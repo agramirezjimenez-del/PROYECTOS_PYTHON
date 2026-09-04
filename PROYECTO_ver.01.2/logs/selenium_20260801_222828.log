@@ -1,0 +1,65 @@
+22:28:28 | INFO     | ====================
+22:28:28 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+22:28:28 | INFO     | ====================
+22:28:28 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+22:28:28 | INFO     | =======================================================
+22:28:28 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+22:28:28 | INFO     | BANCO   : BBVA
+22:28:28 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+22:28:28 | INFO     | =======================================================
+22:28:28 | INFO     | User-Agent seleccionado: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/119.0.0.0 Safari/537.36
+22:28:44 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+22:28:45 | INFO     | Cookies aceptadas
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+22:28:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+22:28:47 | INFO     | Procesando [1/7]: visa-signature-puntos-vida.html
+22:28:54 | INFO     | Procesando [2/7]: tarjeta-platinum.html
+22:29:03 | INFO     | Procesando [3/7]: visa-infinite-puntos.html
+22:29:11 | INFO     | Procesando [4/7]: mastercard-black-puntos-vida.html
+22:29:20 | INFO     | Procesando [5/7]: visa-bfree-puntos-vida.html
+22:29:32 | INFO     | Procesando [6/7]: visa-cero.html
+22:29:38 | INFO     | Procesando [7/7]: mastercard-bfree-puntos-vida.html
+22:29:48 | INFO     | Tiempo total   : 79.7s
+22:29:48 | INFO     | Paginas OK     : 7
+22:29:48 | INFO     | Paginas error  : 0
+22:29:48 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+22:29:48 | INFO     | Estado de validación: OK
+22:29:48 | INFO     | Se extrajeron correctamente los datos de BBVA
+22:29:50 | INFO     | Driver cerrado
+22:29:50 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.parquet
+22:29:50 | ERROR    | Ocurrió un error No module named 'openpyxl'
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\etl_extraccion_informacion_financiera.py", line 32, in <module>
+    storage.save(df_bbva, {"parquet": RUTAS["ruta_bbva"], "excel": RUTAS["ruta_bbva_excel"]})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\utils\storage.py", line 24, in save
+    df.to_excel(ruta, index=False)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\core\generic.py", line 2300, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\io\formats\excel.py", line 1003, in write
+    writer = ExcelWriter(
+        writer,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 58, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+22:29:51 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE

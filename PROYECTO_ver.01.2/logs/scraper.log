@@ -1,0 +1,1365 @@
+2026-08-01 22:38:21,106 | INFO | User-Agent: *
+2026-08-01 22:38:21,107 | INFO | Permite acceso: True
+2026-08-01 22:38:21,107 | INFO | Crawl-delay: None
+2026-08-01 22:38:21,107 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-01 22:38:21,109 | INFO | Esperando 3.2s antes de solicitar (buenas prácticas)
+2026-08-01 22:38:24,265 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-01 22:38:25,051 | INFO | HTML crudo guardado
+2026-08-01 22:38:25,126 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-01 22:38:25,130 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-01 22:38:25,134 | INFO | Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-01 22:38:25,134 | INFO | Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-01 22:38:25,134 | INFO | Tarjetas extraídas: 11
+2026-08-01 22:38:25,136 | INFO | --- Diagnóstico de calidad de datos ---
+2026-08-01 22:38:25,148 | INFO | Nulos por columna:
+nombre_tarjeta              0
+categoria                   0
+membresia_anual_soles       0
+millas_por_dolar_consumo    0
+bono_bienvenida_millas      0
+url_detalle                 0
+fecha_extraccion            0
+fuente                      0
+2026-08-01 22:38:25,166 | INFO | Filas duplicadas (misma tarjeta + misma corrida): 0
+2026-08-01 22:38:25,167 | INFO | Tipos de dato:
+nombre_tarjeta                  str
+categoria                       str
+membresia_anual_soles       float64
+millas_por_dolar_consumo    float64
+bono_bienvenida_millas      float64
+url_detalle                     str
+fecha_extraccion                str
+fuente                          str
+2026-08-01 22:38:25,174 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-01 22:38:25,187 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-01 22:38:25,199 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.parquet
+2026-08-01 22:38:25,234 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.xlsx
+2026-08-01 22:38:25,235 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD
+2026-08-01 22:38:25,253 | ERROR | Ocurrió un error ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\etl_extraccion_informacion_financiera.py", line 49, in <module>
+    storage.save(df_gold, {"parquet": f"./output/tarjetas_gold_{periodo}.parquet",
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            "excel": f"./output/tarjetas_gold_{periodo}.xlsx"})
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\utils\storage.py", line 21, in save
+    df.to_parquet(ruta, index=False, compression="snappy")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\core\frame.py", line 3135, in to_parquet
+    return to_parquet(
+        self,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\io\parquet.py", line 490, in to_parquet
+    impl.write(
+    ~~~~~~~~~~^
+        df,
+        ^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\io\parquet.py", line 191, in write
+    table = self.api.Table.from_pandas(df, **from_pandas_kwargs)
+  File "pyarrow/table.pxi", line 4769, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 656, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 644, in convert_column
+    raise e
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 638, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 408, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 91, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+2026-08-01 22:38:25,465 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-01 22:51:30,108 | INFO | User-Agent: *
+2026-08-01 22:51:30,109 | INFO | Permite acceso: True
+2026-08-01 22:51:30,109 | INFO | Crawl-delay: None
+2026-08-01 22:51:30,109 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-01 22:51:30,111 | INFO | Esperando 6.2s antes de solicitar (buenas prácticas)
+2026-08-01 22:51:36,327 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-01 22:51:37,046 | INFO | HTML crudo guardado
+2026-08-01 22:51:37,133 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-01 22:51:37,136 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-01 22:51:37,137 | INFO | Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-01 22:51:37,138 | INFO | Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-01 22:51:37,138 | INFO | Tarjetas extraídas: 11
+2026-08-01 22:51:37,140 | INFO | --- Diagnóstico de calidad de datos ---
+2026-08-01 22:51:37,145 | INFO | Nulos por columna:
+nombre_tarjeta              0
+categoria                   0
+membresia_anual_soles       0
+millas_por_dolar_consumo    0
+bono_bienvenida_millas      0
+url_detalle                 0
+fecha_extraccion            0
+fuente                      0
+2026-08-01 22:51:37,160 | INFO | Filas duplicadas (misma tarjeta + misma corrida): 0
+2026-08-01 22:51:37,160 | INFO | Tipos de dato:
+nombre_tarjeta                  str
+categoria                       str
+membresia_anual_soles       float64
+millas_por_dolar_consumo    float64
+bono_bienvenida_millas      float64
+url_detalle                     str
+fecha_extraccion                str
+fuente                          str
+2026-08-01 22:51:37,165 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-01 22:51:37,173 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-01 22:51:37,180 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.parquet
+2026-08-01 22:51:37,210 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.xlsx
+2026-08-01 22:51:37,211 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD
+2026-08-01 22:51:37,245 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-01.parquet
+2026-08-01 22:51:37,310 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-01.xlsx
+2026-08-01 22:51:37,311 | INFO | 3. EXPORTANDO ARCHIVO FINAL
+2026-08-01 22:51:37,312 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-01 23:48:26,784 | INFO | User-Agent: *
+2026-08-01 23:48:26,785 | INFO | Permite acceso: True
+2026-08-01 23:48:26,785 | INFO | Crawl-delay: None
+2026-08-01 23:48:26,785 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-01 23:48:26,787 | INFO | Esperando 3.1s antes de solicitar (buenas prácticas)
+2026-08-01 23:48:29,860 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-01 23:48:30,673 | INFO | HTML crudo guardado
+2026-08-01 23:48:30,856 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-01 23:48:30,858 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-01 23:48:30,860 | INFO | Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-01 23:48:30,860 | INFO | Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-01 23:48:30,860 | INFO | Tarjetas extraídas: 11
+2026-08-01 23:48:30,862 | INFO | --- Diagnóstico de calidad de datos ---
+2026-08-01 23:48:30,875 | INFO | Nulos por columna:
+nombre_tarjeta              0
+categoria                   0
+membresia_anual_soles       0
+millas_por_dolar_consumo    0
+bono_bienvenida_millas      0
+url_detalle                 0
+fecha_extraccion            0
+fuente                      0
+2026-08-01 23:48:30,897 | INFO | Filas duplicadas (misma tarjeta + misma corrida): 0
+2026-08-01 23:48:30,898 | INFO | Tipos de dato:
+nombre_tarjeta                  str
+categoria                       str
+membresia_anual_soles       float64
+millas_por_dolar_consumo    float64
+bono_bienvenida_millas      float64
+url_detalle                     str
+fecha_extraccion                str
+fuente                          str
+2026-08-01 23:48:30,905 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-01 23:48:30,921 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-01 23:48:31,178 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.parquet
+2026-08-01 23:48:31,224 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.xlsx
+2026-08-01 23:48:31,225 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-01 23:48:31,255 | ERROR | Ocurrió un error module 'modulos.validacion' has no attribute 'validar_gold_armonizado'
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 80, in <module>
+    validacion.validar_gold_armonizado(df_gold)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'modulos.validacion' has no attribute 'validar_gold_armonizado'
+2026-08-01 23:48:31,258 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-01 23:59:43,065 | INFO | User-Agent: *
+2026-08-01 23:59:43,066 | INFO | Permite acceso: True
+2026-08-01 23:59:43,066 | INFO | Crawl-delay: None
+2026-08-01 23:59:43,067 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-01 23:59:43,068 | INFO | Esperando 4.2s antes de solicitar (buenas prácticas)
+2026-08-01 23:59:47,286 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-01 23:59:48,101 | INFO | HTML crudo guardado
+2026-08-01 23:59:48,355 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-01 23:59:48,357 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-01 23:59:48,359 | INFO | Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-01 23:59:48,360 | INFO | Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-01 23:59:48,360 | INFO | Tarjetas extraídas: 11
+2026-08-01 23:59:48,362 | INFO | --- Diagnóstico de calidad de datos ---
+2026-08-01 23:59:48,372 | INFO | Nulos por columna:
+nombre_tarjeta              0
+categoria                   0
+membresia_anual_soles       0
+millas_por_dolar_consumo    0
+bono_bienvenida_millas      0
+url_detalle                 0
+fecha_extraccion            0
+fuente                      0
+2026-08-01 23:59:48,410 | INFO | Filas duplicadas (misma tarjeta + misma corrida): 0
+2026-08-01 23:59:48,414 | INFO | Tipos de dato:
+nombre_tarjeta                  str
+categoria                       str
+membresia_anual_soles       float64
+millas_por_dolar_consumo    float64
+bono_bienvenida_millas      float64
+url_detalle                     str
+fecha_extraccion                str
+fuente                          str
+2026-08-01 23:59:48,423 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-01 23:59:48,446 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-01 23:59:48,671 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.parquet
+2026-08-01 23:59:48,719 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.xlsx
+2026-08-01 23:59:48,719 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-01 23:59:48,758 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado.
+2026-08-01 23:59:48,758 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-01 23:59:48,763 | ERROR | Ocurrió un error ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 83, in <module>
+    storage.save(df_gold, {
+    ~~~~~~~~~~~~^^^^^^^^^^^
+        "parquet": RUTAS["ruta_gold"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "excel": RUTAS["ruta_gold_excel"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\utils\storage.py", line 21, in save
+    df.to_parquet(ruta, index=False, compression="snappy")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\core\frame.py", line 3135, in to_parquet
+    return to_parquet(
+        self,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\io\parquet.py", line 490, in to_parquet
+    impl.write(
+    ~~~~~~~~~~^
+        df,
+        ^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\io\parquet.py", line 191, in write
+    table = self.api.Table.from_pandas(df, **from_pandas_kwargs)
+  File "pyarrow/table.pxi", line 4769, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 656, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 644, in convert_column
+    raise e
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 638, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 408, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 91, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+2026-08-01 23:59:48,782 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-02 00:14:07,416 | INFO | ======================================================================
+2026-08-02 00:14:07,417 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:14:07,417 | INFO | ======================================================================
+2026-08-02 00:14:07,418 | INFO | ======================================================================
+2026-08-02 00:14:07,418 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:14:07,418 | INFO | ======================================================================
+2026-08-02 00:14:08,098 | INFO | User-Agent: *
+2026-08-02 00:14:08,098 | INFO | Permite acceso: True
+2026-08-02 00:14:08,098 | INFO | Crawl-delay: None
+2026-08-02 00:14:08,098 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:14:08,101 | INFO | ======================================================================
+2026-08-02 00:14:08,101 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:14:08,101 | INFO | ======================================================================
+2026-08-02 00:14:08,102 | INFO | Esperando 3.8s antes de solicitar (buenas prácticas)
+2026-08-02 00:14:11,922 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:14:12,785 | INFO | HTML crudo guardado
+2026-08-02 00:14:12,864 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:14:12,865 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:14:12,866 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:14:12,867 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:14:12,867 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:14:12,867 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:14:12,867 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:14:12,868 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:14:12,868 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:14:12,868 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:14:12,868 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:14:12,868 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:14:12,869 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:14:12,869 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:14:12,869 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:14:12,869 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:14:12,869 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:14:12,870 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:14:12,870 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:14:12,870 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:14:12,870 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:14:12,871 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:14:12,871 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:14:12,871 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:14:12,871 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:14:12,871 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:14:12,872 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:14:12,872 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:14:12,873 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:14:12,895 | INFO | ======================================================================
+2026-08-02 00:14:12,900 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:14:12,900 | INFO | ======================================================================
+2026-08-02 00:14:12,937 | INFO | ======================================================================
+2026-08-02 00:14:12,937 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:14:12,938 | INFO | ======================================================================
+2026-08-02 00:14:12,938 | INFO | Registros      : 11
+2026-08-02 00:14:12,938 | INFO | Columnas       : 8
+2026-08-02 00:14:12,938 | INFO | Duplicados     : 0
+2026-08-02 00:14:12,938 | INFO | Valores nulos  : 0
+2026-08-02 00:14:12,939 | INFO | Estado         : OK
+2026-08-02 00:14:12,939 | INFO | ======================================================================
+2026-08-02 00:14:12,976 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:14:12,976 | INFO | ======================================================================
+2026-08-02 00:14:12,977 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:14:12,977 | INFO | ======================================================================
+2026-08-02 00:14:12,984 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:14:12,985 | INFO | ======================================================================
+2026-08-02 00:14:12,985 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:14:12,985 | INFO | ======================================================================
+2026-08-02 00:14:12,986 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:14:12,986 | INFO | Estado             : ✓ OK
+2026-08-02 00:14:12,986 | INFO | Tiempo total       : 5.6s
+2026-08-02 00:14:12,986 | INFO | ======================================================================
+2026-08-02 00:19:32,798 | INFO | ======================================================================
+2026-08-02 00:19:32,799 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:19:32,799 | INFO | ======================================================================
+2026-08-02 00:19:32,799 | INFO | ======================================================================
+2026-08-02 00:19:32,799 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:19:32,799 | INFO | ======================================================================
+2026-08-02 00:19:33,427 | INFO | User-Agent: *
+2026-08-02 00:19:33,427 | INFO | Permite acceso: True
+2026-08-02 00:19:33,427 | INFO | Crawl-delay: None
+2026-08-02 00:19:33,428 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:19:33,429 | INFO | ======================================================================
+2026-08-02 00:19:33,429 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:19:33,429 | INFO | ======================================================================
+2026-08-02 00:19:33,429 | INFO | Esperando 4.8s antes de solicitar (buenas prácticas)
+2026-08-02 00:19:38,209 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:19:38,933 | INFO | HTML crudo guardado
+2026-08-02 00:19:39,002 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:19:39,004 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:19:39,005 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:19:39,005 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:19:39,006 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:19:39,006 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:19:39,006 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:19:39,006 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:19:39,007 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:19:39,007 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:19:39,007 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:19:39,007 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:19:39,007 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:19:39,008 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:19:39,008 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:19:39,008 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:19:39,008 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:19:39,008 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:19:39,009 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:19:39,009 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:19:39,009 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:19:39,009 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:19:39,009 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:19:39,010 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:19:39,010 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:19:39,010 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:19:39,010 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:19:39,010 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:19:39,011 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:19:39,046 | INFO | ======================================================================
+2026-08-02 00:19:39,046 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:19:39,046 | INFO | ======================================================================
+2026-08-02 00:19:39,087 | INFO | ======================================================================
+2026-08-02 00:19:39,088 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:19:39,088 | INFO | ======================================================================
+2026-08-02 00:19:39,088 | INFO | Registros      : 11
+2026-08-02 00:19:39,088 | INFO | Columnas       : 8
+2026-08-02 00:19:39,088 | INFO | Duplicados     : 0
+2026-08-02 00:19:39,089 | INFO | Valores nulos  : 0
+2026-08-02 00:19:39,089 | INFO | Estado         : OK
+2026-08-02 00:19:39,089 | INFO | ======================================================================
+2026-08-02 00:19:39,132 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:19:39,133 | INFO | ======================================================================
+2026-08-02 00:19:39,133 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:19:39,133 | INFO | ======================================================================
+2026-08-02 00:19:39,141 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:19:39,141 | INFO | ======================================================================
+2026-08-02 00:19:39,141 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:19:39,141 | INFO | ======================================================================
+2026-08-02 00:19:39,141 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:19:39,142 | INFO | Estado             : ✓ OK
+2026-08-02 00:19:39,142 | INFO | Tiempo total       : 6.3s
+2026-08-02 00:19:39,142 | INFO | ======================================================================
+2026-08-02 00:24:55,406 | INFO | ======================================================================
+2026-08-02 00:24:55,407 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:24:55,407 | INFO | ======================================================================
+2026-08-02 00:24:55,407 | INFO | ======================================================================
+2026-08-02 00:24:55,407 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:24:55,407 | INFO | ======================================================================
+2026-08-02 00:24:55,856 | INFO | User-Agent: *
+2026-08-02 00:24:55,857 | INFO | Permite acceso: True
+2026-08-02 00:24:55,857 | INFO | Crawl-delay: None
+2026-08-02 00:24:55,857 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:24:55,858 | INFO | ======================================================================
+2026-08-02 00:24:55,858 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:24:55,858 | INFO | ======================================================================
+2026-08-02 00:24:55,859 | INFO | Esperando 4.9s antes de solicitar (buenas prácticas)
+2026-08-02 00:25:00,732 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:25:01,593 | INFO | HTML crudo guardado
+2026-08-02 00:25:01,711 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:25:01,713 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:25:01,713 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:25:01,714 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:25:01,714 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:25:01,714 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:25:01,715 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:25:01,715 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:25:01,715 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:25:01,715 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:25:01,715 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:25:01,715 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:25:01,715 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:25:01,716 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:25:01,716 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:25:01,716 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:25:01,716 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:25:01,716 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:25:01,717 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:25:01,717 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:25:01,717 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:25:01,718 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:25:01,718 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:25:01,718 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:25:01,718 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:25:01,718 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:25:01,718 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:25:01,719 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:25:01,719 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:25:01,720 | INFO | ======================================================================
+2026-08-02 00:25:01,720 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:25:01,720 | INFO | ======================================================================
+2026-08-02 00:25:01,750 | INFO | ======================================================================
+2026-08-02 00:25:01,751 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:25:01,751 | INFO | ======================================================================
+2026-08-02 00:25:01,752 | INFO | Registros      : 11
+2026-08-02 00:25:01,752 | INFO | Columnas       : 8
+2026-08-02 00:25:01,752 | INFO | Duplicados     : 0
+2026-08-02 00:25:01,752 | INFO | Valores nulos  : 0
+2026-08-02 00:25:01,752 | INFO | Estado         : OK
+2026-08-02 00:25:01,753 | INFO | ======================================================================
+2026-08-02 00:25:01,766 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:25:01,768 | INFO | ======================================================================
+2026-08-02 00:25:01,768 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:25:01,769 | INFO | ======================================================================
+2026-08-02 00:25:01,783 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:25:01,783 | INFO | ======================================================================
+2026-08-02 00:25:01,784 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:25:01,784 | INFO | ======================================================================
+2026-08-02 00:25:01,784 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:25:01,784 | INFO | Estado             : ✓ OK
+2026-08-02 00:25:01,785 | INFO | Tiempo total       : 6.4s
+2026-08-02 00:25:01,785 | INFO | ======================================================================
+2026-08-02 00:25:01,894 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+2026-08-02 00:25:01,927 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+2026-08-02 00:25:01,927 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-02 00:25:01,960 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado.
+2026-08-02 00:25:01,961 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-02 00:25:01,965 | ERROR | Ocurrió un error ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 83, in <module>
+    storage.save(df_gold, {
+    ~~~~~~~~~~~~^^^^^^^^^^^
+        "parquet": RUTAS["ruta_gold"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "excel": RUTAS["ruta_gold_excel"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\utils\storage.py", line 21, in save
+    df.to_parquet(ruta, index=False, compression="snappy")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\core\frame.py", line 3135, in to_parquet
+    return to_parquet(
+        self,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\io\parquet.py", line 490, in to_parquet
+    impl.write(
+    ~~~~~~~~~~^
+        df,
+        ^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\io\parquet.py", line 191, in write
+    table = self.api.Table.from_pandas(df, **from_pandas_kwargs)
+  File "pyarrow/table.pxi", line 4769, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 656, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 644, in convert_column
+    raise e
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 638, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 408, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 91, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+2026-08-02 00:25:01,979 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-02 00:32:47,923 | INFO | ======================================================================
+2026-08-02 00:32:47,924 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:32:47,924 | INFO | ======================================================================
+2026-08-02 00:32:47,924 | INFO | ======================================================================
+2026-08-02 00:32:47,924 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:32:47,924 | INFO | ======================================================================
+2026-08-02 00:32:48,435 | INFO | User-Agent: *
+2026-08-02 00:32:48,436 | INFO | Permite acceso: True
+2026-08-02 00:32:48,436 | INFO | Crawl-delay: None
+2026-08-02 00:32:48,436 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:32:48,437 | INFO | ======================================================================
+2026-08-02 00:32:48,438 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:32:48,438 | INFO | ======================================================================
+2026-08-02 00:32:48,439 | INFO | Esperando 5.3s antes de solicitar (buenas prácticas)
+2026-08-02 00:32:53,729 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:32:54,586 | INFO | HTML crudo guardado
+2026-08-02 00:32:54,892 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:32:54,894 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:32:54,894 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:32:54,895 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:32:54,895 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:32:54,896 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:32:54,896 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:32:54,896 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:32:54,896 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:32:54,897 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:32:54,897 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:32:54,898 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:32:54,899 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:32:54,900 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:32:54,901 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:32:54,901 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:32:54,902 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:32:54,903 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:32:54,904 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:32:54,904 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:32:54,904 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:32:54,905 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:32:54,906 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:32:54,907 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:32:54,908 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:32:54,909 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:32:54,910 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:32:54,910 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:32:54,911 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:32:54,915 | INFO | ======================================================================
+2026-08-02 00:32:54,915 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:32:54,915 | INFO | ======================================================================
+2026-08-02 00:32:54,952 | INFO | ======================================================================
+2026-08-02 00:32:54,952 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:32:54,952 | INFO | ======================================================================
+2026-08-02 00:32:54,953 | INFO | Registros      : 11
+2026-08-02 00:32:54,953 | INFO | Columnas       : 8
+2026-08-02 00:32:54,953 | INFO | Duplicados     : 0
+2026-08-02 00:32:54,953 | INFO | Valores nulos  : 0
+2026-08-02 00:32:54,953 | INFO | Estado         : OK
+2026-08-02 00:32:54,953 | INFO | ======================================================================
+2026-08-02 00:32:54,970 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:32:54,973 | INFO | ======================================================================
+2026-08-02 00:32:54,974 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:32:54,974 | INFO | ======================================================================
+2026-08-02 00:32:54,991 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:32:54,991 | INFO | ======================================================================
+2026-08-02 00:32:54,991 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:32:54,992 | INFO | ======================================================================
+2026-08-02 00:32:54,992 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:32:54,992 | INFO | Estado             : ✓ OK
+2026-08-02 00:32:54,992 | INFO | Tiempo total       : 7.1s
+2026-08-02 00:32:54,992 | INFO | ======================================================================
+2026-08-02 00:32:55,361 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+2026-08-02 00:32:55,423 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+2026-08-02 00:32:55,424 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-02 00:32:55,460 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado.
+2026-08-02 00:32:55,461 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-02 00:32:55,464 | ERROR | Ocurrió un error ("Expected bytes, got a 'float' object", 'Conversion failed for column ratio_acumulacion with type object')
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 94, in <module>
+    storage.save(df_gold, {
+    ~~~~~~~~~~~~^^^^^^^^^^^
+        "parquet": RUTAS["ruta_gold"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "excel": RUTAS["ruta_gold_excel"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\utils\storage.py", line 21, in save
+    df.to_parquet(ruta, index=False, compression="snappy")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\core\frame.py", line 3135, in to_parquet
+    return to_parquet(
+        self,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\io\parquet.py", line 490, in to_parquet
+    impl.write(
+    ~~~~~~~~~~^
+        df,
+        ^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pandas\io\parquet.py", line 191, in write
+    table = self.api.Table.from_pandas(df, **from_pandas_kwargs)
+  File "pyarrow/table.pxi", line 4769, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 656, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 644, in convert_column
+    raise e
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 638, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 408, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 91, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'float' object", 'Conversion failed for column ratio_acumulacion with type object')
+2026-08-02 00:32:55,483 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-02 00:41:21,196 | INFO | ======================================================================
+2026-08-02 00:41:21,197 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:41:21,198 | INFO | ======================================================================
+2026-08-02 00:41:21,198 | INFO | ======================================================================
+2026-08-02 00:41:21,199 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:41:21,199 | INFO | ======================================================================
+2026-08-02 00:41:21,681 | INFO | User-Agent: *
+2026-08-02 00:41:21,681 | INFO | Permite acceso: True
+2026-08-02 00:41:21,682 | INFO | Crawl-delay: None
+2026-08-02 00:41:21,682 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:41:21,683 | INFO | ======================================================================
+2026-08-02 00:41:21,683 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:41:21,684 | INFO | ======================================================================
+2026-08-02 00:41:21,684 | INFO | Esperando 5.4s antes de solicitar (buenas prácticas)
+2026-08-02 00:41:27,041 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:41:27,827 | INFO | HTML crudo guardado
+2026-08-02 00:41:28,022 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:41:28,024 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:41:28,024 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:41:28,025 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:41:28,025 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:41:28,025 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:41:28,025 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:41:28,026 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:41:28,026 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:41:28,026 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:41:28,026 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:41:28,026 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:41:28,027 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:41:28,027 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:41:28,027 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:41:28,027 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:41:28,027 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:41:28,028 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:41:28,028 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:41:28,028 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:41:28,028 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:41:28,028 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:41:28,029 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:41:28,029 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:41:28,029 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:41:28,029 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:41:28,029 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:41:28,029 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:41:28,029 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:41:28,030 | INFO | ======================================================================
+2026-08-02 00:41:28,030 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:41:28,030 | INFO | ======================================================================
+2026-08-02 00:41:28,051 | INFO | ======================================================================
+2026-08-02 00:41:28,051 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:41:28,051 | INFO | ======================================================================
+2026-08-02 00:41:28,051 | INFO | Registros      : 11
+2026-08-02 00:41:28,052 | INFO | Columnas       : 8
+2026-08-02 00:41:28,052 | INFO | Duplicados     : 0
+2026-08-02 00:41:28,052 | INFO | Valores nulos  : 0
+2026-08-02 00:41:28,052 | INFO | Estado         : OK
+2026-08-02 00:41:28,052 | INFO | ======================================================================
+2026-08-02 00:41:28,062 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:41:28,062 | INFO | ======================================================================
+2026-08-02 00:41:28,063 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:41:28,063 | INFO | ======================================================================
+2026-08-02 00:41:28,073 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:41:28,073 | INFO | ======================================================================
+2026-08-02 00:41:28,073 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:41:28,074 | INFO | ======================================================================
+2026-08-02 00:41:28,074 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:41:28,074 | INFO | Estado             : ✓ OK
+2026-08-02 00:41:28,074 | INFO | Tiempo total       : 6.9s
+2026-08-02 00:41:28,074 | INFO | ======================================================================
+2026-08-02 00:41:28,214 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+2026-08-02 00:41:28,272 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+2026-08-02 00:41:28,272 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-02 00:41:28,316 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado.
+2026-08-02 00:41:28,317 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-02 00:41:28,324 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-02.parquet
+2026-08-02 00:41:28,456 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-02.xlsx
+2026-08-02 00:41:28,457 | INFO | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+2026-08-02 00:41:28,609 | ERROR | Ocurrió un error module 'modulos.validacion' has no attribute 'validar_gold_enriquecido'
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 103, in <module>
+    validacion.validar_gold_enriquecido(df_gold_features)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'modulos.validacion' has no attribute 'validar_gold_enriquecido'. Did you mean: 'validar_gold_armonizado'?
+2026-08-02 00:41:28,612 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-02 00:48:54,457 | INFO | ======================================================================
+2026-08-02 00:48:54,458 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:48:54,458 | INFO | ======================================================================
+2026-08-02 00:48:54,458 | INFO | ======================================================================
+2026-08-02 00:48:54,458 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:48:54,458 | INFO | ======================================================================
+2026-08-02 00:48:55,935 | INFO | User-Agent: *
+2026-08-02 00:48:55,935 | INFO | Permite acceso: True
+2026-08-02 00:48:55,935 | INFO | Crawl-delay: None
+2026-08-02 00:48:55,935 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:48:55,937 | INFO | ======================================================================
+2026-08-02 00:48:55,937 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:48:55,937 | INFO | ======================================================================
+2026-08-02 00:48:55,937 | INFO | Esperando 3.3s antes de solicitar (buenas prácticas)
+2026-08-02 00:48:59,266 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:49:00,187 | INFO | HTML crudo guardado
+2026-08-02 00:49:00,301 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:49:00,303 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:49:00,303 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:49:00,304 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:49:00,305 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:49:00,305 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:49:00,305 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:49:00,305 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:49:00,306 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:49:00,306 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:49:00,307 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:49:00,307 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:49:00,308 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:49:00,308 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:49:00,308 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:49:00,309 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:49:00,309 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:49:00,309 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:49:00,309 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:49:00,309 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:49:00,310 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:49:00,310 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:49:00,310 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:49:00,310 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:49:00,310 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:49:00,310 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:49:00,311 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:49:00,311 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:49:00,311 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:49:00,312 | INFO | ======================================================================
+2026-08-02 00:49:00,313 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:49:00,313 | INFO | ======================================================================
+2026-08-02 00:49:00,339 | INFO | ======================================================================
+2026-08-02 00:49:00,340 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:49:00,340 | INFO | ======================================================================
+2026-08-02 00:49:00,340 | INFO | Registros      : 11
+2026-08-02 00:49:00,341 | INFO | Columnas       : 8
+2026-08-02 00:49:00,341 | INFO | Duplicados     : 0
+2026-08-02 00:49:00,341 | INFO | Valores nulos  : 0
+2026-08-02 00:49:00,341 | INFO | Estado         : OK
+2026-08-02 00:49:00,341 | INFO | ======================================================================
+2026-08-02 00:49:00,353 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:49:00,353 | INFO | ======================================================================
+2026-08-02 00:49:00,354 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:49:00,354 | INFO | ======================================================================
+2026-08-02 00:49:00,366 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:49:00,366 | INFO | ======================================================================
+2026-08-02 00:49:00,366 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:49:00,366 | INFO | ======================================================================
+2026-08-02 00:49:00,366 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:49:00,366 | INFO | Estado             : ✓ OK
+2026-08-02 00:49:00,366 | INFO | Tiempo total       : 5.9s
+2026-08-02 00:49:00,366 | INFO | ======================================================================
+2026-08-02 00:49:00,565 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+2026-08-02 00:49:00,597 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+2026-08-02 00:49:00,597 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-02 00:49:00,639 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado.
+2026-08-02 00:49:00,639 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-02 00:49:00,645 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-02.parquet
+2026-08-02 00:49:00,701 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-02.xlsx
+2026-08-02 00:49:00,702 | INFO | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+2026-08-02 00:49:00,883 | ERROR | ❌ Validación GOLD enriquecida falló. Columnas faltantes: ['tea_soles_promedio', 'tea_dolares_promedio', 'costo_membresia_mensual', 'costo_total_estimado', 'tiene_recompensas', 'nivel_beneficios', 'puntaje_competitividad', 'ratio_beneficio_costo', 'grupo_ingreso', 'categoria_riesgo', 'recomendacion']
+2026-08-02 00:49:00,884 | ERROR | Ocurrió un error Columnas faltantes en GOLD enriquecida: ['tea_soles_promedio', 'tea_dolares_promedio', 'costo_membresia_mensual', 'costo_total_estimado', 'tiene_recompensas', 'nivel_beneficios', 'puntaje_competitividad', 'ratio_beneficio_costo', 'grupo_ingreso', 'categoria_riesgo', 'recomendacion']
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 103, in <module>
+    validacion.validar_gold_enriquecido(df_gold_features)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\modulos\validacion.py", line 92, in validar_gold_enriquecido
+    raise ValueError(f"Columnas faltantes en GOLD enriquecida: {columnas_faltantes}")
+ValueError: Columnas faltantes en GOLD enriquecida: ['tea_soles_promedio', 'tea_dolares_promedio', 'costo_membresia_mensual', 'costo_total_estimado', 'tiene_recompensas', 'nivel_beneficios', 'puntaje_competitividad', 'ratio_beneficio_costo', 'grupo_ingreso', 'categoria_riesgo', 'recomendacion']
+2026-08-02 00:49:00,888 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-02 00:55:26,721 | INFO | ======================================================================
+2026-08-02 00:55:26,722 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-02 00:55:26,722 | INFO | ======================================================================
+2026-08-02 00:55:26,723 | INFO | ======================================================================
+2026-08-02 00:55:26,723 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-02 00:55:26,723 | INFO | ======================================================================
+2026-08-02 00:55:27,269 | INFO | User-Agent: *
+2026-08-02 00:55:27,270 | INFO | Permite acceso: True
+2026-08-02 00:55:27,270 | INFO | Crawl-delay: None
+2026-08-02 00:55:27,270 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-02 00:55:27,272 | INFO | ======================================================================
+2026-08-02 00:55:27,272 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-02 00:55:27,272 | INFO | ======================================================================
+2026-08-02 00:55:27,273 | INFO | Esperando 4.5s antes de solicitar (buenas prácticas)
+2026-08-02 00:55:31,801 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-02 00:55:32,657 | INFO | HTML crudo guardado
+2026-08-02 00:55:32,843 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-02 00:55:32,845 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-02 00:55:32,845 | INFO | Procesando [1/13] American Express® Blue
+2026-08-02 00:55:32,846 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-02 00:55:32,846 | INFO | Procesando [2/13] American Express ® Green
+2026-08-02 00:55:32,846 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-02 00:55:32,846 | INFO | Procesando [3/13] American Express® Gold
+2026-08-02 00:55:32,847 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-02 00:55:32,847 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-02 00:55:32,847 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-02 00:55:32,847 | INFO | Procesando [5/13] American Express® Black
+2026-08-02 00:55:32,848 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-02 00:55:32,848 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-02 00:55:32,848 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-02 00:55:32,848 | INFO | Procesando [7/13] Visa Clásica
+2026-08-02 00:55:32,848 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-02 00:55:32,848 | INFO | Procesando [8/13] Visa Oro
+2026-08-02 00:55:32,849 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-02 00:55:32,849 | INFO | Procesando [9/13] Visa Platinum
+2026-08-02 00:55:32,849 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-02 00:55:32,849 | INFO | Procesando [10/13] Visa Signature
+2026-08-02 00:55:32,849 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-02 00:55:32,849 | INFO | Procesando [11/13] Visa Infinite
+2026-08-02 00:55:32,850 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-02 00:55:32,850 | INFO | Procesando [12/13] Visa Premia
+2026-08-02 00:55:32,850 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-02 00:55:32,850 | INFO | Procesando [13/13] Visa Access
+2026-08-02 00:55:32,851 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-02 00:55:32,851 | INFO | Tarjetas extraídas: 11/13
+2026-08-02 00:55:32,852 | INFO | ======================================================================
+2026-08-02 00:55:32,852 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-02 00:55:32,852 | INFO | ======================================================================
+2026-08-02 00:55:32,887 | INFO | ======================================================================
+2026-08-02 00:55:32,888 | INFO |                            CALIDAD DE DATOS                           
+2026-08-02 00:55:32,888 | INFO | ======================================================================
+2026-08-02 00:55:32,888 | INFO | Registros      : 11
+2026-08-02 00:55:32,888 | INFO | Columnas       : 8
+2026-08-02 00:55:32,888 | INFO | Duplicados     : 0
+2026-08-02 00:55:32,889 | INFO | Valores nulos  : 0
+2026-08-02 00:55:32,889 | INFO | Estado         : OK
+2026-08-02 00:55:32,889 | INFO | ======================================================================
+2026-08-02 00:55:32,901 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-02 00:55:32,903 | INFO | ======================================================================
+2026-08-02 00:55:32,903 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-02 00:55:32,903 | INFO | ======================================================================
+2026-08-02 00:55:32,918 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-02 00:55:32,918 | INFO | ======================================================================
+2026-08-02 00:55:32,918 | INFO |                           PROCESO COMPLETADO                          
+2026-08-02 00:55:32,918 | INFO | ======================================================================
+2026-08-02 00:55:32,919 | INFO | Tarjetas extraídas : 11
+2026-08-02 00:55:32,919 | INFO | Estado             : ✓ OK
+2026-08-02 00:55:32,919 | INFO | Tiempo total       : 6.2s
+2026-08-02 00:55:32,919 | INFO | ======================================================================
+2026-08-02 00:55:33,142 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+2026-08-02 00:55:33,171 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+2026-08-02 00:55:33,172 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-02 00:55:33,214 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado. (54 filas)
+2026-08-02 00:55:33,214 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-02 00:55:33,220 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-02.parquet
+2026-08-02 00:55:33,258 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-02.xlsx
+2026-08-02 00:55:33,258 | INFO | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+2026-08-02 00:55:33,425 | INFO | ✅ Validación GOLD enriquecida OK: 54 filas, 35 columnas
+2026-08-02 00:55:33,425 | INFO | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+2026-08-02 00:55:33,427 | INFO | 📊 Columnas numéricas encontradas: 21
+2026-08-02 00:55:33,428 | INFO |    tea_soles_min: media=39.54, min=19.99, max=99.99
+2026-08-02 00:55:33,429 | INFO |    tea_soles_max: media=102.65, min=54.99, max=112.98
+2026-08-02 00:55:33,429 | INFO |    membresia_anual: media=223.10, min=0.00, max=594.00
+2026-08-02 00:55:33,430 | INFO |    seguro_desgravamen_mensual: media=4.27, min=0.00, max=9.90
+2026-08-02 00:55:33,430 | INFO |    ingreso_minimo_requerido: media=4730.23, min=600.00, max=12000.00
+2026-08-02 00:55:33,430 | INFO | Validación Pandera (capa gold enriquecida): OK
+2026-08-02 00:55:33,444 | INFO | Archivo guardado: ./output/tarjetas_gold_features_2026-08-02.parquet
+2026-08-02 00:55:33,499 | INFO | Archivo guardado: ./output/tarjetas_gold_features_2026-08-02.xlsx
+2026-08-02 00:55:33,500 | INFO | 4. EXPORTANDO ARCHIVO FINAL
+2026-08-02 00:55:33,500 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-02 00:55:33,500 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado. (54 filas)
+2026-08-02 00:55:33,501 | INFO | ✅ Validación Pandera (capa gold cruda): OK
+2026-08-02 00:55:33,505 | INFO | ✅ Validación GOLD enriquecida OK: 54 filas, 35 columnas
+2026-08-02 00:55:33,505 | INFO | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+2026-08-02 00:55:33,506 | INFO | 📊 Columnas numéricas encontradas: 21
+2026-08-02 00:55:33,506 | INFO |    tea_soles_min: media=39.54, min=19.99, max=99.99
+2026-08-02 00:55:33,507 | INFO |    tea_soles_max: media=102.65, min=54.99, max=112.98
+2026-08-02 00:55:33,508 | INFO |    membresia_anual: media=223.10, min=0.00, max=594.00
+2026-08-02 00:55:33,509 | INFO |    seguro_desgravamen_mensual: media=4.27, min=0.00, max=9.90
+2026-08-02 00:55:33,510 | INFO |    ingreso_minimo_requerido: media=4730.23, min=600.00, max=12000.00
+2026-08-02 00:55:33,511 | INFO | ✅ Validación Pandera (capa gold enriquecida): OK
+2026-08-02 00:55:33,529 | INFO | 
+============================================================
+REPORTE DE VALIDACIÓN DE DATOS
+============================================================
+Total de registros: 54
+Total de columnas: 35
+Memoria utilizada: 0.02 MB
+
+📋 COLUMNAS PRESENTES:
+  - banco: category, 0 nulos, 5 valores únicos
+  - tarjeta_nombre: string, 0 nulos, 52 valores únicos
+  - marca: category, 11 nulos, 4 valores únicos
+  - categoria: category, 22 nulos, 11 valores únicos
+  - tea_soles_min: float32, 13 nulos, 13 valores únicos
+  - tea_soles_max: float32, 15 nulos, 8 valores únicos
+  - membresia_anual: float32, 0 nulos, 19 valores únicos
+  - requisito_exoneracion_membresia: string, 36 nulos, 10 valores únicos
+  - programa_recompensas: string, 21 nulos, 5 valores únicos
+  - ratio_acumulacion: string, 32 nulos, 6 valores únicos
+  - seguro_desgravamen_mensual: float32, 11 nulos, 12 valores únicos
+  - ingreso_minimo_requerido: float32, 11 nulos, 13 valores únicos
+  - bono_bienvenida: float32, 43 nulos, 3 valores únicos
+  - fecha_scraping: string, 0 nulos, 11 valores únicos
+  - url_origen: string, 3 nulos, 50 valores únicos
+  - tea_promedio: float32, 13 nulos, 16 valores únicos
+  - rango_tea: float32, 15 nulos, 13 valores únicos
+  - costo_anual_base: float32, 0 nulos, 36 valores únicos
+  - consumo_minimo_exoneracion_soles: Float32, 45 nulos, 4 valores únicos
+  - exonera_por_consumo: boolean, 0 nulos, 2 valores únicos
+  - tiene_programa_recompensas: boolean, 0 nulos, 2 valores únicos
+  - nivel_categoria: Int8, 22 nulos, 4 valores únicos
+  - tea_promedio_del_banco: float32, 11 nulos, 4 valores únicos
+  - membresia_promedio_del_banco: float32, 0 nulos, 5 valores únicos
+  - num_tarjetas_del_banco: int8, 0 nulos, 4 valores únicos
+  - ingreso_min_promedio_categoria: float32, 33 nulos, 9 valores únicos
+  - tea_vs_promedio_banco: float32, 13 nulos, 16 valores únicos
+  - tea_max_bin: category, 15 nulos, 4 valores únicos
+  - ingreso_minimo_bin: category, 11 nulos, 4 valores únicos
+  - membresia_bin: category, 0 nulos, 4 valores únicos
+  - tea_soles_min_zscore: float64, 15 nulos, 12 valores únicos
+  - tea_soles_max_zscore: float64, 15 nulos, 8 valores únicos
+  - tea_promedio_zscore: float64, 15 nulos, 14 valores únicos
+  - membresia_anual_minmax: float64, 0 nulos, 19 valores únicos
+  - ingreso_minimo_requerido_robust: float64, 11 nulos, 13 valores únicos
+
+🏦 DISTRIBUCIÓN POR BANCO:
+  - SCOTIABANK: 22 tarjetas
+  - BCP: 11 tarjetas
+  - INTERBANK: 11 tarjetas
+  - BBVA: 7 tarjetas
+  - BANBIF: 3 tarjetas
+
+📊 ESTADÍSTICAS DE TEA SOLES:
+  - Mínimo: 19.99%
+  - Máximo: 112.98%
+  - Promedio (min): 39.54%
+  - Promedio (max): 102.65%
+
+============================================================
+✅ VALIDACIÓN COMPLETADA
+2026-08-02 00:55:33,535 | INFO | 📊 Resumen del dataset: {'total_registros': 54, 'total_columnas': 35, 'memoria_uso_mb': np.float64(0.016190528869628906), 'bancos': ['BBVA', 'BCP', 'SCOTIABANK', 'BANBIF', 'INTERBANK'], 'total_bancos': 5, 'distribucion_bancos': {'SCOTIABANK': 22, 'BCP': 11, 'INTERBANK': 11, 'BBVA': 7, 'BANBIF': 3}, 'categorias': ['Platinum', 'Bfree', 'Visa Infinite', 'Signature', 'Visa Cero', 'Black', 'Clásica', 'Premium', <NA>, 'Oro', 'Amex - Millas Benefit', 'Visa - Millas Benefit'], 'total_categorias': 12, 'tea_soles_min': {'media': np.float32(39.54439), 'min': np.float32(19.99), 'max': np.float32(99.99), 'mediana': np.float32(19.99), 'std': np.float32(25.099867)}, 'tea_soles_max': {'media': np.float32(102.65103), 'min': np.float32(54.99), 'max': np.float32(112.98), 'mediana': np.float32(109.83), 'std': np.float32(12.953408)}, 'membresia_anual': {'media': np.float32(223.09814), 'min': np.float32(0.0), 'max': np.float32(594.0), 'mediana': np.float32(170.0)}, 'valores_nulos': {'marca': 11, 'categoria': 22, 'tea_soles_min': 13, 'tea_soles_max': 15, 'requisito_exoneracion_membresia': 36, 'programa_recompensas': 21, 'ratio_acumulacion': 32, 'seguro_desgravamen_mensual': 11, 'ingreso_minimo_requerido': 11, 'bono_bienvenida': 43, 'url_origen': 3, 'tea_promedio': 13, 'rango_tea': 15, 'consumo_minimo_exoneracion_soles': 45, 'nivel_categoria': 22, 'tea_promedio_del_banco': 11, 'ingreso_min_promedio_categoria': 33, 'tea_vs_promedio_banco': 13, 'tea_max_bin': 15, 'ingreso_minimo_bin': 11, 'tea_soles_min_zscore': 15, 'tea_soles_max_zscore': 15, 'tea_promedio_zscore': 15, 'ingreso_minimo_requerido_robust': 11}}
+2026-08-03 17:35:39,579 | INFO | ======================================================================
+2026-08-03 17:35:39,580 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-03 17:35:39,581 | INFO | ======================================================================
+2026-08-03 17:35:39,581 | INFO | ======================================================================
+2026-08-03 17:35:39,581 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-03 17:35:39,581 | INFO | ======================================================================
+2026-08-03 17:35:40,225 | INFO | User-Agent: *
+2026-08-03 17:35:40,225 | INFO | Permite acceso: True
+2026-08-03 17:35:40,225 | INFO | Crawl-delay: None
+2026-08-03 17:35:40,226 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-03 17:35:40,227 | INFO | ======================================================================
+2026-08-03 17:35:40,227 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-03 17:35:40,227 | INFO | ======================================================================
+2026-08-03 17:35:40,228 | INFO | Esperando 4.7s antes de solicitar (buenas prácticas)
+2026-08-03 17:35:44,912 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-03 17:35:45,810 | INFO | HTML crudo guardado
+2026-08-03 17:35:45,924 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-03 17:35:45,926 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-03 17:35:45,927 | INFO | Procesando [1/13] American Express® Blue
+2026-08-03 17:35:45,928 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-03 17:35:45,928 | INFO | Procesando [2/13] American Express ® Green
+2026-08-03 17:35:45,929 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-03 17:35:45,929 | INFO | Procesando [3/13] American Express® Gold
+2026-08-03 17:35:45,930 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-03 17:35:45,930 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-03 17:35:45,930 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-03 17:35:45,931 | INFO | Procesando [5/13] American Express® Black
+2026-08-03 17:35:45,932 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-03 17:35:45,932 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-03 17:35:45,932 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-03 17:35:45,932 | INFO | Procesando [7/13] Visa Clásica
+2026-08-03 17:35:45,933 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-03 17:35:45,933 | INFO | Procesando [8/13] Visa Oro
+2026-08-03 17:35:45,933 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-03 17:35:45,934 | INFO | Procesando [9/13] Visa Platinum
+2026-08-03 17:35:45,934 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-03 17:35:45,935 | INFO | Procesando [10/13] Visa Signature
+2026-08-03 17:35:45,936 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-03 17:35:45,936 | INFO | Procesando [11/13] Visa Infinite
+2026-08-03 17:35:45,937 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-03 17:35:45,937 | INFO | Procesando [12/13] Visa Premia
+2026-08-03 17:35:45,938 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-03 17:35:45,938 | INFO | Procesando [13/13] Visa Access
+2026-08-03 17:35:45,939 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-03 17:35:45,939 | INFO | Tarjetas extraídas: 11/13
+2026-08-03 17:35:45,941 | INFO | ======================================================================
+2026-08-03 17:35:45,941 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-03 17:35:45,941 | INFO | ======================================================================
+2026-08-03 17:35:45,949 | INFO | ======================================================================
+2026-08-03 17:35:45,949 | INFO |                            CALIDAD DE DATOS                           
+2026-08-03 17:35:45,949 | INFO | ======================================================================
+2026-08-03 17:35:45,950 | INFO | Registros      : 11
+2026-08-03 17:35:45,950 | INFO | Columnas       : 8
+2026-08-03 17:35:45,950 | INFO | Duplicados     : 0
+2026-08-03 17:35:45,950 | INFO | Valores nulos  : 0
+2026-08-03 17:35:45,951 | INFO | Estado         : OK
+2026-08-03 17:35:45,951 | INFO | ======================================================================
+2026-08-03 17:35:45,957 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-03 17:35:45,958 | INFO | ======================================================================
+2026-08-03 17:35:45,958 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-03 17:35:45,958 | INFO | ======================================================================
+2026-08-03 17:35:45,965 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-03 17:35:45,965 | INFO | ======================================================================
+2026-08-03 17:35:45,965 | INFO |                           PROCESO COMPLETADO                          
+2026-08-03 17:35:45,965 | INFO | ======================================================================
+2026-08-03 17:35:45,966 | INFO | Tarjetas extraídas : 11
+2026-08-03 17:35:45,966 | INFO | Estado             : ✓ OK
+2026-08-03 17:35:45,966 | INFO | Tiempo total       : 6.4s
+2026-08-03 17:35:45,966 | INFO | ======================================================================
+2026-08-03 17:35:45,973 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-03.parquet
+2026-08-03 17:35:46,006 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-03.xlsx
+2026-08-03 17:35:46,006 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-03 17:35:46,042 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado. (43 filas)
+2026-08-03 17:35:46,043 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-03 17:35:46,049 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-03.parquet
+2026-08-03 17:35:46,090 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-03.xlsx
+2026-08-03 17:35:46,091 | INFO | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+2026-08-03 17:35:46,308 | INFO | ✅ Validación GOLD enriquecida OK: 43 filas, 35 columnas
+2026-08-03 17:35:46,309 | INFO | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+2026-08-03 17:35:46,310 | INFO | 📊 Columnas numéricas encontradas: 21
+2026-08-03 17:35:46,312 | INFO |    tea_soles_min: media=30.42, min=19.99, max=99.99
+2026-08-03 17:35:46,313 | INFO |    tea_soles_max: media=105.30, min=54.99, max=112.98
+2026-08-03 17:35:46,314 | INFO |    membresia_anual: media=231.80, min=0.00, max=594.00
+2026-08-03 17:35:46,315 | INFO |    seguro_desgravamen_mensual: media=4.44, min=0.34, max=9.90
+2026-08-03 17:35:46,316 | INFO |    ingreso_minimo_requerido: media=4881.25, min=600.00, max=12000.00
+2026-08-03 17:35:46,316 | INFO | Validación Pandera (capa gold enriquecida): OK
+2026-08-03 17:35:46,329 | INFO | Archivo guardado: ./output/tarjetas_gold_features_2026-08-03.parquet
+2026-08-03 17:35:46,401 | INFO | Archivo guardado: ./output/tarjetas_gold_features_2026-08-03.xlsx
+2026-08-03 17:35:46,402 | INFO | 4. EXPORTANDO ARCHIVO FINAL
+2026-08-03 17:35:46,402 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-03 17:35:46,403 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado. (43 filas)
+2026-08-03 17:35:46,403 | INFO | ✅ Validación Pandera (capa gold cruda): OK
+2026-08-03 17:35:46,409 | INFO | ✅ Validación GOLD enriquecida OK: 43 filas, 35 columnas
+2026-08-03 17:35:46,410 | INFO | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+2026-08-03 17:35:46,411 | INFO | 📊 Columnas numéricas encontradas: 21
+2026-08-03 17:35:46,413 | INFO |    tea_soles_min: media=30.42, min=19.99, max=99.99
+2026-08-03 17:35:46,414 | INFO |    tea_soles_max: media=105.30, min=54.99, max=112.98
+2026-08-03 17:35:46,415 | INFO |    membresia_anual: media=231.80, min=0.00, max=594.00
+2026-08-03 17:35:46,416 | INFO |    seguro_desgravamen_mensual: media=4.44, min=0.34, max=9.90
+2026-08-03 17:35:46,417 | INFO |    ingreso_minimo_requerido: media=4881.25, min=600.00, max=12000.00
+2026-08-03 17:35:46,417 | INFO | ✅ Validación Pandera (capa gold enriquecida): OK
+2026-08-03 17:35:46,465 | INFO | 
+============================================================
+REPORTE DE VALIDACIÓN DE DATOS
+============================================================
+Total de registros: 43
+Total de columnas: 35
+Memoria utilizada: 0.01 MB
+
+📋 COLUMNAS PRESENTES:
+  - banco: category, 0 nulos, 4 valores únicos
+  - tarjeta_nombre: string, 0 nulos, 42 valores únicos
+  - marca: category, 11 nulos, 3 valores únicos
+  - categoria: category, 22 nulos, 10 valores únicos
+  - tea_soles_min: float32, 13 nulos, 8 valores únicos
+  - tea_soles_max: float32, 15 nulos, 7 valores únicos
+  - membresia_anual: float32, 0 nulos, 19 valores únicos
+  - requisito_exoneracion_membresia: string, 36 nulos, 5 valores únicos
+  - programa_recompensas: string, 21 nulos, 2 valores únicos
+  - ratio_acumulacion: string, 32 nulos, 3 valores únicos
+  - seguro_desgravamen_mensual: float32, 11 nulos, 9 valores únicos
+  - ingreso_minimo_requerido: float32, 11 nulos, 11 valores únicos
+  - bono_bienvenida: float32, 32 nulos, 3 valores únicos
+  - fecha_scraping: string, 0 nulos, 10 valores únicos
+  - url_origen: string, 0 nulos, 40 valores únicos
+  - tea_promedio: float32, 13 nulos, 11 valores únicos
+  - rango_tea: float32, 15 nulos, 8 valores únicos
+  - costo_anual_base: float32, 0 nulos, 28 valores únicos
+  - consumo_minimo_exoneracion_soles: Float32, 43 nulos, 0 valores únicos
+  - exonera_por_consumo: boolean, 0 nulos, 1 valores únicos
+  - tiene_programa_recompensas: boolean, 0 nulos, 2 valores únicos
+  - nivel_categoria: Int8, 22 nulos, 4 valores únicos
+  - tea_promedio_del_banco: float32, 11 nulos, 3 valores únicos
+  - membresia_promedio_del_banco: float32, 0 nulos, 4 valores únicos
+  - num_tarjetas_del_banco: int8, 0 nulos, 4 valores únicos
+  - ingreso_min_promedio_categoria: float32, 33 nulos, 7 valores únicos
+  - tea_vs_promedio_banco: float32, 13 nulos, 11 valores únicos
+  - tea_max_bin: category, 15 nulos, 4 valores únicos
+  - ingreso_minimo_bin: category, 11 nulos, 4 valores únicos
+  - membresia_bin: category, 0 nulos, 4 valores únicos
+  - tea_soles_min_zscore: float64, 15 nulos, 7 valores únicos
+  - tea_soles_max_zscore: float64, 15 nulos, 7 valores únicos
+  - tea_promedio_zscore: float64, 15 nulos, 9 valores únicos
+  - membresia_anual_minmax: float64, 0 nulos, 19 valores únicos
+  - ingreso_minimo_requerido_robust: float64, 11 nulos, 11 valores únicos
+
+🏦 DISTRIBUCIÓN POR BANCO:
+  - SCOTIABANK: 22 tarjetas
+  - INTERBANK: 11 tarjetas
+  - BBVA: 7 tarjetas
+  - BANBIF: 3 tarjetas
+
+📊 ESTADÍSTICAS DE TEA SOLES:
+  - Mínimo: 19.99%
+  - Máximo: 112.98%
+  - Promedio (min): 30.42%
+  - Promedio (max): 105.30%
+
+============================================================
+✅ VALIDACIÓN COMPLETADA
+2026-08-03 17:35:46,475 | INFO | 📊 Resumen del dataset: {'total_registros': 43, 'total_columnas': 35, 'memoria_uso_mb': np.float64(0.012790679931640625), 'bancos': ['BBVA', 'SCOTIABANK', 'BANBIF', 'INTERBANK'], 'total_bancos': 4, 'distribucion_bancos': {'SCOTIABANK': 22, 'INTERBANK': 11, 'BBVA': 7, 'BANBIF': 3}, 'categorias': ['Signature', 'Bfree', 'Visa Cero', 'Visa Infinite', 'Platinum', 'Black', <NA>, 'Clásica', 'Oro', 'Amex - Millas Benefit', 'Visa - Millas Benefit'], 'total_categorias': 11, 'tea_soles_min': {'media': np.float32(30.424), 'min': np.float32(19.99), 'max': np.float32(99.99), 'mediana': np.float32(19.99), 'std': np.float32(21.078188)}, 'tea_soles_max': {'media': np.float32(105.303215), 'min': np.float32(54.99), 'max': np.float32(112.98), 'mediana': np.float32(111.405), 'std': np.float32(14.501284)}, 'membresia_anual': {'media': np.float32(231.79767), 'min': np.float32(0.0), 'max': np.float32(594.0), 'mediana': np.float32(199.0)}, 'valores_nulos': {'marca': 11, 'categoria': 22, 'tea_soles_min': 13, 'tea_soles_max': 15, 'requisito_exoneracion_membresia': 36, 'programa_recompensas': 21, 'ratio_acumulacion': 32, 'seguro_desgravamen_mensual': 11, 'ingreso_minimo_requerido': 11, 'bono_bienvenida': 32, 'tea_promedio': 13, 'rango_tea': 15, 'consumo_minimo_exoneracion_soles': 43, 'nivel_categoria': 22, 'tea_promedio_del_banco': 11, 'ingreso_min_promedio_categoria': 33, 'tea_vs_promedio_banco': 13, 'tea_max_bin': 15, 'ingreso_minimo_bin': 11, 'tea_soles_min_zscore': 15, 'tea_soles_max_zscore': 15, 'tea_promedio_zscore': 15, 'ingreso_minimo_requerido_robust': 11}}
+2026-08-03 18:20:43,191 | INFO | ======================================================================
+2026-08-03 18:20:43,192 | INFO |                   ETL - CATÁLOGO TARJETAS INTERBANK                   
+2026-08-03 18:20:43,214 | INFO | ======================================================================
+2026-08-03 18:20:43,215 | INFO | ======================================================================
+2026-08-03 18:20:43,219 | INFO |                         ETAPA 1 - VERIFICACIÓN                        
+2026-08-03 18:20:43,219 | INFO | ======================================================================
+2026-08-03 18:20:43,841 | INFO | User-Agent: *
+2026-08-03 18:20:43,842 | INFO | Permite acceso: True
+2026-08-03 18:20:43,842 | INFO | Crawl-delay: None
+2026-08-03 18:20:43,843 | INFO | robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-03 18:20:43,846 | INFO | ======================================================================
+2026-08-03 18:20:43,847 | INFO |                          ETAPA 2 - EXTRACCIÓN                         
+2026-08-03 18:20:43,847 | INFO | ======================================================================
+2026-08-03 18:20:43,848 | INFO | Esperando 5.2s antes de solicitar (buenas prácticas)
+2026-08-03 18:20:49,044 | INFO | Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-03 18:20:49,896 | INFO | HTML crudo guardado
+2026-08-03 18:20:49,999 | INFO | Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-03 18:20:50,002 | INFO | Bloques de tarjeta encontrados (<article>): 13
+2026-08-03 18:20:50,002 | INFO | Procesando [1/13] American Express® Blue
+2026-08-03 18:20:50,003 | INFO |   ✓ Extraída correctamente: American Express® Blue
+2026-08-03 18:20:50,003 | INFO | Procesando [2/13] American Express ® Green
+2026-08-03 18:20:50,004 | INFO |   ✓ Extraída correctamente: American Express ® Green
+2026-08-03 18:20:50,004 | INFO | Procesando [3/13] American Express® Gold
+2026-08-03 18:20:50,005 | INFO |   ✓ Extraída correctamente: American Express® Gold
+2026-08-03 18:20:50,005 | INFO | Procesando [4/13] American Express® Platinum
+2026-08-03 18:20:50,006 | INFO |   ✓ Extraída correctamente: American Express® Platinum
+2026-08-03 18:20:50,006 | INFO | Procesando [5/13] American Express® Black
+2026-08-03 18:20:50,006 | INFO |   ✓ Extraída correctamente: American Express® Black
+2026-08-03 18:20:50,007 | INFO | Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-03 18:20:50,007 | INFO |   ✓ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-03 18:20:50,008 | INFO | Procesando [7/13] Visa Clásica
+2026-08-03 18:20:50,008 | INFO |   ✓ Extraída correctamente: Visa Clásica
+2026-08-03 18:20:50,009 | INFO | Procesando [8/13] Visa Oro
+2026-08-03 18:20:50,010 | INFO |   ✓ Extraída correctamente: Visa Oro
+2026-08-03 18:20:50,010 | INFO | Procesando [9/13] Visa Platinum
+2026-08-03 18:20:50,011 | INFO |   ✓ Extraída correctamente: Visa Platinum
+2026-08-03 18:20:50,011 | INFO | Procesando [10/13] Visa Signature
+2026-08-03 18:20:50,012 | INFO |   ✓ Extraída correctamente: Visa Signature
+2026-08-03 18:20:50,012 | INFO | Procesando [11/13] Visa Infinite
+2026-08-03 18:20:50,012 | INFO |   ✓ Extraída correctamente: Visa Infinite
+2026-08-03 18:20:50,013 | INFO | Procesando [12/13] Visa Premia
+2026-08-03 18:20:50,013 | INFO |   ✗ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-03 18:20:50,013 | INFO | Procesando [13/13] Visa Access
+2026-08-03 18:20:50,014 | INFO |   ✗ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-03 18:20:50,014 | INFO | Tarjetas extraídas: 11/13
+2026-08-03 18:20:50,015 | INFO | ======================================================================
+2026-08-03 18:20:50,015 | INFO |                       ETAPA 3 - CALIDAD DE DATOS                      
+2026-08-03 18:20:50,015 | INFO | ======================================================================
+2026-08-03 18:20:50,017 | INFO | ======================================================================
+2026-08-03 18:20:50,017 | INFO |                            CALIDAD DE DATOS                           
+2026-08-03 18:20:50,018 | INFO | ======================================================================
+2026-08-03 18:20:50,018 | INFO | Registros      : 11
+2026-08-03 18:20:50,018 | INFO | Columnas       : 8
+2026-08-03 18:20:50,018 | INFO | Duplicados     : 0
+2026-08-03 18:20:50,018 | INFO | Valores nulos  : 0
+2026-08-03 18:20:50,019 | INFO | Estado         : OK
+2026-08-03 18:20:50,019 | INFO | ======================================================================
+2026-08-03 18:20:50,024 | INFO | Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-03 18:20:50,025 | INFO | ======================================================================
+2026-08-03 18:20:50,025 | INFO |                       ETAPA 4 - ENRIQUECIMIENTO                       
+2026-08-03 18:20:50,025 | INFO | ======================================================================
+2026-08-03 18:20:50,036 | INFO | Enriquecimiento completado (5 columnas sintéticas agregadas)
+2026-08-03 18:20:50,036 | INFO | ======================================================================
+2026-08-03 18:20:50,036 | INFO |                           PROCESO COMPLETADO                          
+2026-08-03 18:20:50,037 | INFO | ======================================================================
+2026-08-03 18:20:50,037 | INFO | Tarjetas extraídas : 11
+2026-08-03 18:20:50,037 | INFO | Estado             : ✓ OK
+2026-08-03 18:20:50,037 | INFO | Tiempo total       : 6.8s
+2026-08-03 18:20:50,038 | INFO | ======================================================================
+2026-08-03 18:20:50,043 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-03.parquet
+2026-08-03 18:20:50,070 | INFO | Archivo guardado: ./output/tarjetas_ibk_2026-08-03.xlsx
+2026-08-03 18:20:50,070 | INFO | ====================
+2026-08-03 18:20:50,071 | INFO | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+2026-08-03 18:20:50,071 | INFO | ====================
+2026-08-03 18:20:50,103 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado. (43 filas)
+2026-08-03 18:20:50,104 | INFO | Validación Pandera (capa gold cruda): OK
+2026-08-03 18:20:50,109 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-03.parquet
+2026-08-03 18:20:50,147 | INFO | Archivo guardado: ./output/tarjetas_gold_2026-08-03.xlsx
+2026-08-03 18:20:50,148 | INFO | ====================
+2026-08-03 18:20:50,148 | INFO | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+2026-08-03 18:20:50,149 | INFO | ====================
+2026-08-03 18:20:50,248 | INFO | ✅ Validación GOLD enriquecida OK: 43 filas, 35 columnas
+2026-08-03 18:20:50,248 | INFO | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+2026-08-03 18:20:50,250 | INFO | 📊 Columnas numéricas encontradas: 21
+2026-08-03 18:20:50,251 | INFO |    tea_soles_min: media=30.42, min=19.99, max=99.99
+2026-08-03 18:20:50,252 | INFO |    tea_soles_max: media=105.30, min=54.99, max=112.98
+2026-08-03 18:20:50,254 | INFO |    membresia_anual: media=231.80, min=0.00, max=594.00
+2026-08-03 18:20:50,255 | INFO |    seguro_desgravamen_mensual: media=4.44, min=0.34, max=9.90
+2026-08-03 18:20:50,256 | INFO |    ingreso_minimo_requerido: media=4881.25, min=600.00, max=12000.00
+2026-08-03 18:20:50,256 | INFO | Validación Pandera (capa gold enriquecida): OK
+2026-08-03 18:20:50,270 | INFO | Archivo guardado: ./output/tarjetas_gold_features_2026-08-03.parquet
+2026-08-03 18:20:50,329 | INFO | Archivo guardado: ./output/tarjetas_gold_features_2026-08-03.xlsx
+2026-08-03 18:20:50,329 | INFO | 4. EXPORTANDO ARCHIVO FINAL
+2026-08-03 18:20:50,329 | INFO | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+2026-08-03 18:20:50,330 | INFO | ✔ Validación GOLD OK: esquema completo y armonizado. (43 filas)
+2026-08-03 18:20:50,330 | INFO | ✅ Validación Pandera (capa gold cruda): OK
+2026-08-03 18:20:50,335 | INFO | ✅ Validación GOLD enriquecida OK: 43 filas, 35 columnas
+2026-08-03 18:20:50,336 | INFO | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+2026-08-03 18:20:50,337 | INFO | 📊 Columnas numéricas encontradas: 21
+2026-08-03 18:20:50,339 | INFO |    tea_soles_min: media=30.42, min=19.99, max=99.99
+2026-08-03 18:20:50,340 | INFO |    tea_soles_max: media=105.30, min=54.99, max=112.98
+2026-08-03 18:20:50,341 | INFO |    membresia_anual: media=231.80, min=0.00, max=594.00
+2026-08-03 18:20:50,343 | INFO |    seguro_desgravamen_mensual: media=4.44, min=0.34, max=9.90
+2026-08-03 18:20:50,344 | INFO |    ingreso_minimo_requerido: media=4881.25, min=600.00, max=12000.00
+2026-08-03 18:20:50,345 | INFO | ✅ Validación Pandera (capa gold enriquecida): OK
+2026-08-03 18:20:50,359 | INFO | 
+============================================================
+REPORTE DE VALIDACIÓN DE DATOS
+============================================================
+Total de registros: 43
+Total de columnas: 35
+Memoria utilizada: 0.01 MB
+
+📋 COLUMNAS PRESENTES:
+  - banco: category, 0 nulos, 4 valores únicos
+  - tarjeta_nombre: string, 0 nulos, 42 valores únicos
+  - marca: category, 11 nulos, 3 valores únicos
+  - categoria: category, 22 nulos, 10 valores únicos
+  - tea_soles_min: float32, 13 nulos, 8 valores únicos
+  - tea_soles_max: float32, 15 nulos, 7 valores únicos
+  - membresia_anual: float32, 0 nulos, 19 valores únicos
+  - requisito_exoneracion_membresia: string, 36 nulos, 5 valores únicos
+  - programa_recompensas: string, 21 nulos, 2 valores únicos
+  - ratio_acumulacion: string, 32 nulos, 3 valores únicos
+  - seguro_desgravamen_mensual: float32, 11 nulos, 9 valores únicos
+  - ingreso_minimo_requerido: float32, 11 nulos, 11 valores únicos
+  - bono_bienvenida: float32, 32 nulos, 3 valores únicos
+  - fecha_scraping: string, 0 nulos, 11 valores únicos
+  - url_origen: string, 0 nulos, 40 valores únicos
+  - tea_promedio: float32, 13 nulos, 11 valores únicos
+  - rango_tea: float32, 15 nulos, 8 valores únicos
+  - costo_anual_base: float32, 0 nulos, 28 valores únicos
+  - consumo_minimo_exoneracion_soles: Float32, 43 nulos, 0 valores únicos
+  - exonera_por_consumo: boolean, 0 nulos, 1 valores únicos
+  - tiene_programa_recompensas: boolean, 0 nulos, 2 valores únicos
+  - nivel_categoria: Int8, 22 nulos, 4 valores únicos
+  - tea_promedio_del_banco: float32, 11 nulos, 3 valores únicos
+  - membresia_promedio_del_banco: float32, 0 nulos, 4 valores únicos
+  - num_tarjetas_del_banco: int8, 0 nulos, 4 valores únicos
+  - ingreso_min_promedio_categoria: float32, 33 nulos, 7 valores únicos
+  - tea_vs_promedio_banco: float32, 13 nulos, 11 valores únicos
+  - tea_max_bin: category, 15 nulos, 4 valores únicos
+  - ingreso_minimo_bin: category, 11 nulos, 4 valores únicos
+  - membresia_bin: category, 0 nulos, 4 valores únicos
+  - tea_soles_min_zscore: float64, 15 nulos, 7 valores únicos
+  - tea_soles_max_zscore: float64, 15 nulos, 7 valores únicos
+  - tea_promedio_zscore: float64, 15 nulos, 9 valores únicos
+  - membresia_anual_minmax: float64, 0 nulos, 19 valores únicos
+  - ingreso_minimo_requerido_robust: float64, 11 nulos, 11 valores únicos
+
+🏦 DISTRIBUCIÓN POR BANCO:
+  - SCOTIABANK: 22 tarjetas
+  - INTERBANK: 11 tarjetas
+  - BBVA: 7 tarjetas
+  - BANBIF: 3 tarjetas
+
+📊 ESTADÍSTICAS DE TEA SOLES:
+  - Mínimo: 19.99%
+  - Máximo: 112.98%
+  - Promedio (min): 30.42%
+  - Promedio (max): 105.30%
+
+============================================================
+✅ VALIDACIÓN COMPLETADA
+2026-08-03 18:20:50,367 | INFO | 📊 Resumen del dataset: {'total_registros': 43, 'total_columnas': 35, 'memoria_uso_mb': np.float64(0.012790679931640625), 'bancos': ['BBVA', 'SCOTIABANK', 'BANBIF', 'INTERBANK'], 'total_bancos': 4, 'distribucion_bancos': {'SCOTIABANK': 22, 'INTERBANK': 11, 'BBVA': 7, 'BANBIF': 3}, 'categorias': ['Bfree', 'Signature', 'Visa Cero', 'Black', 'Platinum', 'Visa Infinite', <NA>, 'Clásica', 'Oro', 'Amex - Millas Benefit', 'Visa - Millas Benefit'], 'total_categorias': 11, 'tea_soles_min': {'media': np.float32(30.424), 'min': np.float32(19.99), 'max': np.float32(99.99), 'mediana': np.float32(19.99), 'std': np.float32(21.078188)}, 'tea_soles_max': {'media': np.float32(105.303215), 'min': np.float32(54.99), 'max': np.float32(112.98), 'mediana': np.float32(111.405), 'std': np.float32(14.501284)}, 'membresia_anual': {'media': np.float32(231.79767), 'min': np.float32(0.0), 'max': np.float32(594.0), 'mediana': np.float32(199.0)}, 'valores_nulos': {'marca': 11, 'categoria': 22, 'tea_soles_min': 13, 'tea_soles_max': 15, 'requisito_exoneracion_membresia': 36, 'programa_recompensas': 21, 'ratio_acumulacion': 32, 'seguro_desgravamen_mensual': 11, 'ingreso_minimo_requerido': 11, 'bono_bienvenida': 32, 'tea_promedio': 13, 'rango_tea': 15, 'consumo_minimo_exoneracion_soles': 43, 'nivel_categoria': 22, 'tea_promedio_del_banco': 11, 'ingreso_min_promedio_categoria': 33, 'tea_vs_promedio_banco': 13, 'tea_max_bin': 15, 'ingreso_minimo_bin': 11, 'tea_soles_min_zscore': 15, 'tea_soles_max_zscore': 15, 'tea_promedio_zscore': 15, 'ingreso_minimo_requerido_robust': 11}}
+2026-08-03 22:41:51 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:51 | INFO | interbank_scraper |                🚀 PIPELINE - CATÁLOGO TARJETAS INTERBANK               
+2026-08-03 22:41:51 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:51 | INFO | interbank_scraper | 📅 Inicio: 2026-08-03 22:41:51
+2026-08-03 22:41:51 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:51 | INFO | interbank_scraper |                  ETAPA 1 - VERIFICACIÓN DE ROBOTS.TXT                 
+2026-08-03 22:41:51 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:51 | INFO | interbank_scraper | User-Agent: *
+2026-08-03 22:41:51 | INFO | interbank_scraper | Permite acceso: True
+2026-08-03 22:41:51 | INFO | interbank_scraper | Crawl-delay: None
+2026-08-03 22:41:51 | INFO | interbank_scraper | ✅ robots.txt permite scrapear https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit.
+2026-08-03 22:41:51 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:51 | INFO | interbank_scraper |                     ETAPA 2 - EXTRACCIÓN DE DATOS                     
+2026-08-03 22:41:51 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:51 | INFO | interbank_scraper | ⏳ Esperando 4.6s antes de solicitar (buenas prácticas)
+2026-08-03 22:41:56 | INFO | interbank_scraper | 📡 Solicitando https://interbank.pe/tarjetas/tarjetas-credito/millas-benefit (intento 1/3)
+2026-08-03 22:41:57 | INFO | interbank_scraper | 💾 HTML crudo guardado en data\raw\interbank_millas.html
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📂 Categorías detectadas: ['Amex - Millas Benefit', 'Visa - Millas Benefit', 'Sin Membresía']
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📄 Bloques de tarjeta encontrados (<article>): 13
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [1/13] American Express® Blue
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: American Express® Blue
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [2/13] American Express ® Green
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: American Express ® Green
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [3/13] American Express® Gold
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: American Express® Gold
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [4/13] American Express® Platinum
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: American Express® Platinum
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [5/13] American Express® Black
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: American Express® Black
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [6/13] The Platinum Card American Express® de Interbank
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: The Platinum Card American Express® de Interbank
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [7/13] Visa Clásica
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: Visa Clásica
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [8/13] Visa Oro
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: Visa Oro
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [9/13] Visa Platinum
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: Visa Platinum
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [10/13] Visa Signature
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: Visa Signature
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [11/13] Visa Infinite
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ✅ Extraída correctamente: Visa Infinite
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [12/13] Visa Premia
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ⏭️ Descartada 'Visa Premia' (sin membresía ni millas)
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🔍 Procesando [13/13] Visa Access
+2026-08-03 22:41:57 | INFO | interbank_scraper |   ⏭️ Descartada 'Visa Access' (sin membresía ni millas)
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Tarjetas extraídas: 11/13
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper |                 ETAPA 3 - LIMPIEZA Y CALIDAD DE DATOS                 
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper |                            CALIDAD DE DATOS                           
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Registros      : 11
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Columnas       : 8
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Duplicados     : 0
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Valores nulos  : 0
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Estado         : OK
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | 🧹 Limpieza aplicada: 0 filas removidas (duplicadas o sin nombre de tarjeta). Quedan 11 filas.
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper |                   ETAPA 4 - ENRIQUECIMIENTO DE DATOS                  
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📈 Enriquecimiento completado
+2026-08-03 22:41:57 | INFO | interbank_scraper |    - Segmentos: {'Premium': 4, 'Intermedio': 3, 'Básico': 2, 'Elite': 2}
+2026-08-03 22:41:57 | INFO | interbank_scraper |    - Valor promedio de millas anuales: S/ 864.87
+2026-08-03 22:41:57 | INFO | interbank_scraper |    - Gasto mensual promedio estimado: S/ 5190.91
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper |                    ETAPA 5 - VALIDACIÓN CON PANDERA                   
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | ✅ Validación de Pandera superada con éxito para Interbank.
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper |                    ETAPA 6 - PERSISTENCIA DE DATOS                    
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | 💾 Datos guardados en Parquet: data\processed\tarjetas_interbank_millas.parquet
+2026-08-03 22:41:57 | INFO | interbank_scraper | 💾 Datos guardados en Avro: data\processed\tarjetas_interbank_millas.avro
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper |                          ✅ PROCESO COMPLETADO                         
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Tarjetas extraídas : 11
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📊 Columnas          : 17
+2026-08-03 22:41:57 | INFO | interbank_scraper | ⏱️  Tiempo total      : 6.7s
+2026-08-03 22:41:57 | INFO | interbank_scraper | 📅 Fin: 2026-08-03 22:41:57
+2026-08-03 22:41:57 | INFO | interbank_scraper | ======================================================================

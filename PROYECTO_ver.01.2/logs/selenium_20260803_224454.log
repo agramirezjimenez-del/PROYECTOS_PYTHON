@@ -1,0 +1,35 @@
+22:44:54 | INFO     | =======================================================
+22:44:54 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+22:44:54 | INFO     | BANCO   : BCP
+22:44:54 | INFO     | =======================================================
+22:44:54 | INFO     | Iniciando extracción BCP (Capa Silver)...
+22:45:09 | WARNING  | Brave/Chrome falló. Iniciando Edge de respaldo... Error: Message: session not created: Chrome failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Users\gabyb\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff774ad8945+14ce5]
+	chromedriver!GetHandleVerifier [0x7ff774ad89a0+14d40]
+	chromedriver!(No symbol) [0x7ff774605afd]
+	chromedriver!(No symbol) [0x7ff7746482a7]
+	chromedriver!(No symbol) [0x7ff77464370f]
+	chromedriver!(No symbol) [0x7ff774697721]
+	chromedriver!(No symbol) [0x7ff774696f86]
+	chromedriver!(No symbol) [0x7ff77465308c]
+	chromedriver!(No symbol) [0x7ff774653fb3]
+	chromedriver!GetHandleVerifier [0x7ff77510e60b+64a9ab]
+	chromedriver!GetHandleVerifier [0x7ff775108b12+644eb2]
+	chromedriver!GetHandleVerifier [0x7ff77512e3ae+66a74e]
+	chromedriver!GetHandleVerifier [0x7ff774af5d7e+3211e]
+	chromedriver!GetHandleVerifier [0x7ff774afe52c+3a8cc]
+	chromedriver!GetHandleVerifier [0x7ff774ae2854+1ebf4]
+	chromedriver!GetHandleVerifier [0x7ff774ae29e4+1ed84]
+	chromedriver!GetHandleVerifier [0x7ff774ac5d17+20b7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd10b8e957+17]
+	ntdll!RtlUserThreadStart [0x7ffd11bead6c+2c]
+
+22:45:14 | INFO     | Cerrando navegador BCP...
+22:45:16 | INFO     | Aplicando reglas de negocio, Binning y Normalización (Tema 4)...
+22:45:16 | INFO     | Optimizando uso de memoria...
+22:45:16 | INFO     | Ejecutando validación de calidad (Pandera)...
+22:45:16 | INFO     | ✅ Validación de Pandera superada con éxito para BCP.
+22:45:16 | INFO     | Módulo BCP finalizado completamente. Registros: 0

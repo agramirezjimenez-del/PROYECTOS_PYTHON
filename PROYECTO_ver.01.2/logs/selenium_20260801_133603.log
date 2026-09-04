@@ -1,0 +1,49 @@
+13:36:03 | INFO     | ====================
+13:36:03 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+13:36:03 | INFO     | ====================
+13:36:03 | INFO     | ====================
+13:36:03 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+13:36:03 | INFO     | ====================
+13:36:03 | INFO     | =======================================================
+13:36:03 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+13:36:03 | INFO     | BANCO   : BBVA
+13:36:03 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+13:36:03 | INFO     | =======================================================
+13:36:03 | INFO     | User-Agent seleccionado: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Firefox/118.0
+13:36:08 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+13:36:09 | INFO     | Cookies aceptadas
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+13:36:09 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+13:36:11 | INFO     | Procesando [1/7]: visa-infinite-puntos.html
+13:36:20 | INFO     | Procesando [2/7]: mastercard-black-puntos-vida.html
+13:36:28 | INFO     | Procesando [3/7]: tarjeta-platinum.html
+13:36:39 | INFO     | Procesando [4/7]: visa-bfree-puntos-vida.html
+13:36:47 | INFO     | Procesando [5/7]: visa-signature-puntos-vida.html
+13:36:55 | INFO     | Procesando [6/7]: mastercard-bfree-puntos-vida.html
+13:37:03 | INFO     | Procesando [7/7]: visa-cero.html
+13:37:09 | INFO     | Tiempo total   : 66.7s
+13:37:09 | INFO     | Paginas OK     : 7
+13:37:09 | INFO     | Paginas error  : 0
+13:37:10 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+13:37:10 | INFO     | Estado de validación: OK
+13:37:10 | INFO     | Se extrajeron correctamente los datos de BBVA
+13:37:12 | INFO     | Driver cerrado
+13:37:16 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.parquet
+13:37:16 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.xlsx
+13:37:16 | INFO     | ====================
+13:37:16 | INFO     | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD
+13:37:16 | INFO     | ====================
+13:37:16 | INFO     | ====================
+13:37:16 | INFO     | 3. EXPORTANDO ARCHIVO FINAL
+13:37:16 | INFO     | ====================
+13:37:16 | INFO     | ====================
+13:37:16 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+13:37:16 | INFO     | ====================

@@ -1,0 +1,51 @@
+18:13:25 | INFO     | ====================
+18:13:25 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+18:13:25 | INFO     | ====================
+18:13:25 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+18:13:25 | INFO     | =======================================================
+18:13:25 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+18:13:25 | INFO     | BANCO   : BBVA
+18:13:25 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+18:13:25 | INFO     | =======================================================
+18:13:25 | INFO     | User-Agent seleccionado: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Firefox/118.0
+18:13:30 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+18:13:30 | INFO     | Cookies aceptadas
+18:13:30 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+18:13:31 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+18:13:33 | INFO     | Procesando [1/7]: visa-bfree-puntos-vida.html
+18:13:41 | INFO     | Procesando [2/7]: tarjeta-platinum.html
+18:13:50 | INFO     | Procesando [3/7]: visa-signature-puntos-vida.html
+18:13:59 | INFO     | Procesando [4/7]: visa-infinite-puntos.html
+18:14:07 | INFO     | Procesando [5/7]: mastercard-bfree-puntos-vida.html
+18:14:16 | INFO     | Procesando [6/7]: visa-cero.html
+18:14:22 | INFO     | Procesando [7/7]: mastercard-black-puntos-vida.html
+18:14:30 | INFO     | Tiempo total   : 64.8s
+18:14:30 | INFO     | Paginas OK     : 7
+18:14:30 | INFO     | Paginas error  : 0
+18:14:30 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+18:14:30 | INFO     | Estado de validación: OK
+18:14:30 | INFO     | Se extrajeron correctamente los datos de BBVA
+18:14:33 | INFO     | Driver cerrado
+18:14:33 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-03.parquet
+18:14:33 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-03.xlsx
+18:14:33 | INFO     | =======================================================
+18:14:33 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+18:14:33 | INFO     | BANCO   : BCP
+18:14:33 | ERROR    | Ocurrió un error list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Downloads\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 43, in <module>
+    df_bcp = etl_bcp.run_pipeline()
+  File "c:\Users\Usuario\Downloads\PROYECTO_ver.01\modulos\etl_bcp.py", line 148, in run_pipeline
+    log.info(f'URL     : {urls_bcp[0]}')
+                          ~~~~~~~~^^^
+IndexError: list index out of range
+18:14:33 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+18:14:33 | ERROR    | ❌ Error en validación: name 'df_gold' is not defined

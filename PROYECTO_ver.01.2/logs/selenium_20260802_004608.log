@@ -1,0 +1,116 @@
+00:46:10 | INFO     | ====================
+00:46:10 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+00:46:10 | INFO     | ====================
+00:46:10 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+00:46:10 | INFO     | =======================================================
+00:46:10 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+00:46:10 | INFO     | BANCO   : BBVA
+00:46:10 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+00:46:10 | INFO     | =======================================================
+00:46:10 | INFO     | User-Agent seleccionado: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Firefox/118.0
+00:46:15 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+00:46:16 | INFO     | Cookies aceptadas
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+00:46:16 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+00:46:17 | INFO     | Procesando [1/7]: visa-bfree-puntos-vida.html
+00:46:24 | INFO     | Procesando [2/7]: visa-cero.html
+00:46:31 | INFO     | Procesando [3/7]: visa-infinite-puntos.html
+00:46:40 | INFO     | Procesando [4/7]: mastercard-bfree-puntos-vida.html
+00:46:47 | INFO     | Procesando [5/7]: mastercard-black-puntos-vida.html
+00:46:55 | INFO     | Procesando [6/7]: tarjeta-platinum.html
+00:47:02 | INFO     | Procesando [7/7]: visa-signature-puntos-vida.html
+00:47:10 | INFO     | Tiempo total   : 60.2s
+00:47:10 | INFO     | Paginas OK     : 7
+00:47:10 | INFO     | Paginas error  : 0
+00:47:10 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+00:47:10 | INFO     | Estado de validación: OK
+00:47:10 | INFO     | Se extrajeron correctamente los datos de BBVA
+00:47:13 | INFO     | Driver cerrado
+00:47:13 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-02.parquet
+00:47:13 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-02.xlsx
+00:47:13 | INFO     | ============================================================
+00:47:13 | INFO     | INICIANDO EXTRACCIÓN - Catalogo BCP
+00:47:13 | INFO     | ============================================================
+00:47:13 | INFO     | Se procesarán 11 tarjetas...
+00:47:13 | INFO     | Procesando [1/11]: tarjeta-io-1
+00:47:14 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/tarjeta...
+00:47:14 | DEBUG    | Extracción exitosa: Tarjeta iO
+00:47:16 | DEBUG    | Pausa de 1.84s completada.
+00:47:16 | INFO     | Procesando [2/11]: bcp-american-express-black-bcp-latam-pass
+00:47:16 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:47:16 | DEBUG    | Extracción exitosa: American Express Black LATAM Pass
+00:47:19 | DEBUG    | Pausa de 2.85s completada.
+00:47:19 | INFO     | Procesando [3/11]: bcp-visa-latam-pass-signature
+00:47:20 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:47:20 | DEBUG    | Extracción exitosa: VISA Signature  LATAM Pass
+00:47:23 | DEBUG    | Pausa de 2.86s completada.
+00:47:23 | INFO     | Procesando [4/11]: bcp-american-express-latam-pass-platinum
+00:47:24 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:47:24 | DEBUG    | Extracción exitosa: American Express Platinum BCP LATAM Pass
+00:47:25 | DEBUG    | Pausa de 1.72s completada.
+00:47:25 | INFO     | Procesando [5/11]: bcp-visa-latam-pass-platinum
+00:47:26 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:47:26 | DEBUG    | Extracción exitosa: VISA Platinum  LATAM Pass
+00:47:29 | DEBUG    | Pausa de 2.56s completada.
+00:47:29 | INFO     | Procesando [6/11]: bcp-american-express-latam-pass-gold
+00:47:29 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:47:29 | DEBUG    | Extracción exitosa: American Express Oro BCP LATAM Pass
+00:47:31 | DEBUG    | Pausa de 1.69s completada.
+00:47:31 | INFO     | Procesando [7/11]: bcp-visa-latam-pass-oro
+00:47:32 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:47:32 | DEBUG    | Extracción exitosa: VISA Oro  LATAM Pass
+00:47:34 | DEBUG    | Pausa de 2.15s completada.
+00:47:34 | INFO     | Procesando [8/11]: bcp-american-express-latam-pass-clasica
+00:47:35 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:47:35 | DEBUG    | Extracción exitosa: American Express Clásica BCP LATAM Pass
+00:47:37 | DEBUG    | Pausa de 2.37s completada.
+00:47:37 | INFO     | Procesando [9/11]: bcp-visa-light
+00:47:38 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:47:38 | DEBUG    | Extracción exitosa: VISA Light
+00:47:41 | DEBUG    | Pausa de 3.28s completada.
+00:47:41 | INFO     | Procesando [10/11]: bcp-visa-clasica
+00:47:42 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:47:42 | DEBUG    | Extracción exitosa: VISA Clasica
+00:47:45 | DEBUG    | Pausa de 3.01s completada.
+00:47:45 | INFO     | Procesando [11/11]: bcp-visa-latam-pass-clasica
+00:47:45 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:47:45 | DEBUG    | Extracción exitosa: VISA Clásica  LATAM Pass
+00:47:45 | INFO     | ✓ Validación OK: 11 filas, 14 columnas confirmadas.
+00:47:45 | INFO     | ============================================================
+00:47:45 | INFO     | PROCESO COMPLETADO
+00:47:45 | INFO     | Tarjetas extraídas  : 11
+00:47:45 | INFO     | Estado Validación   : ✓ OK
+00:47:45 | INFO     | Tiempo Total        : 32.1s
+00:47:45 | INFO     | ============================================================
+00:47:45 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-02.parquet
+00:47:45 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-02.xlsx
+00:48:45 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-02.parquet
+00:48:45 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-02.xlsx
+00:48:54 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-02.parquet
+00:48:54 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-02.xlsx
+00:49:00 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+00:49:00 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+00:49:00 | INFO     | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+00:49:00 | INFO     | ✔ Validación GOLD OK: esquema completo y armonizado.
+00:49:00 | INFO     | Validación Pandera (capa gold cruda): OK
+00:49:00 | INFO     | Archivo guardado: ./output/tarjetas_gold_2026-08-02.parquet
+00:49:00 | INFO     | Archivo guardado: ./output/tarjetas_gold_2026-08-02.xlsx
+00:49:00 | INFO     | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+00:49:00 | ERROR    | ❌ Validación GOLD enriquecida falló. Columnas faltantes: ['tea_soles_promedio', 'tea_dolares_promedio', 'costo_membresia_mensual', 'costo_total_estimado', 'tiene_recompensas', 'nivel_beneficios', 'puntaje_competitividad', 'ratio_beneficio_costo', 'grupo_ingreso', 'categoria_riesgo', 'recomendacion']
+00:49:00 | ERROR    | Ocurrió un error Columnas faltantes en GOLD enriquecida: ['tea_soles_promedio', 'tea_dolares_promedio', 'costo_membresia_mensual', 'costo_total_estimado', 'tiene_recompensas', 'nivel_beneficios', 'puntaje_competitividad', 'ratio_beneficio_costo', 'grupo_ingreso', 'categoria_riesgo', 'recomendacion']
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 103, in <module>
+    validacion.validar_gold_enriquecido(df_gold_features)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_ver.01\modulos\validacion.py", line 92, in validar_gold_enriquecido
+    raise ValueError(f"Columnas faltantes en GOLD enriquecida: {columnas_faltantes}")
+ValueError: Columnas faltantes en GOLD enriquecida: ['tea_soles_promedio', 'tea_dolares_promedio', 'costo_membresia_mensual', 'costo_total_estimado', 'tiene_recompensas', 'nivel_beneficios', 'puntaje_competitividad', 'ratio_beneficio_costo', 'grupo_ingreso', 'categoria_riesgo', 'recomendacion']
+00:49:00 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE

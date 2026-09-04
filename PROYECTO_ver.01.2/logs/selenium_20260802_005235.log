@@ -1,0 +1,191 @@
+00:52:37 | INFO     | ====================
+00:52:37 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+00:52:37 | INFO     | ====================
+00:52:37 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+00:52:37 | INFO     | =======================================================
+00:52:37 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+00:52:37 | INFO     | BANCO   : BBVA
+00:52:37 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+00:52:37 | INFO     | =======================================================
+00:52:37 | INFO     | User-Agent seleccionado: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Version/17.0 Safari/605.1.15
+00:52:43 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+00:52:43 | INFO     | Cookies aceptadas
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+00:52:44 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+00:52:46 | INFO     | Procesando [1/7]: tarjeta-platinum.html
+00:52:55 | INFO     | Procesando [2/7]: visa-bfree-puntos-vida.html
+00:53:02 | INFO     | Procesando [3/7]: mastercard-bfree-puntos-vida.html
+00:53:10 | INFO     | Procesando [4/7]: visa-infinite-puntos.html
+00:53:19 | INFO     | Procesando [5/7]: visa-signature-puntos-vida.html
+00:53:27 | INFO     | Procesando [6/7]: visa-cero.html
+00:53:33 | INFO     | Procesando [7/7]: mastercard-black-puntos-vida.html
+00:53:41 | INFO     | Tiempo total   : 64.0s
+00:53:41 | INFO     | Paginas OK     : 7
+00:53:41 | INFO     | Paginas error  : 0
+00:53:41 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+00:53:41 | INFO     | Estado de validación: OK
+00:53:41 | INFO     | Se extrajeron correctamente los datos de BBVA
+00:53:46 | INFO     | Driver cerrado
+00:53:46 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-02.parquet
+00:53:47 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-02.xlsx
+00:53:47 | INFO     | ============================================================
+00:53:47 | INFO     | INICIANDO EXTRACCIÓN - Catalogo BCP
+00:53:47 | INFO     | ============================================================
+00:53:47 | INFO     | Se procesarán 11 tarjetas...
+00:53:47 | INFO     | Procesando [1/11]: tarjeta-io-1
+00:53:48 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/tarjeta...
+00:53:48 | DEBUG    | Extracción exitosa: Tarjeta iO
+00:53:51 | DEBUG    | Pausa de 3.38s completada.
+00:53:51 | INFO     | Procesando [2/11]: bcp-american-express-black-bcp-latam-pass
+00:53:52 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:53:52 | DEBUG    | Extracción exitosa: American Express Black LATAM Pass
+00:53:55 | DEBUG    | Pausa de 2.87s completada.
+00:53:55 | INFO     | Procesando [3/11]: bcp-visa-latam-pass-signature
+00:53:55 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:53:56 | DEBUG    | Extracción exitosa: VISA Signature  LATAM Pass
+00:53:58 | DEBUG    | Pausa de 2.40s completada.
+00:53:58 | INFO     | Procesando [4/11]: bcp-american-express-latam-pass-platinum
+00:53:59 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:53:59 | DEBUG    | Extracción exitosa: American Express Platinum BCP LATAM Pass
+00:54:02 | DEBUG    | Pausa de 3.01s completada.
+00:54:02 | INFO     | Procesando [5/11]: bcp-visa-latam-pass-platinum
+00:54:02 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:54:02 | DEBUG    | Extracción exitosa: VISA Platinum  LATAM Pass
+00:54:04 | DEBUG    | Pausa de 1.53s completada.
+00:54:04 | INFO     | Procesando [6/11]: bcp-american-express-latam-pass-gold
+00:54:05 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:54:05 | DEBUG    | Extracción exitosa: American Express Oro BCP LATAM Pass
+00:54:06 | DEBUG    | Pausa de 1.53s completada.
+00:54:06 | INFO     | Procesando [7/11]: bcp-visa-latam-pass-oro
+00:54:07 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:54:07 | DEBUG    | Extracción exitosa: VISA Oro  LATAM Pass
+00:54:09 | DEBUG    | Pausa de 2.40s completada.
+00:54:09 | INFO     | Procesando [8/11]: bcp-american-express-latam-pass-clasica
+00:54:10 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+00:54:10 | DEBUG    | Extracción exitosa: American Express Clásica BCP LATAM Pass
+00:54:11 | DEBUG    | Pausa de 1.54s completada.
+00:54:11 | INFO     | Procesando [9/11]: bcp-visa-light
+00:54:12 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:54:12 | DEBUG    | Extracción exitosa: VISA Light
+00:54:14 | DEBUG    | Pausa de 2.04s completada.
+00:54:14 | INFO     | Procesando [10/11]: bcp-visa-clasica
+00:54:15 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:54:15 | DEBUG    | Extracción exitosa: VISA Clasica
+00:54:17 | DEBUG    | Pausa de 1.85s completada.
+00:54:17 | INFO     | Procesando [11/11]: bcp-visa-latam-pass-clasica
+00:54:17 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+00:54:17 | DEBUG    | Extracción exitosa: VISA Clásica  LATAM Pass
+00:54:17 | INFO     | ✓ Validación OK: 11 filas, 14 columnas confirmadas.
+00:54:17 | INFO     | ============================================================
+00:54:17 | INFO     | PROCESO COMPLETADO
+00:54:17 | INFO     | Tarjetas extraídas  : 11
+00:54:17 | INFO     | Estado Validación   : ✓ OK
+00:54:17 | INFO     | Tiempo Total        : 30.4s
+00:54:17 | INFO     | ============================================================
+00:54:17 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-02.parquet
+00:54:17 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-02.xlsx
+00:55:18 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-02.parquet
+00:55:18 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-02.xlsx
+00:55:26 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-02.parquet
+00:55:26 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-02.xlsx
+00:55:33 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.parquet
+00:55:33 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-02.xlsx
+00:55:33 | INFO     | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD (esquema armonizado)
+00:55:33 | INFO     | ✔ Validación GOLD OK: esquema completo y armonizado. (54 filas)
+00:55:33 | INFO     | Validación Pandera (capa gold cruda): OK
+00:55:33 | INFO     | Archivo guardado: ./output/tarjetas_gold_2026-08-02.parquet
+00:55:33 | INFO     | Archivo guardado: ./output/tarjetas_gold_2026-08-02.xlsx
+00:55:33 | INFO     | 3. TEMA 4: ENRIQUECIMIENTO, NORMALIZACIÓN Y OPTIMIZACIÓN
+00:55:33 | INFO     | ✅ Validación GOLD enriquecida OK: 54 filas, 35 columnas
+00:55:33 | INFO     | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+00:55:33 | INFO     | 📊 Columnas numéricas encontradas: 21
+00:55:33 | INFO     |    tea_soles_min: media=39.54, min=19.99, max=99.99
+00:55:33 | INFO     |    tea_soles_max: media=102.65, min=54.99, max=112.98
+00:55:33 | INFO     |    membresia_anual: media=223.10, min=0.00, max=594.00
+00:55:33 | INFO     |    seguro_desgravamen_mensual: media=4.27, min=0.00, max=9.90
+00:55:33 | INFO     |    ingreso_minimo_requerido: media=4730.23, min=600.00, max=12000.00
+00:55:33 | INFO     | Validación Pandera (capa gold enriquecida): OK
+00:55:33 | INFO     | Archivo guardado: ./output/tarjetas_gold_features_2026-08-02.parquet
+00:55:33 | INFO     | Archivo guardado: ./output/tarjetas_gold_features_2026-08-02.xlsx
+00:55:33 | INFO     | 4. EXPORTANDO ARCHIVO FINAL
+00:55:33 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+00:55:33 | INFO     | ✔ Validación GOLD OK: esquema completo y armonizado. (54 filas)
+00:55:33 | INFO     | ✅ Validación Pandera (capa gold cruda): OK
+00:55:33 | INFO     | ✅ Validación GOLD enriquecida OK: 54 filas, 35 columnas
+00:55:33 | INFO     | 📋 Columnas disponibles: ['banco', 'tarjeta_nombre', 'marca', 'categoria', 'tea_soles_min', 'tea_soles_max', 'membresia_anual', 'requisito_exoneracion_membresia', 'programa_recompensas', 'ratio_acumulacion', 'seguro_desgravamen_mensual', 'ingreso_minimo_requerido', 'bono_bienvenida', 'fecha_scraping', 'url_origen', 'tea_promedio', 'rango_tea', 'costo_anual_base', 'consumo_minimo_exoneracion_soles', 'exonera_por_consumo', 'tiene_programa_recompensas', 'nivel_categoria', 'tea_promedio_del_banco', 'membresia_promedio_del_banco', 'num_tarjetas_del_banco', 'ingreso_min_promedio_categoria', 'tea_vs_promedio_banco', 'tea_max_bin', 'ingreso_minimo_bin', 'membresia_bin', 'tea_soles_min_zscore', 'tea_soles_max_zscore', 'tea_promedio_zscore', 'membresia_anual_minmax', 'ingreso_minimo_requerido_robust']
+00:55:33 | INFO     | 📊 Columnas numéricas encontradas: 21
+00:55:33 | INFO     |    tea_soles_min: media=39.54, min=19.99, max=99.99
+00:55:33 | INFO     |    tea_soles_max: media=102.65, min=54.99, max=112.98
+00:55:33 | INFO     |    membresia_anual: media=223.10, min=0.00, max=594.00
+00:55:33 | INFO     |    seguro_desgravamen_mensual: media=4.27, min=0.00, max=9.90
+00:55:33 | INFO     |    ingreso_minimo_requerido: media=4730.23, min=600.00, max=12000.00
+00:55:33 | INFO     | ✅ Validación Pandera (capa gold enriquecida): OK
+00:55:33 | INFO     | 
+============================================================
+REPORTE DE VALIDACIÓN DE DATOS
+============================================================
+Total de registros: 54
+Total de columnas: 35
+Memoria utilizada: 0.02 MB
+
+📋 COLUMNAS PRESENTES:
+  - banco: category, 0 nulos, 5 valores únicos
+  - tarjeta_nombre: string, 0 nulos, 52 valores únicos
+  - marca: category, 11 nulos, 4 valores únicos
+  - categoria: category, 22 nulos, 11 valores únicos
+  - tea_soles_min: float32, 13 nulos, 13 valores únicos
+  - tea_soles_max: float32, 15 nulos, 8 valores únicos
+  - membresia_anual: float32, 0 nulos, 19 valores únicos
+  - requisito_exoneracion_membresia: string, 36 nulos, 10 valores únicos
+  - programa_recompensas: string, 21 nulos, 5 valores únicos
+  - ratio_acumulacion: string, 32 nulos, 6 valores únicos
+  - seguro_desgravamen_mensual: float32, 11 nulos, 12 valores únicos
+  - ingreso_minimo_requerido: float32, 11 nulos, 13 valores únicos
+  - bono_bienvenida: float32, 43 nulos, 3 valores únicos
+  - fecha_scraping: string, 0 nulos, 11 valores únicos
+  - url_origen: string, 3 nulos, 50 valores únicos
+  - tea_promedio: float32, 13 nulos, 16 valores únicos
+  - rango_tea: float32, 15 nulos, 13 valores únicos
+  - costo_anual_base: float32, 0 nulos, 36 valores únicos
+  - consumo_minimo_exoneracion_soles: Float32, 45 nulos, 4 valores únicos
+  - exonera_por_consumo: boolean, 0 nulos, 2 valores únicos
+  - tiene_programa_recompensas: boolean, 0 nulos, 2 valores únicos
+  - nivel_categoria: Int8, 22 nulos, 4 valores únicos
+  - tea_promedio_del_banco: float32, 11 nulos, 4 valores únicos
+  - membresia_promedio_del_banco: float32, 0 nulos, 5 valores únicos
+  - num_tarjetas_del_banco: int8, 0 nulos, 4 valores únicos
+  - ingreso_min_promedio_categoria: float32, 33 nulos, 9 valores únicos
+  - tea_vs_promedio_banco: float32, 13 nulos, 16 valores únicos
+  - tea_max_bin: category, 15 nulos, 4 valores únicos
+  - ingreso_minimo_bin: category, 11 nulos, 4 valores únicos
+  - membresia_bin: category, 0 nulos, 4 valores únicos
+  - tea_soles_min_zscore: float64, 15 nulos, 12 valores únicos
+  - tea_soles_max_zscore: float64, 15 nulos, 8 valores únicos
+  - tea_promedio_zscore: float64, 15 nulos, 14 valores únicos
+  - membresia_anual_minmax: float64, 0 nulos, 19 valores únicos
+  - ingreso_minimo_requerido_robust: float64, 11 nulos, 13 valores únicos
+
+🏦 DISTRIBUCIÓN POR BANCO:
+  - SCOTIABANK: 22 tarjetas
+  - BCP: 11 tarjetas
+  - INTERBANK: 11 tarjetas
+  - BBVA: 7 tarjetas
+  - BANBIF: 3 tarjetas
+
+📊 ESTADÍSTICAS DE TEA SOLES:
+  - Mínimo: 19.99%
+  - Máximo: 112.98%
+  - Promedio (min): 39.54%
+  - Promedio (max): 102.65%
+
+============================================================
+✅ VALIDACIÓN COMPLETADA
+00:55:33 | INFO     | 📊 Resumen del dataset: {'total_registros': 54, 'total_columnas': 35, 'memoria_uso_mb': np.float64(0.016190528869628906), 'bancos': ['BBVA', 'BCP', 'SCOTIABANK', 'BANBIF', 'INTERBANK'], 'total_bancos': 5, 'distribucion_bancos': {'SCOTIABANK': 22, 'BCP': 11, 'INTERBANK': 11, 'BBVA': 7, 'BANBIF': 3}, 'categorias': ['Platinum', 'Bfree', 'Visa Infinite', 'Signature', 'Visa Cero', 'Black', 'Clásica', 'Premium', <NA>, 'Oro', 'Amex - Millas Benefit', 'Visa - Millas Benefit'], 'total_categorias': 12, 'tea_soles_min': {'media': np.float32(39.54439), 'min': np.float32(19.99), 'max': np.float32(99.99), 'mediana': np.float32(19.99), 'std': np.float32(25.099867)}, 'tea_soles_max': {'media': np.float32(102.65103), 'min': np.float32(54.99), 'max': np.float32(112.98), 'mediana': np.float32(109.83), 'std': np.float32(12.953408)}, 'membresia_anual': {'media': np.float32(223.09814), 'min': np.float32(0.0), 'max': np.float32(594.0), 'mediana': np.float32(170.0)}, 'valores_nulos': {'marca': 11, 'categoria': 22, 'tea_soles_min': 13, 'tea_soles_max': 15, 'requisito_exoneracion_membresia': 36, 'programa_recompensas': 21, 'ratio_acumulacion': 32, 'seguro_desgravamen_mensual': 11, 'ingreso_minimo_requerido': 11, 'bono_bienvenida': 43, 'url_origen': 3, 'tea_promedio': 13, 'rango_tea': 15, 'consumo_minimo_exoneracion_soles': 45, 'nivel_categoria': 22, 'tea_promedio_del_banco': 11, 'ingreso_min_promedio_categoria': 33, 'tea_vs_promedio_banco': 13, 'tea_max_bin': 15, 'ingreso_minimo_bin': 11, 'tea_soles_min_zscore': 15, 'tea_soles_max_zscore': 15, 'tea_promedio_zscore': 15, 'ingreso_minimo_requerido_robust': 11}}

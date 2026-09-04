@@ -1,0 +1,147 @@
+17:22:48 | INFO     | ====================
+17:22:48 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+17:22:48 | INFO     | ====================
+17:22:48 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+17:22:48 | INFO     | =======================================================
+17:22:48 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+17:22:48 | INFO     | BANCO   : BBVA
+17:22:48 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+17:22:48 | INFO     | =======================================================
+17:22:48 | INFO     | User-Agent seleccionado: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Version/17.0 Safari/605.1.15
+17:22:54 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+17:22:56 | INFO     | Cookies aceptadas
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+17:22:56 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+17:22:57 | INFO     | Procesando [1/7]: mastercard-black-puntos-vida.html
+17:23:05 | INFO     | Procesando [2/7]: visa-cero.html
+17:23:12 | INFO     | Procesando [3/7]: visa-signature-puntos-vida.html
+17:23:21 | INFO     | Procesando [4/7]: visa-infinite-puntos.html
+17:23:28 | INFO     | Procesando [5/7]: tarjeta-platinum.html
+17:23:38 | INFO     | Procesando [6/7]: mastercard-bfree-puntos-vida.html
+17:23:46 | INFO     | Procesando [7/7]: visa-bfree-puntos-vida.html
+17:23:54 | INFO     | Tiempo total   : 65.5s
+17:23:54 | INFO     | Paginas OK     : 7
+17:23:54 | INFO     | Paginas error  : 0
+17:23:54 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+17:23:54 | INFO     | Estado de validación: OK
+17:23:54 | INFO     | Se extrajeron correctamente los datos de BBVA
+17:23:56 | INFO     | Driver cerrado
+17:23:56 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-03.parquet
+17:23:57 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-03.xlsx
+17:23:57 | INFO     | ============================================================
+17:23:57 | INFO     | INICIANDO EXTRACCIÓN - Catalogo BCP
+17:23:57 | INFO     | ============================================================
+17:23:57 | INFO     | Se procesarán 11 tarjetas...
+17:23:57 | INFO     | Procesando [1/11]: tarjeta-io-1
+17:23:58 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/tarjeta...
+17:23:58 | DEBUG    | Extracción exitosa: Tarjeta iO
+17:24:01 | DEBUG    | Pausa de 3.16s completada.
+17:24:01 | INFO     | Procesando [2/11]: bcp-american-express-black-bcp-latam-pass
+17:24:02 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+17:24:02 | DEBUG    | Extracción exitosa: American Express Black LATAM Pass
+17:24:05 | DEBUG    | Pausa de 3.34s completada.
+17:24:05 | INFO     | Procesando [3/11]: bcp-visa-latam-pass-signature
+17:24:06 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+17:24:06 | DEBUG    | Extracción exitosa: VISA Signature  LATAM Pass
+17:24:08 | DEBUG    | Pausa de 2.15s completada.
+17:24:08 | INFO     | Procesando [4/11]: bcp-american-express-latam-pass-platinum
+17:24:09 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+17:24:10 | DEBUG    | Extracción exitosa: American Express Platinum BCP LATAM Pass
+17:24:12 | DEBUG    | Pausa de 2.30s completada.
+17:24:12 | INFO     | Procesando [5/11]: bcp-visa-latam-pass-platinum
+17:24:13 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+17:24:13 | DEBUG    | Extracción exitosa: VISA Platinum  LATAM Pass
+17:24:16 | DEBUG    | Pausa de 3.46s completada.
+17:24:16 | INFO     | Procesando [6/11]: bcp-american-express-latam-pass-gold
+17:24:17 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+17:24:17 | DEBUG    | Extracción exitosa: American Express Oro BCP LATAM Pass
+17:24:20 | DEBUG    | Pausa de 3.05s completada.
+17:24:20 | INFO     | Procesando [7/11]: bcp-visa-latam-pass-oro
+17:24:21 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+17:24:21 | DEBUG    | Extracción exitosa: VISA Oro  LATAM Pass
+17:24:23 | DEBUG    | Pausa de 1.58s completada.
+17:24:23 | INFO     | Procesando [8/11]: bcp-american-express-latam-pass-clasica
+17:24:24 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+17:24:24 | DEBUG    | Extracción exitosa: American Express Clásica BCP LATAM Pass
+17:24:26 | DEBUG    | Pausa de 2.69s completada.
+17:24:26 | INFO     | Procesando [9/11]: bcp-visa-light
+17:24:27 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+17:24:27 | DEBUG    | Extracción exitosa: VISA Light
+17:24:30 | DEBUG    | Pausa de 2.75s completada.
+17:24:30 | INFO     | Procesando [10/11]: bcp-visa-clasica
+17:24:31 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+17:24:31 | DEBUG    | Extracción exitosa: VISA Clasica
+17:24:33 | DEBUG    | Pausa de 1.71s completada.
+17:24:33 | INFO     | Procesando [11/11]: bcp-visa-latam-pass-clasica
+17:24:33 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+17:24:34 | DEBUG    | Extracción exitosa: VISA Clásica  LATAM Pass
+17:24:34 | INFO     | ✓ Validación OK: 11 filas, 14 columnas confirmadas.
+17:24:34 | INFO     | ============================================================
+17:24:34 | INFO     | PROCESO COMPLETADO
+17:24:34 | INFO     | Tarjetas extraídas  : 11
+17:24:34 | INFO     | Estado Validación   : ✓ OK
+17:24:34 | INFO     | Tiempo Total        : 37.0s
+17:24:34 | INFO     | ============================================================
+17:24:34 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-03.parquet
+17:24:34 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-03.xlsx
+17:25:41 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-03.parquet
+17:25:41 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-03.xlsx
+17:26:14 | ERROR    | Ocurrió un error Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6b4668945+14ce5]
+	chromedriver!GetHandleVerifier [0x7ff6b46689a0+14d40]
+	chromedriver!(No symbol) [0x7ff6b4195afd]
+	chromedriver!(No symbol) [0x7ff6b41f0b59]
+	chromedriver!(No symbol) [0x7ff6b41f0e5c]
+	chromedriver!(No symbol) [0x7ff6b42418d7]
+	chromedriver!(No symbol) [0x7ff6b423e4ab]
+	chromedriver!(No symbol) [0x7ff6b41e308c]
+	chromedriver!(No symbol) [0x7ff6b41e3fb3]
+	chromedriver!GetHandleVerifier [0x7ff6b4c9e60b+64a9ab]
+	chromedriver!GetHandleVerifier [0x7ff6b4c98b12+644eb2]
+	chromedriver!GetHandleVerifier [0x7ff6b4cbe3ae+66a74e]
+	chromedriver!GetHandleVerifier [0x7ff6b4685d7e+3211e]
+	chromedriver!GetHandleVerifier [0x7ff6b468e52c+3a8cc]
+	chromedriver!GetHandleVerifier [0x7ff6b4672854+1ebf4]
+	chromedriver!GetHandleVerifier [0x7ff6b46729e4+1ed84]
+	chromedriver!GetHandleVerifier [0x7ff6b4655d17+20b7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd731d7374+14]
+	ntdll!RtlUserThreadStart [0x7ffd74ddcc91+21]
+Traceback (most recent call last):
+  File "c:\Users\Usuario\Downloads\PROYECTO_ver.01\etl_extraccion_informacion_financiera.py", line 55, in <module>
+    df_banbif = etl_banbif.run()
+  File "c:\Users\Usuario\Downloads\PROYECTO_ver.01\modulos\etl_banbif.py", line 96, in run
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6b4668945+14ce5]
+	chromedriver!GetHandleVerifier [0x7ff6b46689a0+14d40]
+	chromedriver!(No symbol) [0x7ff6b4195afd]
+	chromedriver!(No symbol) [0x7ff6b41f0b59]
+	chromedriver!(No symbol) [0x7ff6b41f0e5c]
+	chromedriver!(No symbol) [0x7ff6b42418d7]
+	chromedriver!(No symbol) [0x7ff6b423e4ab]
+	chromedriver!(No symbol) [0x7ff6b41e308c]
+	chromedriver!(No symbol) [0x7ff6b41e3fb3]
+	chromedriver!GetHandleVerifier [0x7ff6b4c9e60b+64a9ab]
+	chromedriver!GetHandleVerifier [0x7ff6b4c98b12+644eb2]
+	chromedriver!GetHandleVerifier [0x7ff6b4cbe3ae+66a74e]
+	chromedriver!GetHandleVerifier [0x7ff6b4685d7e+3211e]
+	chromedriver!GetHandleVerifier [0x7ff6b468e52c+3a8cc]
+	chromedriver!GetHandleVerifier [0x7ff6b4672854+1ebf4]
+	chromedriver!GetHandleVerifier [0x7ff6b46729e4+1ed84]
+	chromedriver!GetHandleVerifier [0x7ff6b4655d17+20b7]
+	KERNEL32!BaseThreadInitThunk [0x7ffd731d7374+14]
+	ntdll!RtlUserThreadStart [0x7ffd74ddcc91+21]
+
+17:26:14 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE
+17:26:14 | ERROR    | ❌ Error en validación: name 'df_gold' is not defined

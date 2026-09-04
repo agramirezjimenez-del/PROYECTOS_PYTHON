@@ -1,0 +1,142 @@
+22:35:26 | INFO     | ====================
+22:35:26 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+22:35:26 | INFO     | ====================
+22:35:26 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+22:35:26 | INFO     | =======================================================
+22:35:26 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+22:35:26 | INFO     | BANCO   : BBVA
+22:35:26 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+22:35:26 | INFO     | =======================================================
+22:35:26 | INFO     | User-Agent seleccionado: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/119.0.0.0 Safari/537.36
+22:35:32 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+22:35:32 | INFO     | Cookies aceptadas
+22:35:32 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+22:35:33 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+22:35:34 | INFO     | Procesando [1/7]: visa-cero.html
+22:35:41 | INFO     | Procesando [2/7]: visa-infinite-puntos.html
+22:35:49 | INFO     | Procesando [3/7]: tarjeta-platinum.html
+22:35:59 | INFO     | Procesando [4/7]: mastercard-black-puntos-vida.html
+22:36:06 | INFO     | Procesando [5/7]: mastercard-bfree-puntos-vida.html
+22:36:13 | INFO     | Procesando [6/7]: visa-signature-puntos-vida.html
+22:36:21 | INFO     | Procesando [7/7]: visa-bfree-puntos-vida.html
+22:36:28 | INFO     | Tiempo total   : 61.9s
+22:36:28 | INFO     | Paginas OK     : 7
+22:36:28 | INFO     | Paginas error  : 0
+22:36:28 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+22:36:28 | INFO     | Estado de validación: OK
+22:36:28 | INFO     | Se extrajeron correctamente los datos de BBVA
+22:36:31 | INFO     | Driver cerrado
+22:36:31 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.parquet
+22:36:33 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.xlsx
+22:36:33 | INFO     | ============================================================
+22:36:33 | INFO     | INICIANDO EXTRACCIÓN - Catalogo BCP
+22:36:33 | INFO     | ============================================================
+22:36:33 | INFO     | Se procesarán 11 tarjetas...
+22:36:33 | INFO     | Procesando [1/11]: tarjeta-io-1
+22:36:34 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/tarjeta...
+22:36:34 | DEBUG    | Extracción exitosa: Tarjeta iO
+22:36:36 | DEBUG    | Pausa de 2.75s completada.
+22:36:36 | INFO     | Procesando [2/11]: bcp-american-express-black-bcp-latam-pass
+22:36:37 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:36:37 | DEBUG    | Extracción exitosa: American Express Black LATAM Pass
+22:36:39 | DEBUG    | Pausa de 1.89s completada.
+22:36:39 | INFO     | Procesando [3/11]: bcp-visa-latam-pass-signature
+22:36:40 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:36:40 | DEBUG    | Extracción exitosa: VISA Signature  LATAM Pass
+22:36:43 | DEBUG    | Pausa de 3.37s completada.
+22:36:43 | INFO     | Procesando [4/11]: bcp-american-express-latam-pass-platinum
+22:36:44 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:36:44 | DEBUG    | Extracción exitosa: American Express Platinum BCP LATAM Pass
+22:36:46 | DEBUG    | Pausa de 2.43s completada.
+22:36:46 | INFO     | Procesando [5/11]: bcp-visa-latam-pass-platinum
+22:36:47 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:36:47 | DEBUG    | Extracción exitosa: VISA Platinum  LATAM Pass
+22:36:49 | DEBUG    | Pausa de 2.02s completada.
+22:36:49 | INFO     | Procesando [6/11]: bcp-american-express-latam-pass-gold
+22:36:50 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:36:50 | DEBUG    | Extracción exitosa: American Express Oro BCP LATAM Pass
+22:36:53 | DEBUG    | Pausa de 3.15s completada.
+22:36:53 | INFO     | Procesando [7/11]: bcp-visa-latam-pass-oro
+22:36:53 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:36:53 | DEBUG    | Extracción exitosa: VISA Oro  LATAM Pass
+22:36:55 | DEBUG    | Pausa de 1.96s completada.
+22:36:55 | INFO     | Procesando [8/11]: bcp-american-express-latam-pass-clasica
+22:36:56 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:36:56 | DEBUG    | Extracción exitosa: American Express Clásica BCP LATAM Pass
+22:36:58 | DEBUG    | Pausa de 2.17s completada.
+22:36:58 | INFO     | Procesando [9/11]: bcp-visa-light
+22:36:59 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:36:59 | DEBUG    | Extracción exitosa: VISA Light
+22:37:01 | DEBUG    | Pausa de 2.50s completada.
+22:37:01 | INFO     | Procesando [10/11]: bcp-visa-clasica
+22:37:02 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:37:02 | DEBUG    | Extracción exitosa: VISA Clasica
+22:37:05 | DEBUG    | Pausa de 2.62s completada.
+22:37:05 | INFO     | Procesando [11/11]: bcp-visa-latam-pass-clasica
+22:37:05 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:37:05 | DEBUG    | Extracción exitosa: VISA Clásica  LATAM Pass
+22:37:05 | INFO     | ✓ Validación OK: 11 filas, 14 columnas confirmadas.
+22:37:05 | INFO     | ============================================================
+22:37:05 | INFO     | PROCESO COMPLETADO
+22:37:05 | INFO     | Tarjetas extraídas  : 11
+22:37:05 | INFO     | Estado Validación   : ✓ OK
+22:37:05 | INFO     | Tiempo Total        : 32.7s
+22:37:05 | INFO     | ============================================================
+22:37:05 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-01.parquet
+22:37:05 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-01.xlsx
+22:38:09 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-01.parquet
+22:38:09 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-01.xlsx
+22:38:20 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-01.parquet
+22:38:20 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-01.xlsx
+22:38:25 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.parquet
+22:38:25 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.xlsx
+22:38:25 | INFO     | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD
+22:38:25 | ERROR    | Ocurrió un error ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+Traceback (most recent call last):
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\etl_extraccion_informacion_financiera.py", line 49, in <module>
+    storage.save(df_gold, {"parquet": f"./output/tarjetas_gold_{periodo}.parquet",
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            "excel": f"./output/tarjetas_gold_{periodo}.xlsx"})
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\utils\storage.py", line 21, in save
+    df.to_parquet(ruta, index=False, compression="snappy")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\core\frame.py", line 3135, in to_parquet
+    return to_parquet(
+        self,
+    ...<7 lines>...
+        **kwargs,
+    )
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\io\parquet.py", line 490, in to_parquet
+    impl.write(
+    ~~~~~~~~~~^
+        df,
+        ^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pandas\io\parquet.py", line 191, in write
+    table = self.api.Table.from_pandas(df, **from_pandas_kwargs)
+  File "pyarrow/table.pxi", line 4769, in pyarrow.lib.Table.from_pandas
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 656, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+              ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 644, in convert_column
+    raise e
+  File "C:\Users\gabyb\OneDrive\Documents\ARQUITECTURA DE BASE DE DATOS\IV CICLO\Segundo Modulo\Lenguaje de ciencia de Datos II\PROYECTO_01-08\.venv\Lib\site-packages\pyarrow\pandas_compat.py", line 638, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 408, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 91, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: ("Could not convert 'No aplica' with type str: tried to convert to int64", 'Conversion failed for column requisito_exoneracion_membresia with type object')
+22:38:25 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE

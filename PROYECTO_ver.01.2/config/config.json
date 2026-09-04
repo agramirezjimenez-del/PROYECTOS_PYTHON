@@ -1,0 +1,117 @@
+{
+    "bancos": {
+        "BBVA": {
+            "DPF": {
+                "urls": [
+
+                ]
+            },
+            "Cuenta de Ahorro": {
+                "urls": [
+                    
+                ]
+            }
+            ,
+            "Tarjeta de Crédito": {
+                "urls": [
+                    "https://www.bbva.pe/personas/productos/tarjetas.html"
+                ]
+            }
+        },
+        "BANBIF": {
+            "DPF": {
+                "urls": [
+
+                ]
+            },
+            "Cuenta de Ahorro": {
+                "urls": [
+                    
+                ]
+            }
+            ,
+            "Tarjeta de Crédito": {
+                "urls": ["https://www.banbif.com.pe/comparador-tarjetas"
+                    
+                ]
+            }
+        },
+        "BCP": {
+            "DPF": {
+                "urls": ["https://www.viabcp.com/tarjetas/american-express-clasica?pcid=viabcp:tarjetas-tarjetas-credito:amex-clasica-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/american-express-gold?pcid=viabcp:tarjetas-tarjetas-credito:amex-oro-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/american-express-platinum?pcid=viabcp:tarjetas-tarjetas-credito:amex-platinum-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/american-express-black?pcid=viabcp:tarjetas-tarjetas-credito:amex-black-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-latampass-clasica?pcid=viabcp:tarjetas-tarjetas-credito:visa-clasica-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-latampass-oro?pcid=viabcp:tarjetas-tarjetas-credito:visa-oro-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-latampass-platinum?pcid=viabcp:tarjetas-tarjetas-credito:visa-platinum-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-latampass-signature?pcid=viabcp:tarjetas-tarjetas-credito:visa-signature-latam-pass:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/sapphire?pcid=viabcp:tarjetas-tarjetas-credito:visa-infinite-sapphire-latam-p:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-platinum-qore?pcid=viabcp:tarjetas-tarjetas-credito:visa-platinum-qore:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/credito-visa-clasica?pcid=viabcp:tarjetas-tarjetas-credito:visa-clasica:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-signature-qore?pcid=viabcp:tarjetas-tarjetas-credito:visa-signature-qore:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/visa-infinite-qore?pcid=viabcp:tarjetas-tarjetas-credito:visa-infinite-qore:masivo:producto-detalle",
+                        "https://www.viabcp.com/tarjetas/credito-visa-light?pcid=viabcp:tarjetas-tarjetas-credito:visa-light:masivo:producto-detalle"
+
+                ]
+            },
+            "Cuenta de Ahorro": {
+                "urls": [
+                    
+                ]
+            }
+            ,
+            "Tarjeta de Crédito": {
+                "urls": [
+                    
+                ]
+            }
+        },
+        "INTERBANK":{
+            "DPF": {
+                "urls": [
+
+                ]
+            },
+            "Cuenta de Ahorro": {
+                "urls": [
+                    
+                ]
+            }
+            ,
+            "Tarjeta de Crédito": {
+                "urls": [
+                    
+                ]
+            }
+        },
+        "SCOTIABANK":{
+            "DPF": {
+                "urls": [
+
+                ]
+            },
+            "Cuenta de Ahorro": {
+                "urls": [
+                    
+                ]
+            }
+            ,
+            "Tarjeta de Crédito": {
+                "urls": [
+                    
+                ]
+            }
+        }
+    },
+    "output":{
+        "base_dir":"output"
+    },
+    "user-agents":{
+        "ua": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/119.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Firefox/118.0",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Version/17.0 Safari/605.1.15"
+        ]
+    }
+}

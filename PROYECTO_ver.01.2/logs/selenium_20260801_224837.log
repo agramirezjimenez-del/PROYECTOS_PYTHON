@@ -1,0 +1,105 @@
+22:48:37 | INFO     | ====================
+22:48:37 | INFO     | Inicio: SCRAPPING BANCOS PERÚ
+22:48:37 | INFO     | ====================
+22:48:37 | INFO     | 1. OBTENIENDO CAPA RAW Y SILVER
+22:48:37 | INFO     | =======================================================
+22:48:37 | INFO     | PIPELINE: EXTRACCIÓN DE TC
+22:48:37 | INFO     | BANCO   : BBVA
+22:48:37 | INFO     | URL     : https://www.bbva.pe/personas/productos/tarjetas.html
+22:48:37 | INFO     | =======================================================
+22:48:37 | INFO     | User-Agent seleccionado: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Firefox/118.0
+22:48:45 | INFO     | Inicio: https://www.bbva.pe/personas/productos/tarjetas.html
+22:48:45 | INFO     | Cookies aceptadas
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-bfree-puntos-vida.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-cero.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-signature-puntos-vida.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/visa-infinite-puntos.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-bfree-puntos-vida.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/tarjeta-platinum.html
+22:48:45 | INFO     | Link capturado: https://www.bbva.pe/personas/productos/tarjetas/credito/mastercard-black-puntos-vida.html
+22:48:47 | INFO     | Procesando [1/7]: mastercard-bfree-puntos-vida.html
+22:48:55 | INFO     | Procesando [2/7]: visa-bfree-puntos-vida.html
+22:49:03 | INFO     | Procesando [3/7]: visa-cero.html
+22:49:10 | INFO     | Procesando [4/7]: visa-infinite-puntos.html
+22:49:19 | INFO     | Procesando [5/7]: mastercard-black-puntos-vida.html
+22:49:27 | INFO     | Procesando [6/7]: tarjeta-platinum.html
+22:49:36 | INFO     | Procesando [7/7]: visa-signature-puntos-vida.html
+22:49:43 | INFO     | Tiempo total   : 66.7s
+22:49:43 | INFO     | Paginas OK     : 7
+22:49:43 | INFO     | Paginas error  : 0
+22:49:44 | INFO     | Validación OK: 7 filas, 14 columnas confirmadas.
+22:49:44 | INFO     | Estado de validación: OK
+22:49:44 | INFO     | Se extrajeron correctamente los datos de BBVA
+22:49:46 | INFO     | Driver cerrado
+22:49:46 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.parquet
+22:49:47 | INFO     | Archivo guardado: ./output/tarjetas_bbva_2026-08-01.xlsx
+22:49:47 | INFO     | ============================================================
+22:49:47 | INFO     | INICIANDO EXTRACCIÓN - Catalogo BCP
+22:49:47 | INFO     | ============================================================
+22:49:47 | INFO     | Se procesarán 11 tarjetas...
+22:49:47 | INFO     | Procesando [1/11]: tarjeta-io-1
+22:49:48 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/tarjeta...
+22:49:48 | DEBUG    | Extracción exitosa: Tarjeta iO
+22:49:51 | DEBUG    | Pausa de 3.48s completada.
+22:49:51 | INFO     | Procesando [2/11]: bcp-american-express-black-bcp-latam-pass
+22:49:52 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:49:52 | DEBUG    | Extracción exitosa: American Express Black LATAM Pass
+22:49:53 | DEBUG    | Pausa de 1.51s completada.
+22:49:53 | INFO     | Procesando [3/11]: bcp-visa-latam-pass-signature
+22:49:54 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:49:54 | DEBUG    | Extracción exitosa: VISA Signature  LATAM Pass
+22:49:57 | DEBUG    | Pausa de 3.41s completada.
+22:49:57 | INFO     | Procesando [4/11]: bcp-american-express-latam-pass-platinum
+22:49:58 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:49:58 | DEBUG    | Extracción exitosa: American Express Platinum BCP LATAM Pass
+22:50:00 | DEBUG    | Pausa de 1.75s completada.
+22:50:00 | INFO     | Procesando [5/11]: bcp-visa-latam-pass-platinum
+22:50:00 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:50:01 | DEBUG    | Extracción exitosa: VISA Platinum  LATAM Pass
+22:50:04 | DEBUG    | Pausa de 3.19s completada.
+22:50:04 | INFO     | Procesando [6/11]: bcp-american-express-latam-pass-gold
+22:50:04 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:50:04 | DEBUG    | Extracción exitosa: American Express Oro BCP LATAM Pass
+22:50:07 | DEBUG    | Pausa de 2.26s completada.
+22:50:07 | INFO     | Procesando [7/11]: bcp-visa-latam-pass-oro
+22:50:07 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:50:07 | DEBUG    | Extracción exitosa: VISA Oro  LATAM Pass
+22:50:10 | DEBUG    | Pausa de 2.56s completada.
+22:50:10 | INFO     | Procesando [8/11]: bcp-american-express-latam-pass-clasica
+22:50:11 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-ame...
+22:50:11 | DEBUG    | Extracción exitosa: American Express Clásica BCP LATAM Pass
+22:50:12 | DEBUG    | Pausa de 1.61s completada.
+22:50:12 | INFO     | Procesando [9/11]: bcp-visa-light
+22:50:13 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:50:13 | DEBUG    | Extracción exitosa: VISA Light
+22:50:16 | DEBUG    | Pausa de 3.24s completada.
+22:50:16 | INFO     | Procesando [10/11]: bcp-visa-clasica
+22:50:17 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:50:17 | DEBUG    | Extracción exitosa: VISA Clasica
+22:50:19 | DEBUG    | Pausa de 2.24s completada.
+22:50:19 | INFO     | Procesando [11/11]: bcp-visa-latam-pass-clasica
+22:50:20 | DEBUG    | OK descargado: https://comparabien.com.pe/producto/tarjetas-credito/bcp-vis...
+22:50:20 | DEBUG    | Extracción exitosa: VISA Clásica  LATAM Pass
+22:50:20 | INFO     | ✓ Validación OK: 11 filas, 14 columnas confirmadas.
+22:50:20 | INFO     | ============================================================
+22:50:20 | INFO     | PROCESO COMPLETADO
+22:50:20 | INFO     | Tarjetas extraídas  : 11
+22:50:20 | INFO     | Estado Validación   : ✓ OK
+22:50:20 | INFO     | Tiempo Total        : 32.9s
+22:50:20 | INFO     | ============================================================
+22:50:20 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-01.parquet
+22:50:20 | INFO     | Archivo guardado: ./output/tarjetas_bcp_2026-08-01.xlsx
+22:51:21 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-01.parquet
+22:51:21 | INFO     | Archivo guardado: ./output/tarjetas_scotiabank_2026-08-01.xlsx
+22:51:29 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-01.parquet
+22:51:29 | INFO     | Archivo guardado: ./output/tarjetas_banbif_2026-08-01.xlsx
+22:51:37 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.parquet
+22:51:37 | INFO     | Archivo guardado: ./output/tarjetas_ibk_2026-08-01.xlsx
+22:51:37 | INFO     | 2. UNIFICANDO INFORMACIÓN EN LA CAPA GOLD
+22:51:37 | INFO     | Archivo guardado: ./output/tarjetas_gold_2026-08-01.parquet
+22:51:37 | INFO     | Archivo guardado: ./output/tarjetas_gold_2026-08-01.xlsx
+22:51:37 | INFO     | 3. EXPORTANDO ARCHIVO FINAL
+22:51:37 | INFO     | SE COMPLETÓ EL PROCESO CORRECTAMENTE
