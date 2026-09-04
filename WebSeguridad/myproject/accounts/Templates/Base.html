@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Site</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/accounts/register/">Register</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        {% block content %}
+        <!-- El contenido de cada página individual se instertará aquí -->
+        {% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2026 My Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
