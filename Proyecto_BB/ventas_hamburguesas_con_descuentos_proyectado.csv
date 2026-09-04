@@ -1,0 +1,501 @@
+﻿id_pedido,fecha_hora,categoria,producto,cantidad,precio_unitario,descuento_unitario,monto_total,canal_venta,metodo_pago,calificacion,descuento_unitario_propuesto,cantidad_proyectada,monto_total_proyectado,incremento_monto
+ORD-1000,2026-06-21 16:01:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Delivery App,Yape/Plin,4,4.8,2.0,54.4,-9.6
+ORD-1001,2026-05-15 17:53:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,4,2.4,1.0,21.6,-2.4
+ORD-1002,2026-07-11 20:27:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Efectivo,5,2.4,1.0,21.6,-2.4
+ORD-1003,2026-06-30 14:48:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Efectivo,5,1.8,2.0,32.4,-3.6
+ORD-1004,2026-05-21 21:49:00,Gourmet,Hamburguesa huachana,4,32.0,6.4,102.4,Web Directa,Yape/Plin,4,6.4,4.0,102.4,0.0
+ORD-1005,2026-07-22 20:29:00,Clásicas,Hamburguesa Clásica,3,18.0,3.6,43.2,Presencial,Tarjeta de Crédito,4,3.6,3.0,43.2,0.0
+ORD-1006,2026-07-26 13:37:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Yape/Plin,4,4.28,2.0,48.44,-8.56
+ORD-1007,2026-07-14 12:50:00,Especiales,Hamburguesa Extrema,1,36.0,7.2,28.8,Para Llevar,Tarjeta de Crédito,5,7.2,1.0,28.8,0.0
+ORD-1008,2026-07-14 12:03:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Crédito,3,1.8,1.0,16.2,-1.8
+ORD-1009,2026-07-27 11:00:00,Extranjera,Hamburguesa Mexicana,3,21.0,0.0,63.0,Presencial,Yape/Plin,5,4.2,6.0,100.8,37.8
+ORD-1010,2026-05-24 12:07:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Presencial,Tarjeta de Crédito,5,5.4,1.0,30.6,-5.4
+ORD-1011,2026-05-03 18:28:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Para Llevar,Tarjeta de Débito,4,1.8,1.0,16.2,-1.8
+ORD-1012,2026-05-22 12:54:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Efectivo,4,2.2,1.0,19.8,-2.2
+ORD-1013,2026-06-22 14:38:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Crédito,5,4.28,2.0,48.44,-8.56
+ORD-1014,2026-05-02 19:02:00,Extranjera,Hamburguesa Mexicana,4,21.0,3.15,71.4,Delivery App,Tarjeta de Crédito,5,3.15,4.0,71.4,0.0
+ORD-1015,2026-07-27 11:31:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Presencial,Efectivo,4,5.7,1.0,22.8,0.0
+ORD-1016,2026-05-30 19:09:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1017,2026-06-07 14:09:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Yape/Plin,5,4.28,2.0,48.44,-8.56
+ORD-1018,2026-05-02 12:18:00,Pollo,Crispy Chicken Burger,5,22.0,2.2,99.0,Presencial,Efectivo,5,2.2,5.0,99.0,0.0
+ORD-1019,2026-07-03 18:45:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Delivery App,Efectivo,3,4.8,1.0,27.2,-4.8
+ORD-1020,2026-06-29 18:33:00,Especiales,Hamburguesa La Churrita,1,28.5,4.27,24.23,Web Directa,Yape/Plin,5,4.27,1.0,24.23,0.0
+ORD-1021,2026-05-21 20:59:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Crédito,1,2.2,1.0,19.8,-2.2
+ORD-1022,2026-06-02 19:32:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Delivery App,Tarjeta de Crédito,4,1.8,3.0,48.6,-5.4
+ORD-1023,2026-07-15 19:22:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,1,1.8,1.0,16.2,-1.8
+ORD-1024,2026-06-27 14:54:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,2,1.8,1.0,16.2,-1.8
+ORD-1025,2026-05-22 13:27:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Débito,5,2.4,2.0,43.2,-4.8
+ORD-1026,2026-07-28 19:31:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Crédito,5,1.8,2.0,32.4,-3.6
+ORD-1027,2026-06-18 19:49:00,Extranjera,Hamburguesa Mexicana,1,23.0,0.0,23.0,Presencial,Tarjeta de Crédito,5,4.6,2.0,36.8,13.8
+ORD-1028,2026-07-30 22:06:00,Clásicas,Hamburguesa Clásica,3,18.0,2.7,45.9,Presencial,Tarjeta de Crédito,5,2.7,3.0,45.9,0.0
+ORD-1029,2026-06-28 15:28:00,Gourmet,Hamburguesa huachana,1,32.0,4.8,27.2,Presencial,Yape/Plin,4,4.8,1.0,27.2,0.0
+ORD-1030,2026-06-11 14:07:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Débito,5,1.8,2.0,32.4,-3.6
+ORD-1031,2026-07-31 19:00:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Efectivo,5,2.2,1.0,19.8,-2.2
+ORD-1032,2026-06-29 14:56:00,Especiales,Hamburguesa Extrema,2,36.0,0.0,72.0,Web Directa,Yape/Plin,5,5.4,2.0,61.2,-10.8
+ORD-1033,2026-07-19 20:54:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,3,2.4,1.0,21.6,-2.4
+ORD-1034,2026-05-15 20:02:00,Pollo,Crispy Chicken Burger,3,22.0,0.0,66.0,Para Llevar,Tarjeta de Débito,5,2.2,3.0,59.4,-6.6
+ORD-1035,2026-07-01 15:23:00,Clásicas,Hamburguesa Clásica,2,18.0,3.6,28.8,Web Directa,Tarjeta de Débito,5,3.6,2.0,28.8,0.0
+ORD-1036,2026-07-01 19:22:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Débito,5,2.2,2.0,39.6,-4.4
+ORD-1037,2026-06-16 19:58:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Yape/Plin,3,1.8,2.0,32.4,-3.6
+ORD-1038,2026-07-01 12:07:00,Extranjera,Hamburguesa Mexicana,2,21.0,0.0,42.0,Delivery App,Yape/Plin,4,4.2,4.0,67.2,25.2
+ORD-1039,2026-06-20 20:53:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Yape/Plin,5,1.8,1.0,16.2,-1.8
+ORD-1040,2026-06-24 17:56:00,Especiales,Hamburguesa La Churrita,1,28.5,2.85,25.65,Presencial,Tarjeta de Crédito,5,2.85,1.0,25.65,0.0
+ORD-1041,2026-07-03 19:46:00,Gourmet,Hamburguesa huachana,4,32.0,0.0,128.0,Delivery App,Tarjeta de Crédito,5,4.8,5.0,136.0,8.0
+ORD-1042,2026-05-03 14:36:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Yape/Plin,5,2.4,1.0,21.6,-2.4
+ORD-1043,2026-06-20 20:02:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Crédito,2,1.8,2.0,32.4,-3.6
+ORD-1044,2026-05-07 14:50:00,Clásicas,Hamburguesa Clásica,4,18.0,0.0,72.0,Delivery App,Tarjeta de Crédito,4,1.8,4.0,64.8,-7.2
+ORD-1045,2026-05-21 11:32:00,Clásicas,Cheeseburger Doble,1,24.0,2.4,21.6,Delivery App,Tarjeta de Crédito,5,2.4,1.0,21.6,0.0
+ORD-1046,2026-07-12 20:27:00,Especiales,Hamburguesa La Churrita,2,28.5,5.7,45.6,Delivery App,Yape/Plin,3,5.7,2.0,45.6,0.0
+ORD-1047,2026-06-08 12:46:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Crédito,5,1.8,1.0,16.2,-1.8
+ORD-1048,2026-05-18 14:07:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Yape/Plin,4,2.4,2.0,43.2,-4.8
+ORD-1049,2026-05-04 21:33:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Efectivo,3,1.8,1.0,16.2,-1.8
+ORD-1050,2026-07-28 21:34:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Web Directa,Tarjeta de Crédito,5,2.2,1.0,19.8,-2.2
+ORD-1051,2026-06-29 17:31:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Crédito,4,1.8,2.0,32.4,-3.6
+ORD-1052,2026-05-14 18:23:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1053,2026-05-09 15:13:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Yape/Plin,5,1.8,2.0,32.4,-3.6
+ORD-1054,2026-07-29 14:31:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1055,2026-06-22 14:55:00,Pollo,Crispy Chicken Burger,1,22.0,2.2,19.8,Para Llevar,Tarjeta de Débito,5,2.2,1.0,19.8,0.0
+ORD-1056,2026-05-02 18:45:00,Clásicas,Cheeseburger Doble,2,24.0,3.6,40.8,Delivery App,Tarjeta de Crédito,4,3.6,2.0,40.8,0.0
+ORD-1057,2026-07-23 19:42:00,Clásicas,Hamburguesa Clásica,1,18.0,1.8,16.2,Para Llevar,Yape/Plin,2,1.8,1.0,16.2,0.0
+ORD-1058,2026-07-31 19:15:00,Gourmet,Hamburguesa huachana,3,32.0,0.0,96.0,Delivery App,Tarjeta de Débito,4,4.8,4.0,108.8,12.8
+ORD-1059,2026-06-29 19:03:00,Pollo,Crispy Chicken Burger,3,22.0,0.0,66.0,Delivery App,Yape/Plin,3,2.2,3.0,59.4,-6.6
+ORD-1060,2026-07-10 12:51:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Efectivo,3,1.8,2.0,32.4,-3.6
+ORD-1061,2026-06-13 16:36:00,Pollo,Crispy Chicken Burger,4,23.5,0.0,94.0,Delivery App,Tarjeta de Crédito,5,2.35,4.0,84.6,-9.4
+ORD-1062,2026-05-08 12:53:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Presencial,Yape/Plin,5,4.2,2.0,33.6,12.6
+ORD-1063,2026-06-16 17:20:00,Clásicas,Hamburguesa Clásica,2,18.0,2.7,30.6,Web Directa,Tarjeta de Crédito,5,2.7,2.0,30.6,0.0
+ORD-1064,2026-06-04 15:13:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Web Directa,Yape/Plin,4,2.2,1.0,19.8,-2.2
+ORD-1065,2026-07-17 20:30:00,Gourmet,Hamburguesa huachana,3,32.0,0.0,96.0,Presencial,Yape/Plin,2,4.8,4.0,108.8,12.8
+ORD-1066,2026-07-20 14:54:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1067,2026-06-05 12:47:00,Clásicas,Hamburguesa Clásica,2,18.0,2.7,30.6,Web Directa,Tarjeta de Crédito,4,2.7,2.0,30.6,0.0
+ORD-1068,2026-06-19 13:17:00,Clásicas,Hamburguesa Clásica,3,18.0,3.6,43.2,Delivery App,Tarjeta de Crédito,4,3.6,3.0,43.2,0.0
+ORD-1069,2026-05-04 19:06:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Débito,4,2.2,1.0,19.8,-2.2
+ORD-1070,2026-05-02 18:09:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Delivery App,Tarjeta de Débito,5,5.4,1.0,30.6,-5.4
+ORD-1071,2026-05-06 12:06:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Delivery App,Tarjeta de Crédito,5,4.8,2.0,54.4,-9.6
+ORD-1072,2026-06-23 12:32:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1073,2026-05-04 19:22:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1074,2026-06-23 12:20:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1075,2026-07-02 19:18:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Yape/Plin,4,2.4,1.0,21.6,-2.4
+ORD-1076,2026-05-18 19:47:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Delivery App,Tarjeta de Débito,5,1.8,3.0,48.6,-5.4
+ORD-1077,2026-07-29 12:18:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Para Llevar,Tarjeta de Crédito,3,2.2,2.0,39.6,-4.4
+ORD-1078,2026-06-13 12:35:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Web Directa,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1079,2026-06-03 22:28:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Crédito,4,2.2,1.0,19.8,-2.2
+ORD-1080,2026-07-13 14:59:00,Clásicas,Cheeseburger Doble,1,24.0,2.4,21.6,Web Directa,Efectivo,5,2.4,1.0,21.6,0.0
+ORD-1081,2026-07-01 14:17:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Crédito,4,1.8,1.0,16.2,-1.8
+ORD-1082,2026-05-14 19:01:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,2,1.8,1.0,16.2,-1.8
+ORD-1083,2026-06-17 20:00:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Efectivo,5,2.4,1.0,21.6,-2.4
+ORD-1084,2026-05-15 22:46:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Presencial,Yape/Plin,5,4.2,2.0,33.6,12.6
+ORD-1085,2026-07-11 19:04:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Yape/Plin,4,1.8,2.0,32.4,-3.6
+ORD-1086,2026-07-17 14:19:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Yape/Plin,5,2.2,1.0,19.8,-2.2
+ORD-1087,2026-07-26 12:10:00,Especiales,Hamburguesa La Churrita,2,28.5,4.27,48.46,Presencial,Efectivo,5,4.27,2.0,48.46,0.0
+ORD-1088,2026-07-01 19:41:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Débito,5,2.2,2.0,39.6,-4.4
+ORD-1089,2026-06-09 17:01:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Delivery App,Tarjeta de Débito,5,2.4,2.0,43.2,-4.8
+ORD-1090,2026-07-24 15:02:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Delivery App,Tarjeta de Débito,4,2.2,2.0,39.6,-4.4
+ORD-1091,2026-07-19 20:22:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Débito,5,2.2,1.0,19.8,-2.2
+ORD-1092,2026-07-21 12:54:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Presencial,Tarjeta de Débito,3,1.8,3.0,48.6,-5.4
+ORD-1093,2026-06-22 16:11:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Débito,4,1.8,2.0,32.4,-3.6
+ORD-1094,2026-05-24 11:19:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Crédito,4,2.2,1.0,19.8,-2.2
+ORD-1095,2026-05-26 16:04:00,Especiales,Hamburguesa Extrema,2,36.0,0.0,72.0,Presencial,Tarjeta de Crédito,4,5.4,2.0,61.2,-10.8
+ORD-1096,2026-07-28 12:36:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Crédito,3,1.8,2.0,32.4,-3.6
+ORD-1097,2026-06-29 12:37:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Crédito,5,4.8,1.0,27.2,-4.8
+ORD-1098,2026-06-10 12:29:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Presencial,Tarjeta de Crédito,3,4.2,2.0,33.6,12.6
+ORD-1099,2026-05-29 18:08:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Débito,4,2.2,1.0,19.8,-2.2
+ORD-1100,2026-05-15 19:33:00,Especiales,Hamburguesa Extrema,3,37.5,0.0,112.5,Delivery App,Tarjeta de Crédito,4,5.62,4.0,127.52,15.02
+ORD-1101,2026-06-14 18:52:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Delivery App,Yape/Plin,4,4.8,2.0,54.4,-9.6
+ORD-1102,2026-07-04 21:43:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Presencial,Tarjeta de Crédito,5,2.4,4.0,86.4,-9.6
+ORD-1103,2026-07-28 14:34:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1104,2026-07-10 14:51:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Yape/Plin,4,2.4,1.0,21.6,-2.4
+ORD-1105,2026-05-09 20:57:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Débito,5,4.8,1.0,27.2,-4.8
+ORD-1106,2026-07-27 13:21:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Delivery App,Tarjeta de Crédito,4,4.8,2.0,54.4,-9.6
+ORD-1107,2026-05-01 21:43:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Web Directa,Yape/Plin,5,1.8,2.0,32.4,-3.6
+ORD-1108,2026-05-08 11:23:00,Pollo,Crispy Chicken Burger,5,22.0,0.0,110.0,Delivery App,Yape/Plin,5,2.2,5.0,99.0,-11.0
+ORD-1109,2026-07-27 21:16:00,Gourmet,Hamburguesa huachana,1,32.0,4.8,27.2,Delivery App,Tarjeta de Crédito,5,4.8,1.0,27.2,0.0
+ORD-1110,2026-07-02 11:09:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1111,2026-05-11 20:29:00,Especiales,Hamburguesa La Churrita,2,30.0,0.0,60.0,Delivery App,Efectivo,4,4.5,2.0,51.0,-9.0
+ORD-1112,2026-07-20 17:55:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1113,2026-05-08 22:58:00,Clásicas,Hamburguesa Clásica,2,21.0,0.0,42.0,Delivery App,Tarjeta de Débito,1,2.1,2.0,37.8,-4.2
+ORD-1114,2026-06-04 12:45:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Yape/Plin,4,1.8,2.0,32.4,-3.6
+ORD-1115,2026-06-04 17:22:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Crédito,5,1.8,1.0,16.2,-1.8
+ORD-1116,2026-06-02 21:31:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Débito,4,1.8,2.0,32.4,-3.6
+ORD-1117,2026-05-05 17:16:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Para Llevar,Tarjeta de Crédito,3,2.4,2.0,43.2,-4.8
+ORD-1118,2026-06-10 18:49:00,Especiales,Hamburguesa La Churrita,3,28.5,5.7,68.4,Presencial,Yape/Plin,4,5.7,3.0,68.4,0.0
+ORD-1119,2026-05-28 18:50:00,Clásicas,Hamburguesa Clásica,3,18.0,3.6,43.2,Presencial,Tarjeta de Débito,5,3.6,3.0,43.2,0.0
+ORD-1120,2026-05-07 16:16:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Yape/Plin,3,2.2,1.0,19.8,-2.2
+ORD-1121,2026-07-12 18:13:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,4,2.4,1.0,21.6,-2.4
+ORD-1122,2026-07-11 18:08:00,Extranjera,Hamburguesa Mexicana,5,21.0,2.1,94.5,Delivery App,Tarjeta de Crédito,5,2.1,5.0,94.5,0.0
+ORD-1123,2026-05-12 20:39:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Delivery App,Tarjeta de Débito,5,5.4,1.0,30.6,-5.4
+ORD-1124,2026-06-03 11:01:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Presencial,Yape/Plin,4,1.8,3.0,48.6,-5.4
+ORD-1125,2026-06-02 14:44:00,Clásicas,Cheeseburger Doble,1,24.0,4.8,19.2,Delivery App,Tarjeta de Débito,5,4.8,1.0,19.2,0.0
+ORD-1126,2026-06-17 21:24:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Crédito,3,1.8,2.0,32.4,-3.6
+ORD-1127,2026-05-23 20:38:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Web Directa,Yape/Plin,5,4.28,2.0,48.44,-8.56
+ORD-1128,2026-07-01 16:08:00,Especiales,Hamburguesa La Churrita,4,28.5,0.0,114.0,Delivery App,Tarjeta de Crédito,3,4.28,5.0,121.1,7.1
+ORD-1129,2026-07-27 18:53:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Efectivo,4,1.8,1.0,16.2,-1.8
+ORD-1130,2026-06-06 13:21:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Crédito,5,4.28,2.0,48.44,-8.56
+ORD-1131,2026-06-13 13:42:00,Clásicas,Hamburguesa Clásica,1,18.0,1.8,16.2,Presencial,Yape/Plin,5,1.8,1.0,16.2,0.0
+ORD-1132,2026-07-25 16:45:00,Clásicas,Hamburguesa Clásica,1,18.0,1.8,16.2,Presencial,Tarjeta de Crédito,4,1.8,1.0,16.2,0.0
+ORD-1133,2026-07-30 14:03:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Efectivo,4,4.28,2.0,48.44,-8.56
+ORD-1134,2026-06-04 18:25:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Delivery App,Tarjeta de Débito,4,2.4,2.0,43.2,-4.8
+ORD-1135,2026-07-04 12:57:00,Especiales,Hamburguesa La Churrita,4,28.5,4.27,96.92,Delivery App,Tarjeta de Crédito,5,4.27,4.0,96.92,0.0
+ORD-1136,2026-06-16 21:28:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1137,2026-07-17 22:44:00,Especiales,Hamburguesa Extrema,1,36.0,3.6,32.4,Presencial,Tarjeta de Crédito,5,3.6,1.0,32.4,0.0
+ORD-1138,2026-05-03 18:33:00,Clásicas,Hamburguesa Clásica,1,18.0,3.6,14.4,Presencial,Tarjeta de Crédito,4,3.6,1.0,14.4,0.0
+ORD-1139,2026-05-01 17:22:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Web Directa,Efectivo,5,2.4,1.0,21.6,-2.4
+ORD-1140,2026-05-05 14:36:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Débito,5,4.8,1.0,27.2,-4.8
+ORD-1141,2026-07-29 19:10:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Delivery App,Yape/Plin,4,2.4,2.0,43.2,-4.8
+ORD-1142,2026-05-14 18:05:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Web Directa,Tarjeta de Débito,2,5.4,1.0,30.6,-5.4
+ORD-1143,2026-05-27 13:17:00,Gourmet,Hamburguesa huachana,4,32.0,0.0,128.0,Delivery App,Yape/Plin,5,4.8,5.0,136.0,8.0
+ORD-1144,2026-05-09 20:20:00,Especiales,Hamburguesa La Churrita,4,28.5,0.0,114.0,Web Directa,Tarjeta de Crédito,5,4.28,5.0,121.1,7.1
+ORD-1145,2026-07-18 19:41:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Presencial,Tarjeta de Crédito,4,4.8,2.0,54.4,-9.6
+ORD-1146,2026-05-15 20:35:00,Especiales,Hamburguesa Extrema,3,36.0,0.0,108.0,Para Llevar,Yape/Plin,4,5.4,4.0,122.4,14.4
+ORD-1147,2026-07-29 19:40:00,Extranjera,Hamburguesa Mexicana,2,21.0,0.0,42.0,Presencial,Efectivo,5,4.2,4.0,67.2,25.2
+ORD-1148,2026-06-11 18:37:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Crédito,2,4.8,1.0,27.2,-4.8
+ORD-1149,2026-07-16 15:33:00,Gourmet,Hamburguesa huachana,1,32.0,3.2,28.8,Delivery App,Tarjeta de Crédito,3,3.2,1.0,28.8,0.0
+ORD-1150,2026-06-20 20:16:00,Clásicas,Hamburguesa Clásica,1,20.0,0.0,20.0,Para Llevar,Tarjeta de Débito,5,2.0,1.0,18.0,-2.0
+ORD-1151,2026-07-02 20:36:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Web Directa,Efectivo,5,1.8,2.0,32.4,-3.6
+ORD-1152,2026-06-21 11:24:00,Especiales,Hamburguesa La Churrita,3,28.5,5.7,68.4,Presencial,Tarjeta de Crédito,4,5.7,3.0,68.4,0.0
+ORD-1153,2026-05-04 11:37:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Débito,4,1.8,1.0,16.2,-1.8
+ORD-1154,2026-05-23 14:57:00,Especiales,Hamburguesa La Churrita,3,30.5,0.0,91.5,Para Llevar,Yape/Plin,5,4.58,4.0,103.68,12.18
+ORD-1155,2026-05-15 19:11:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Crédito,4,1.8,2.0,32.4,-3.6
+ORD-1156,2026-06-12 22:22:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,4,2.4,1.0,21.6,-2.4
+ORD-1157,2026-05-29 13:52:00,Pollo,Crispy Chicken Burger,5,22.0,0.0,110.0,Web Directa,Tarjeta de Débito,5,2.2,5.0,99.0,-11.0
+ORD-1158,2026-06-05 18:41:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Delivery App,Efectivo,4,4.2,2.0,33.6,12.6
+ORD-1159,2026-05-13 14:21:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Crédito,2,1.8,1.0,16.2,-1.8
+ORD-1160,2026-06-01 21:20:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1161,2026-07-10 19:26:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Débito,5,2.2,1.0,19.8,-2.2
+ORD-1162,2026-06-28 19:56:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Web Directa,Tarjeta de Débito,5,1.8,2.0,32.4,-3.6
+ORD-1163,2026-07-25 16:30:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Débito,3,2.2,1.0,19.8,-2.2
+ORD-1164,2026-05-28 15:05:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Web Directa,Tarjeta de Débito,2,2.4,1.0,21.6,-2.4
+ORD-1165,2026-07-05 13:26:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Presencial,Tarjeta de Débito,5,2.4,4.0,86.4,-9.6
+ORD-1166,2026-06-11 12:39:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Para Llevar,Tarjeta de Débito,4,5.4,1.0,30.6,-5.4
+ORD-1167,2026-06-14 20:33:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Débito,4,1.8,1.0,16.2,-1.8
+ORD-1168,2026-07-01 19:11:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Débito,4,4.8,1.0,27.2,-4.8
+ORD-1169,2026-06-26 22:44:00,Pollo,Crispy Chicken Burger,3,22.0,0.0,66.0,Presencial,Yape/Plin,5,2.2,3.0,59.4,-6.6
+ORD-1170,2026-05-06 22:56:00,Clásicas,Hamburguesa Clásica,1,18.0,1.8,16.2,Delivery App,Tarjeta de Crédito,5,1.8,1.0,16.2,0.0
+ORD-1171,2026-05-28 17:52:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Delivery App,Yape/Plin,5,4.8,1.0,27.2,-4.8
+ORD-1172,2026-05-28 19:06:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Web Directa,Yape/Plin,4,5.4,1.0,30.6,-5.4
+ORD-1173,2026-06-13 20:09:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Crédito,5,1.8,1.0,16.2,-1.8
+ORD-1174,2026-07-23 19:44:00,Extranjera,Hamburguesa Mexicana,2,21.0,0.0,42.0,Presencial,Tarjeta de Débito,3,4.2,4.0,67.2,25.2
+ORD-1175,2026-05-30 13:16:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1176,2026-07-01 16:25:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1177,2026-07-14 12:20:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,4,4.28,2.0,48.44,-8.56
+ORD-1178,2026-07-31 21:27:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Para Llevar,Tarjeta de Crédito,4,2.4,1.0,21.6,-2.4
+ORD-1179,2026-07-28 18:57:00,Extranjera,Hamburguesa Mexicana,4,21.0,4.2,67.2,Para Llevar,Tarjeta de Crédito,5,4.2,4.0,67.2,0.0
+ORD-1180,2026-07-01 13:45:00,Extranjera,Hamburguesa Mexicana,4,21.0,0.0,84.0,Para Llevar,Yape/Plin,5,4.2,9.0,151.2,67.2
+ORD-1181,2026-05-01 18:01:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Crédito,2,4.28,1.0,24.22,-4.28
+ORD-1182,2026-05-27 18:59:00,Pollo,Crispy Chicken Burger,3,22.0,0.0,66.0,Presencial,Yape/Plin,5,2.2,3.0,59.4,-6.6
+ORD-1183,2026-07-01 14:53:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1184,2026-07-16 12:42:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,3,4.28,1.0,24.22,-4.28
+ORD-1185,2026-05-03 18:00:00,Especiales,Hamburguesa La Churrita,1,28.5,2.85,25.65,Web Directa,Tarjeta de Débito,5,2.85,1.0,25.65,0.0
+ORD-1186,2026-07-09 17:50:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1187,2026-07-11 19:52:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Yape/Plin,5,4.28,2.0,48.44,-8.56
+ORD-1188,2026-05-27 17:35:00,Pollo,Crispy Chicken Burger,4,22.0,0.0,88.0,Presencial,Tarjeta de Crédito,5,2.2,4.0,79.2,-8.8
+ORD-1189,2026-05-09 20:50:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1190,2026-07-01 17:25:00,Clásicas,Hamburguesa Clásica,3,18.0,2.7,45.9,Web Directa,Efectivo,5,2.7,3.0,45.9,0.0
+ORD-1191,2026-06-06 17:28:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Crédito,5,1.8,2.0,32.4,-3.6
+ORD-1192,2026-06-20 20:20:00,Clásicas,Cheeseburger Doble,3,24.0,0.0,72.0,Presencial,Tarjeta de Débito,5,2.4,3.0,64.8,-7.2
+ORD-1193,2026-06-13 15:10:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Para Llevar,Yape/Plin,4,4.8,2.0,54.4,-9.6
+ORD-1194,2026-05-24 13:39:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1195,2026-07-18 11:10:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Yape/Plin,5,4.28,2.0,48.44,-8.56
+ORD-1196,2026-06-28 19:35:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Crédito,3,4.28,2.0,48.44,-8.56
+ORD-1197,2026-06-01 18:48:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1198,2026-07-27 19:58:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1199,2026-06-21 13:38:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Yape/Plin,2,4.28,1.0,24.22,-4.28
+ORD-1200,2026-07-01 13:39:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Delivery App,Efectivo,5,4.8,1.0,27.2,-4.8
+ORD-1201,2026-06-27 11:34:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Web Directa,Yape/Plin,5,2.2,2.0,39.6,-4.4
+ORD-1202,2026-06-21 14:53:00,Clásicas,Cheeseburger Doble,1,24.0,4.8,19.2,Presencial,Yape/Plin,4,4.8,1.0,19.2,0.0
+ORD-1203,2026-05-12 18:33:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Crédito,4,1.8,1.0,16.2,-1.8
+ORD-1204,2026-06-08 14:54:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Yape/Plin,5,1.8,1.0,16.2,-1.8
+ORD-1205,2026-05-02 15:46:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Presencial,Yape/Plin,5,1.8,3.0,48.6,-5.4
+ORD-1206,2026-05-03 20:23:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Crédito,4,4.28,1.0,24.22,-4.28
+ORD-1207,2026-06-25 14:53:00,Clásicas,Cheeseburger Doble,3,24.0,3.6,61.2,Para Llevar,Yape/Plin,5,3.6,3.0,61.2,0.0
+ORD-1208,2026-07-20 17:21:00,Especiales,Hamburguesa La Churrita,1,30.0,0.0,30.0,Delivery App,Tarjeta de Crédito,3,4.5,1.0,25.5,-4.5
+ORD-1209,2026-06-28 19:04:00,Especiales,Hamburguesa La Churrita,5,28.5,0.0,142.5,Delivery App,Yape/Plin,5,4.28,6.0,145.32,2.82
+ORD-1210,2026-05-02 14:55:00,Clásicas,Hamburguesa Clásica,4,18.0,0.0,72.0,Presencial,Yape/Plin,3,1.8,4.0,64.8,-7.2
+ORD-1211,2026-05-02 18:32:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Yape/Plin,4,2.4,1.0,21.6,-2.4
+ORD-1212,2026-07-31 20:57:00,Clásicas,Hamburguesa Clásica,1,20.0,0.0,20.0,Presencial,Tarjeta de Crédito,3,2.0,1.0,18.0,-2.0
+ORD-1213,2026-06-23 20:35:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1214,2026-07-26 13:46:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Débito,4,1.8,2.0,32.4,-3.6
+ORD-1215,2026-05-01 20:19:00,Pollo,Crispy Chicken Burger,1,22.0,2.2,19.8,Presencial,Efectivo,5,2.2,1.0,19.8,0.0
+ORD-1216,2026-05-19 16:18:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Débito,5,1.8,1.0,16.2,-1.8
+ORD-1217,2026-05-02 13:34:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Presencial,Tarjeta de Crédito,5,5.4,1.0,30.6,-5.4
+ORD-1218,2026-06-22 16:51:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Yape/Plin,3,2.4,1.0,21.6,-2.4
+ORD-1219,2026-06-13 22:42:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Débito,3,2.2,1.0,19.8,-2.2
+ORD-1220,2026-07-29 16:16:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Para Llevar,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1221,2026-06-01 14:58:00,Gourmet,Hamburguesa huachana,5,32.0,6.4,128.0,Delivery App,Tarjeta de Débito,5,6.4,5.0,128.0,0.0
+ORD-1222,2026-07-09 18:44:00,Gourmet,Hamburguesa huachana,1,34.0,0.0,34.0,Delivery App,Yape/Plin,5,5.1,1.0,28.9,-5.1
+ORD-1223,2026-06-01 13:42:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Débito,4,4.28,2.0,48.44,-8.56
+ORD-1224,2026-07-07 12:33:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1225,2026-06-24 12:08:00,Especiales,Hamburguesa La Churrita,3,28.5,0.0,85.5,Delivery App,Tarjeta de Crédito,4,4.28,4.0,96.88,11.38
+ORD-1226,2026-07-14 12:25:00,Especiales,Hamburguesa La Churrita,3,28.5,0.0,85.5,Presencial,Tarjeta de Crédito,1,4.28,4.0,96.88,11.38
+ORD-1227,2026-06-25 13:01:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Web Directa,Tarjeta de Crédito,5,1.8,3.0,48.6,-5.4
+ORD-1228,2026-05-17 13:52:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Presencial,Tarjeta de Crédito,5,2.4,4.0,86.4,-9.6
+ORD-1229,2026-06-07 18:08:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Delivery App,Tarjeta de Débito,5,5.7,1.0,22.8,0.0
+ORD-1230,2026-05-24 13:08:00,Especiales,Hamburguesa La Churrita,3,28.5,4.27,72.69,Delivery App,Yape/Plin,5,4.27,3.0,72.69,0.0
+ORD-1231,2026-07-08 14:39:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Débito,5,2.2,2.0,39.6,-4.4
+ORD-1232,2026-07-09 20:16:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1233,2026-07-25 16:00:00,Especiales,Hamburguesa Extrema,4,36.0,7.2,115.2,Delivery App,Efectivo,3,7.2,4.0,115.2,0.0
+ORD-1234,2026-05-11 18:24:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Yape/Plin,5,2.4,1.0,21.6,-2.4
+ORD-1235,2026-05-16 13:42:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Yape/Plin,5,2.4,2.0,43.2,-4.8
+ORD-1236,2026-07-12 13:39:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Débito,3,2.4,1.0,21.6,-2.4
+ORD-1237,2026-06-28 11:41:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1238,2026-07-09 13:24:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Delivery App,Tarjeta de Crédito,5,2.2,2.0,39.6,-4.4
+ORD-1239,2026-07-19 13:38:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Débito,4,1.8,2.0,32.4,-3.6
+ORD-1240,2026-05-03 13:34:00,Pollo,Crispy Chicken Burger,1,22.0,2.2,19.8,Delivery App,Efectivo,5,2.2,1.0,19.8,0.0
+ORD-1241,2026-05-20 12:02:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Yape/Plin,4,2.4,1.0,21.6,-2.4
+ORD-1242,2026-06-28 12:49:00,Especiales,Hamburguesa La Churrita,3,28.5,0.0,85.5,Presencial,Tarjeta de Crédito,4,4.28,4.0,96.88,11.38
+ORD-1243,2026-06-05 16:36:00,Especiales,Hamburguesa La Churrita,1,31.5,0.0,31.5,Delivery App,Tarjeta de Débito,4,4.72,1.0,26.78,-4.72
+ORD-1244,2026-05-19 13:43:00,Clásicas,Cheeseburger Doble,1,27.0,0.0,27.0,Presencial,Yape/Plin,5,2.7,1.0,24.3,-2.7
+ORD-1245,2026-07-29 14:43:00,Especiales,Hamburguesa La Churrita,3,28.5,4.27,72.69,Para Llevar,Tarjeta de Crédito,3,4.27,3.0,72.69,0.0
+ORD-1246,2026-07-06 17:50:00,Clásicas,Cheeseburger Doble,3,24.0,0.0,72.0,Delivery App,Tarjeta de Débito,5,2.4,3.0,64.8,-7.2
+ORD-1247,2026-05-19 18:29:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,5,1.8,1.0,16.2,-1.8
+ORD-1248,2026-05-20 11:37:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Débito,5,2.4,2.0,43.2,-4.8
+ORD-1249,2026-07-10 19:33:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Crédito,5,1.8,2.0,32.4,-3.6
+ORD-1250,2026-06-21 18:11:00,Clásicas,Cheeseburger Doble,3,24.0,0.0,72.0,Delivery App,Tarjeta de Débito,5,2.4,3.0,64.8,-7.2
+ORD-1251,2026-06-02 12:18:00,Especiales,Hamburguesa La Churrita,1,31.5,0.0,31.5,Delivery App,Yape/Plin,3,4.72,1.0,26.78,-4.72
+ORD-1252,2026-06-09 20:36:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Débito,2,4.28,1.0,24.22,-4.28
+ORD-1253,2026-06-08 20:43:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Presencial,Tarjeta de Crédito,5,5.7,1.0,22.8,0.0
+ORD-1254,2026-07-21 12:58:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Débito,5,1.8,1.0,16.2,-1.8
+ORD-1255,2026-05-01 13:58:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1256,2026-05-11 19:48:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1257,2026-07-31 19:16:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Web Directa,Yape/Plin,5,2.4,2.0,43.2,-4.8
+ORD-1258,2026-06-26 13:09:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Crédito,2,2.2,1.0,19.8,-2.2
+ORD-1259,2026-07-28 13:56:00,Clásicas,Hamburguesa Clásica,1,18.0,1.8,16.2,Presencial,Yape/Plin,5,1.8,1.0,16.2,0.0
+ORD-1260,2026-06-19 14:54:00,Especiales,Hamburguesa La Churrita,3,28.5,5.7,68.4,Delivery App,Tarjeta de Crédito,5,5.7,3.0,68.4,0.0
+ORD-1261,2026-05-23 16:48:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Web Directa,Tarjeta de Débito,5,5.7,1.0,22.8,0.0
+ORD-1262,2026-05-31 18:46:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,3,2.4,1.0,21.6,-2.4
+ORD-1263,2026-06-11 14:11:00,Clásicas,Hamburguesa Clásica,2,19.5,0.0,39.0,Web Directa,Tarjeta de Débito,4,1.95,2.0,35.1,-3.9
+ORD-1264,2026-05-07 16:15:00,Clásicas,Hamburguesa Clásica,1,18.0,2.7,15.3,Presencial,Tarjeta de Débito,2,2.7,1.0,15.3,0.0
+ORD-1265,2026-05-16 19:23:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Débito,4,2.2,2.0,39.6,-4.4
+ORD-1266,2026-07-29 11:18:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Web Directa,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1267,2026-06-29 13:07:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1268,2026-05-02 19:30:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,4,2.4,2.0,43.2,-4.8
+ORD-1269,2026-05-01 20:20:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1270,2026-06-17 17:16:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Web Directa,Efectivo,4,1.8,1.0,16.2,-1.8
+ORD-1271,2026-05-12 17:22:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1272,2026-07-08 12:36:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1273,2026-06-06 15:53:00,Extranjera,Hamburguesa Mexicana,4,21.0,4.2,67.2,Presencial,Tarjeta de Débito,4,4.2,4.0,67.2,0.0
+ORD-1274,2026-06-01 17:15:00,Clásicas,Cheeseburger Doble,1,24.0,4.8,19.2,Delivery App,Tarjeta de Crédito,4,4.8,1.0,19.2,0.0
+ORD-1275,2026-05-09 13:05:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1276,2026-05-19 13:07:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Web Directa,Yape/Plin,5,2.4,1.0,21.6,-2.4
+ORD-1277,2026-06-17 14:24:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Web Directa,Tarjeta de Débito,4,4.28,2.0,48.44,-8.56
+ORD-1278,2026-07-19 11:17:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Web Directa,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1279,2026-05-03 14:24:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1280,2026-05-20 13:11:00,Pollo,Crispy Chicken Burger,2,22.0,3.3,37.4,Delivery App,Tarjeta de Débito,5,3.3,2.0,37.4,0.0
+ORD-1281,2026-05-24 14:14:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Delivery App,Yape/Plin,5,4.8,1.0,27.2,-4.8
+ORD-1282,2026-06-23 12:58:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1283,2026-06-02 20:25:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Débito,5,2.2,1.0,19.8,-2.2
+ORD-1284,2026-05-24 18:40:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Web Directa,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1285,2026-07-14 18:44:00,Especiales,Hamburguesa La Churrita,3,28.5,0.0,85.5,Delivery App,Tarjeta de Crédito,5,4.28,4.0,96.88,11.38
+ORD-1286,2026-07-11 19:25:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Efectivo,5,1.8,1.0,16.2,-1.8
+ORD-1287,2026-06-05 16:46:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Presencial,Tarjeta de Crédito,5,5.4,1.0,30.6,-5.4
+ORD-1288,2026-06-07 12:31:00,Clásicas,Hamburguesa Clásica,1,19.5,0.0,19.5,Presencial,Efectivo,5,1.95,1.0,17.55,-1.95
+ORD-1289,2026-07-23 17:09:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Débito,4,1.8,2.0,32.4,-3.6
+ORD-1290,2026-07-28 18:15:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Crédito,5,1.8,2.0,32.4,-3.6
+ORD-1291,2026-05-25 19:06:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1292,2026-05-18 15:16:00,Clásicas,Hamburguesa Clásica,2,20.0,0.0,40.0,Presencial,Tarjeta de Crédito,5,2.0,2.0,36.0,-4.0
+ORD-1293,2026-07-21 12:22:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Efectivo,4,1.8,2.0,32.4,-3.6
+ORD-1294,2026-07-05 14:25:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Presencial,Tarjeta de Débito,3,1.8,3.0,48.6,-5.4
+ORD-1295,2026-06-23 14:20:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Débito,4,1.8,2.0,32.4,-3.6
+ORD-1296,2026-06-04 18:21:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,4,4.28,1.0,24.22,-4.28
+ORD-1297,2026-07-19 17:57:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Crédito,5,4.8,1.0,27.2,-4.8
+ORD-1298,2026-06-30 14:06:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1299,2026-06-10 22:13:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Crédito,4,4.28,1.0,24.22,-4.28
+ORD-1300,2026-06-02 18:14:00,Gourmet,Hamburguesa huachana,5,32.0,0.0,160.0,Presencial,Yape/Plin,5,4.8,6.0,163.2,3.2
+ORD-1301,2026-07-07 13:52:00,Clásicas,Hamburguesa Clásica,1,18.0,2.7,15.3,Web Directa,Tarjeta de Débito,5,2.7,1.0,15.3,0.0
+ORD-1302,2026-06-02 12:06:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1303,2026-05-14 13:08:00,Especiales,Hamburguesa Extrema,2,36.0,0.0,72.0,Delivery App,Tarjeta de Débito,3,5.4,2.0,61.2,-10.8
+ORD-1304,2026-05-21 13:50:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Débito,4,4.28,1.0,24.22,-4.28
+ORD-1305,2026-06-17 13:47:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Efectivo,4,2.4,1.0,21.6,-2.4
+ORD-1306,2026-05-20 13:07:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1307,2026-05-08 14:49:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1308,2026-05-07 13:58:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1309,2026-07-06 20:22:00,Clásicas,Hamburguesa Clásica,1,18.0,2.7,15.3,Delivery App,Tarjeta de Crédito,5,2.7,1.0,15.3,0.0
+ORD-1310,2026-05-17 12:28:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Crédito,3,1.8,1.0,16.2,-1.8
+ORD-1311,2026-06-02 17:17:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Efectivo,4,1.8,1.0,16.2,-1.8
+ORD-1312,2026-06-17 15:30:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Presencial,Yape/Plin,5,4.2,2.0,33.6,12.6
+ORD-1313,2026-07-15 22:29:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Delivery App,Efectivo,3,4.8,2.0,54.4,-9.6
+ORD-1314,2026-06-28 12:51:00,Clásicas,Hamburguesa Clásica,1,18.0,2.7,15.3,Presencial,Tarjeta de Débito,5,2.7,1.0,15.3,0.0
+ORD-1315,2026-07-25 14:38:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Débito,1,1.8,1.0,16.2,-1.8
+ORD-1316,2026-05-22 21:34:00,Gourmet,Hamburguesa huachana,4,32.0,0.0,128.0,Delivery App,Tarjeta de Crédito,5,4.8,5.0,136.0,8.0
+ORD-1317,2026-05-30 20:17:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Para Llevar,Tarjeta de Crédito,5,1.8,2.0,32.4,-3.6
+ORD-1318,2026-06-07 19:58:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,5,1.8,1.0,16.2,-1.8
+ORD-1319,2026-06-20 13:41:00,Especiales,Hamburguesa Extrema,2,36.0,0.0,72.0,Web Directa,Tarjeta de Débito,5,5.4,2.0,61.2,-10.8
+ORD-1320,2026-06-23 13:38:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Delivery App,Yape/Plin,5,2.4,2.0,43.2,-4.8
+ORD-1321,2026-05-08 18:16:00,Especiales,Hamburguesa La Churrita,2,28.5,5.7,45.6,Presencial,Yape/Plin,4,5.7,2.0,45.6,0.0
+ORD-1322,2026-05-27 20:13:00,Especiales,Hamburguesa Extrema,1,36.0,5.4,30.6,Presencial,Tarjeta de Crédito,3,5.4,1.0,30.6,0.0
+ORD-1323,2026-05-27 17:30:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Delivery App,Tarjeta de Débito,4,2.4,4.0,86.4,-9.6
+ORD-1324,2026-05-21 17:23:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,5,1.8,1.0,16.2,-1.8
+ORD-1325,2026-05-30 13:34:00,Clásicas,Hamburguesa Clásica,1,21.0,0.0,21.0,Presencial,Tarjeta de Crédito,4,2.1,1.0,18.9,-2.1
+ORD-1326,2026-05-28 19:43:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Yape/Plin,5,2.2,1.0,19.8,-2.2
+ORD-1327,2026-07-03 13:59:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Web Directa,Tarjeta de Débito,5,2.2,1.0,19.8,-2.2
+ORD-1328,2026-07-08 14:44:00,Gourmet,Hamburguesa huachana,2,32.0,6.4,51.2,Delivery App,Tarjeta de Crédito,4,6.4,2.0,51.2,0.0
+ORD-1329,2026-06-30 15:33:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Débito,4,1.8,1.0,16.2,-1.8
+ORD-1330,2026-06-17 17:02:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Efectivo,5,2.2,1.0,19.8,-2.2
+ORD-1331,2026-05-19 13:36:00,Extranjera,Hamburguesa Mexicana,3,21.0,0.0,63.0,Presencial,Tarjeta de Crédito,5,4.2,6.0,100.8,37.8
+ORD-1332,2026-05-04 12:42:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,1,4.28,1.0,24.22,-4.28
+ORD-1333,2026-06-04 18:39:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Delivery App,Tarjeta de Crédito,5,4.2,2.0,33.6,12.6
+ORD-1334,2026-07-03 14:25:00,Pollo,Crispy Chicken Burger,1,23.5,0.0,23.5,Presencial,Yape/Plin,5,2.35,1.0,21.15,-2.35
+ORD-1335,2026-06-18 18:54:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1336,2026-05-17 13:22:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Tarjeta de Crédito,5,4.28,1.0,24.22,-4.28
+ORD-1337,2026-06-13 16:43:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Delivery App,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1338,2026-07-31 17:38:00,Clásicas,Hamburguesa Clásica,1,19.5,0.0,19.5,Delivery App,Yape/Plin,5,1.95,1.0,17.55,-1.95
+ORD-1339,2026-05-30 12:14:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Tarjeta de Débito,4,4.28,1.0,24.22,-4.28
+ORD-1340,2026-06-15 14:55:00,Clásicas,Cheeseburger Doble,2,24.0,2.4,43.2,Presencial,Yape/Plin,4,2.4,2.0,43.2,0.0
+ORD-1341,2026-05-06 13:48:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Delivery App,Tarjeta de Crédito,4,2.2,2.0,39.6,-4.4
+ORD-1342,2026-06-06 12:03:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Para Llevar,Yape/Plin,1,5.4,1.0,30.6,-5.4
+ORD-1343,2026-05-24 22:28:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Yape/Plin,4,4.8,1.0,27.2,-4.8
+ORD-1344,2026-06-15 14:21:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Efectivo,5,1.8,1.0,16.2,-1.8
+ORD-1345,2026-06-22 19:24:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1346,2026-06-29 13:12:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Débito,4,1.8,1.0,16.2,-1.8
+ORD-1347,2026-07-02 18:17:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Débito,4,4.28,1.0,24.22,-4.28
+ORD-1348,2026-07-24 19:32:00,Gourmet,Hamburguesa huachana,3,32.0,0.0,96.0,Para Llevar,Tarjeta de Débito,4,4.8,4.0,108.8,12.8
+ORD-1349,2026-06-01 18:15:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Delivery App,Tarjeta de Débito,4,4.2,2.0,33.6,12.6
+ORD-1350,2026-07-26 16:44:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1351,2026-06-02 15:41:00,Extranjera,Hamburguesa Mexicana,1,23.0,0.0,23.0,Web Directa,Yape/Plin,5,4.6,2.0,36.8,13.8
+ORD-1352,2026-07-06 14:43:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Débito,5,2.2,2.0,39.6,-4.4
+ORD-1353,2026-05-18 20:01:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1354,2026-05-25 19:54:00,Pollo,Crispy Chicken Burger,3,22.0,0.0,66.0,Delivery App,Yape/Plin,5,2.2,3.0,59.4,-6.6
+ORD-1355,2026-06-23 21:34:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1356,2026-06-27 12:41:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,4,2.4,2.0,43.2,-4.8
+ORD-1357,2026-07-06 19:33:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Para Llevar,Efectivo,5,4.28,1.0,24.22,-4.28
+ORD-1358,2026-06-15 20:29:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Delivery App,Efectivo,5,2.4,2.0,43.2,-4.8
+ORD-1359,2026-05-24 13:58:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1360,2026-06-01 12:54:00,Especiales,Hamburguesa La Churrita,1,28.5,2.85,25.65,Presencial,Tarjeta de Crédito,5,2.85,1.0,25.65,0.0
+ORD-1361,2026-06-16 19:12:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Web Directa,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1362,2026-07-25 17:12:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Web Directa,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1363,2026-05-23 19:17:00,Especiales,Hamburguesa La Churrita,1,30.5,0.0,30.5,Delivery App,Tarjeta de Crédito,4,4.58,1.0,25.92,-4.58
+ORD-1364,2026-07-05 13:31:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Presencial,Tarjeta de Débito,4,5.7,1.0,22.8,0.0
+ORD-1365,2026-05-27 19:31:00,Especiales,Hamburguesa La Churrita,4,28.5,4.27,96.92,Presencial,Tarjeta de Débito,4,4.27,4.0,96.92,0.0
+ORD-1366,2026-05-02 13:34:00,Clásicas,Cheeseburger Doble,2,24.0,4.8,38.4,Presencial,Tarjeta de Débito,5,4.8,2.0,38.4,0.0
+ORD-1367,2026-07-29 13:58:00,Clásicas,Hamburguesa Clásica,4,18.0,0.0,72.0,Presencial,Tarjeta de Débito,5,1.8,4.0,64.8,-7.2
+ORD-1368,2026-05-17 13:38:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1369,2026-06-02 19:45:00,Clásicas,Hamburguesa Clásica,3,18.0,3.6,43.2,Para Llevar,Efectivo,2,3.6,3.0,43.2,0.0
+ORD-1370,2026-05-09 18:51:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1371,2026-06-12 17:28:00,Gourmet,Hamburguesa huachana,2,32.0,3.2,57.6,Presencial,Yape/Plin,5,3.2,2.0,57.6,0.0
+ORD-1372,2026-06-17 14:48:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Yape/Plin,3,4.28,2.0,48.44,-8.56
+ORD-1373,2026-06-08 20:28:00,Especiales,Hamburguesa La Churrita,1,28.5,4.27,24.23,Presencial,Tarjeta de Débito,2,4.27,1.0,24.23,0.0
+ORD-1374,2026-06-11 14:52:00,Especiales,Hamburguesa Extrema,2,36.0,0.0,72.0,Presencial,Tarjeta de Débito,4,5.4,2.0,61.2,-10.8
+ORD-1375,2026-05-26 19:43:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Débito,5,2.2,1.0,19.8,-2.2
+ORD-1376,2026-06-19 15:56:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Presencial,Tarjeta de Débito,5,4.2,2.0,33.6,12.6
+ORD-1377,2026-05-25 14:15:00,Pollo,Crispy Chicken Burger,1,22.0,2.2,19.8,Delivery App,Yape/Plin,5,2.2,1.0,19.8,0.0
+ORD-1378,2026-05-24 16:55:00,Clásicas,Hamburguesa Clásica,4,18.0,0.0,72.0,Para Llevar,Tarjeta de Débito,5,1.8,4.0,64.8,-7.2
+ORD-1379,2026-05-13 14:43:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Presencial,Efectivo,5,1.8,3.0,48.6,-5.4
+ORD-1380,2026-06-29 19:46:00,Especiales,Hamburguesa La Churrita,5,28.5,4.27,121.15,Presencial,Tarjeta de Crédito,5,4.27,5.0,121.15,0.0
+ORD-1381,2026-05-07 17:56:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Web Directa,Tarjeta de Crédito,2,1.8,2.0,32.4,-3.6
+ORD-1382,2026-06-26 13:09:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1383,2026-06-05 20:29:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,4,2.4,1.0,21.6,-2.4
+ORD-1384,2026-06-14 14:24:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Web Directa,Tarjeta de Crédito,4,4.28,1.0,24.22,-4.28
+ORD-1385,2026-05-20 17:38:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Crédito,5,4.8,1.0,27.2,-4.8
+ORD-1386,2026-07-04 20:19:00,Gourmet,Hamburguesa huachana,1,33.5,0.0,33.5,Delivery App,Tarjeta de Crédito,4,5.03,1.0,28.47,-5.03
+ORD-1387,2026-05-08 18:04:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Delivery App,Tarjeta de Crédito,5,5.7,1.0,22.8,0.0
+ORD-1388,2026-05-16 12:00:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Efectivo,5,2.2,1.0,19.8,-2.2
+ORD-1389,2026-05-14 20:29:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Presencial,Tarjeta de Crédito,4,2.4,4.0,86.4,-9.6
+ORD-1390,2026-07-15 18:48:00,Extranjera,Hamburguesa Mexicana,1,21.0,0.0,21.0,Delivery App,Yape/Plin,5,4.2,2.0,33.6,12.6
+ORD-1391,2026-07-26 14:02:00,Clásicas,Hamburguesa Clásica,3,18.0,2.7,45.9,Presencial,Yape/Plin,1,2.7,3.0,45.9,0.0
+ORD-1392,2026-05-15 13:44:00,Especiales,Hamburguesa Extrema,2,36.0,0.0,72.0,Presencial,Efectivo,5,5.4,2.0,61.2,-10.8
+ORD-1393,2026-07-31 19:13:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Crédito,4,4.28,1.0,24.22,-4.28
+ORD-1394,2026-07-05 18:55:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Yape/Plin,5,2.4,1.0,21.6,-2.4
+ORD-1395,2026-06-01 17:29:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Débito,5,1.8,1.0,16.2,-1.8
+ORD-1396,2026-07-26 20:49:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Web Directa,Tarjeta de Débito,5,4.28,1.0,24.22,-4.28
+ORD-1397,2026-07-02 19:03:00,Clásicas,Hamburguesa Clásica,2,18.0,3.6,28.8,Presencial,Tarjeta de Débito,4,3.6,2.0,28.8,0.0
+ORD-1398,2026-07-25 13:17:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Web Directa,Yape/Plin,3,1.8,1.0,16.2,-1.8
+ORD-1399,2026-06-20 14:36:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Delivery App,Tarjeta de Crédito,3,5.7,1.0,22.8,0.0
+ORD-1400,2026-05-25 13:24:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1401,2026-06-27 19:47:00,Gourmet,Hamburguesa huachana,5,32.0,0.0,160.0,Delivery App,Tarjeta de Débito,4,4.8,6.0,163.2,3.2
+ORD-1402,2026-07-02 11:00:00,Extranjera,Hamburguesa Mexicana,2,21.0,0.0,42.0,Para Llevar,Yape/Plin,4,4.2,4.0,67.2,25.2
+ORD-1403,2026-07-01 17:52:00,Especiales,Hamburguesa La Churrita,2,28.5,2.85,51.3,Presencial,Efectivo,4,2.85,2.0,51.3,0.0
+ORD-1404,2026-05-22 19:45:00,Especiales,Hamburguesa La Churrita,1,30.0,0.0,30.0,Delivery App,Tarjeta de Crédito,5,4.5,1.0,25.5,-4.5
+ORD-1405,2026-06-27 20:14:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Efectivo,4,1.8,2.0,32.4,-3.6
+ORD-1406,2026-06-27 14:08:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Presencial,Tarjeta de Crédito,3,4.8,2.0,54.4,-9.6
+ORD-1407,2026-07-25 19:14:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1408,2026-06-18 12:48:00,Especiales,Hamburguesa Extrema,5,36.0,5.4,153.0,Para Llevar,Tarjeta de Crédito,3,5.4,5.0,153.0,0.0
+ORD-1409,2026-06-21 19:56:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Para Llevar,Tarjeta de Crédito,4,2.2,1.0,19.8,-2.2
+ORD-1410,2026-06-11 12:23:00,Especiales,Hamburguesa La Churrita,4,28.5,0.0,114.0,Presencial,Tarjeta de Débito,5,4.28,5.0,121.1,7.1
+ORD-1411,2026-07-09 14:03:00,Clásicas,Hamburguesa Clásica,3,18.0,0.0,54.0,Presencial,Tarjeta de Crédito,5,1.8,3.0,48.6,-5.4
+ORD-1412,2026-05-15 19:11:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Crédito,5,2.2,1.0,19.8,-2.2
+ORD-1413,2026-06-23 13:58:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Efectivo,4,2.2,1.0,19.8,-2.2
+ORD-1414,2026-06-29 13:57:00,Clásicas,Hamburguesa Clásica,4,18.0,0.0,72.0,Presencial,Yape/Plin,3,1.8,4.0,64.8,-7.2
+ORD-1415,2026-05-08 19:36:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Yape/Plin,5,2.4,1.0,21.6,-2.4
+ORD-1416,2026-06-22 19:36:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Yape/Plin,3,2.2,1.0,19.8,-2.2
+ORD-1417,2026-06-29 18:42:00,Clásicas,Hamburguesa Clásica,4,18.0,0.0,72.0,Para Llevar,Yape/Plin,3,1.8,4.0,64.8,-7.2
+ORD-1418,2026-05-05 18:59:00,Extranjera,Hamburguesa Mexicana,2,21.0,0.0,42.0,Presencial,Tarjeta de Crédito,5,4.2,4.0,67.2,25.2
+ORD-1419,2026-07-07 17:05:00,Clásicas,Cheeseburger Doble,1,24.0,3.6,20.4,Presencial,Tarjeta de Débito,3,3.6,1.0,20.4,0.0
+ORD-1420,2026-05-06 13:38:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Yape/Plin,1,1.8,2.0,32.4,-3.6
+ORD-1421,2026-06-16 14:55:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Tarjeta de Crédito,4,2.2,1.0,19.8,-2.2
+ORD-1422,2026-06-24 13:45:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Yape/Plin,4,2.4,1.0,21.6,-2.4
+ORD-1423,2026-06-09 20:23:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Tarjeta de Crédito,1,4.28,1.0,24.22,-4.28
+ORD-1424,2026-06-21 18:10:00,Clásicas,Hamburguesa Clásica,2,18.0,3.6,28.8,Presencial,Tarjeta de Crédito,4,3.6,2.0,28.8,0.0
+ORD-1425,2026-05-16 15:12:00,Clásicas,Hamburguesa Clásica,1,21.0,0.0,21.0,Web Directa,Tarjeta de Débito,5,2.1,1.0,18.9,-2.1
+ORD-1426,2026-05-13 16:33:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Débito,3,4.28,2.0,48.44,-8.56
+ORD-1427,2026-05-30 20:24:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Débito,4,4.28,2.0,48.44,-8.56
+ORD-1428,2026-05-19 13:06:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1429,2026-05-17 18:51:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Crédito,5,2.2,2.0,39.6,-4.4
+ORD-1430,2026-07-02 17:03:00,Especiales,Hamburguesa La Churrita,1,31.5,0.0,31.5,Presencial,Tarjeta de Crédito,4,4.72,1.0,26.78,-4.72
+ORD-1431,2026-05-19 18:58:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Web Directa,Yape/Plin,5,1.8,2.0,32.4,-3.6
+ORD-1432,2026-07-31 11:07:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Yape/Plin,2,2.4,1.0,21.6,-2.4
+ORD-1433,2026-06-27 20:19:00,Extranjera,Hamburguesa Mexicana,3,21.0,4.2,50.4,Delivery App,Tarjeta de Crédito,5,4.2,3.0,50.4,0.0
+ORD-1434,2026-06-24 20:28:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Yape/Plin,5,4.8,1.0,27.2,-4.8
+ORD-1435,2026-07-29 17:53:00,Especiales,Hamburguesa La Churrita,1,28.5,2.85,25.65,Delivery App,Tarjeta de Crédito,5,2.85,1.0,25.65,0.0
+ORD-1436,2026-07-29 18:52:00,Clásicas,Cheeseburger Doble,2,24.0,3.6,40.8,Presencial,Tarjeta de Débito,5,3.6,2.0,40.8,0.0
+ORD-1437,2026-07-01 20:50:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,4,2.4,1.0,21.6,-2.4
+ORD-1438,2026-05-23 19:44:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Para Llevar,Yape/Plin,3,4.8,1.0,27.2,-4.8
+ORD-1439,2026-05-09 13:45:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Delivery App,Yape/Plin,3,2.2,2.0,39.6,-4.4
+ORD-1440,2026-05-12 17:09:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Delivery App,Tarjeta de Crédito,5,4.8,2.0,54.4,-9.6
+ORD-1441,2026-05-01 18:42:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Yape/Plin,5,2.2,2.0,39.6,-4.4
+ORD-1442,2026-06-27 15:33:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Web Directa,Tarjeta de Débito,3,4.8,1.0,27.2,-4.8
+ORD-1443,2026-05-01 19:56:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Crédito,2,1.8,2.0,32.4,-3.6
+ORD-1444,2026-06-03 20:25:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1445,2026-06-17 20:40:00,Clásicas,Hamburguesa Clásica,2,21.0,0.0,42.0,Delivery App,Tarjeta de Crédito,5,2.1,2.0,37.8,-4.2
+ORD-1446,2026-07-28 16:48:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Tarjeta de Crédito,5,1.8,2.0,32.4,-3.6
+ORD-1447,2026-05-01 12:57:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Presencial,Tarjeta de Débito,3,2.2,1.0,19.8,-2.2
+ORD-1448,2026-05-16 22:02:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1449,2026-06-30 19:55:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Presencial,Tarjeta de Débito,5,5.7,1.0,22.8,0.0
+ORD-1450,2026-07-03 12:05:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Tarjeta de Crédito,5,1.8,1.0,16.2,-1.8
+ORD-1451,2026-07-02 20:04:00,Clásicas,Cheeseburger Doble,1,24.0,2.4,21.6,Para Llevar,Tarjeta de Crédito,3,2.4,1.0,21.6,0.0
+ORD-1452,2026-07-08 20:04:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Delivery App,Tarjeta de Crédito,5,1.8,1.0,16.2,-1.8
+ORD-1453,2026-05-22 17:53:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Delivery App,Tarjeta de Débito,5,1.8,2.0,32.4,-3.6
+ORD-1454,2026-07-06 18:46:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Delivery App,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1455,2026-07-15 14:22:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Delivery App,Tarjeta de Crédito,5,2.4,4.0,86.4,-9.6
+ORD-1456,2026-05-26 12:48:00,Especiales,Hamburguesa La Churrita,1,30.5,0.0,30.5,Presencial,Yape/Plin,5,4.58,1.0,25.92,-4.58
+ORD-1457,2026-05-16 14:08:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Presencial,Yape/Plin,3,1.8,2.0,32.4,-3.6
+ORD-1458,2026-06-20 19:34:00,Clásicas,Hamburguesa Clásica,2,18.0,1.8,32.4,Presencial,Tarjeta de Débito,3,1.8,2.0,32.4,0.0
+ORD-1459,2026-07-25 11:19:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Yape/Plin,3,2.4,1.0,21.6,-2.4
+ORD-1460,2026-06-26 14:57:00,Especiales,Hamburguesa La Churrita,1,28.5,5.7,22.8,Delivery App,Tarjeta de Débito,3,5.7,1.0,22.8,0.0
+ORD-1461,2026-05-29 14:48:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Presencial,Tarjeta de Débito,4,4.8,2.0,54.4,-9.6
+ORD-1462,2026-07-17 17:58:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,3,2.4,1.0,21.6,-2.4
+ORD-1463,2026-07-31 20:41:00,Clásicas,Cheeseburger Doble,4,24.0,0.0,96.0,Presencial,Tarjeta de Débito,5,2.4,4.0,86.4,-9.6
+ORD-1464,2026-07-08 14:34:00,Gourmet,Hamburguesa huachana,1,32.0,0.0,32.0,Presencial,Tarjeta de Crédito,4,4.8,1.0,27.2,-4.8
+ORD-1465,2026-06-16 14:49:00,Clásicas,Hamburguesa Clásica,4,18.0,1.8,64.8,Presencial,Tarjeta de Crédito,1,1.8,4.0,64.8,0.0
+ORD-1466,2026-07-01 19:17:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,5,2.4,1.0,21.6,-2.4
+ORD-1467,2026-07-08 16:16:00,Pollo,Crispy Chicken Burger,2,22.0,0.0,44.0,Presencial,Tarjeta de Débito,5,2.2,2.0,39.6,-4.4
+ORD-1468,2026-07-15 13:23:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Presencial,Tarjeta de Crédito,5,4.28,2.0,48.44,-8.56
+ORD-1469,2026-05-16 16:02:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Efectivo,5,2.4,2.0,43.2,-4.8
+ORD-1470,2026-07-29 13:31:00,Extranjera,Hamburguesa Mexicana,1,21.0,2.1,18.9,Delivery App,Yape/Plin,5,2.1,1.0,18.9,0.0
+ORD-1471,2026-07-29 13:34:00,Pollo,Crispy Chicken Burger,2,22.0,4.4,35.2,Presencial,Tarjeta de Débito,3,4.4,2.0,35.2,0.0
+ORD-1472,2026-06-17 16:37:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Crédito,1,2.4,1.0,21.6,-2.4
+ORD-1473,2026-07-24 15:12:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Yape/Plin,5,4.28,2.0,48.44,-8.56
+ORD-1474,2026-06-08 20:55:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Yape/Plin,5,4.28,1.0,24.22,-4.28
+ORD-1475,2026-06-02 14:46:00,Clásicas,Cheeseburger Doble,3,24.0,0.0,72.0,Web Directa,Yape/Plin,5,2.4,3.0,64.8,-7.2
+ORD-1476,2026-05-23 18:24:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Crédito,3,2.4,1.0,21.6,-2.4
+ORD-1477,2026-05-10 18:08:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Débito,5,2.4,2.0,43.2,-4.8
+ORD-1478,2026-07-08 11:03:00,Especiales,Hamburguesa La Churrita,3,28.5,0.0,85.5,Delivery App,Tarjeta de Crédito,5,4.28,4.0,96.88,11.38
+ORD-1479,2026-06-03 18:13:00,Clásicas,Cheeseburger Doble,2,24.0,0.0,48.0,Presencial,Tarjeta de Crédito,5,2.4,2.0,43.2,-4.8
+ORD-1480,2026-06-21 13:36:00,Pollo,Crispy Chicken Burger,1,22.0,0.0,22.0,Delivery App,Yape/Plin,5,2.2,1.0,19.8,-2.2
+ORD-1481,2026-05-10 21:33:00,Especiales,Hamburguesa La Churrita,1,28.5,4.27,24.23,Presencial,Yape/Plin,5,4.27,1.0,24.23,0.0
+ORD-1482,2026-05-19 13:10:00,Clásicas,Hamburguesa Clásica,5,18.0,0.0,90.0,Web Directa,Tarjeta de Débito,3,1.8,5.0,81.0,-9.0
+ORD-1483,2026-06-27 15:40:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Yape/Plin,4,4.28,1.0,24.22,-4.28
+ORD-1484,2026-05-01 12:55:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Tarjeta de Débito,4,2.4,1.0,21.6,-2.4
+ORD-1485,2026-07-08 22:02:00,Especiales,Hamburguesa La Churrita,2,28.5,0.0,57.0,Delivery App,Tarjeta de Débito,5,4.28,2.0,48.44,-8.56
+ORD-1486,2026-05-04 17:58:00,Gourmet,Hamburguesa huachana,2,32.0,0.0,64.0,Presencial,Tarjeta de Crédito,4,4.8,2.0,54.4,-9.6
+ORD-1487,2026-05-16 18:27:00,Clásicas,Hamburguesa Clásica,1,18.0,3.6,14.4,Presencial,Efectivo,4,3.6,1.0,14.4,0.0
+ORD-1488,2026-05-24 12:28:00,Clásicas,Cheeseburger Doble,2,24.0,3.6,40.8,Delivery App,Tarjeta de Crédito,5,3.6,2.0,40.8,0.0
+ORD-1489,2026-07-19 19:08:00,Clásicas,Hamburguesa Clásica,2,18.0,0.0,36.0,Web Directa,Efectivo,4,1.8,2.0,32.4,-3.6
+ORD-1490,2026-05-02 13:02:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Presencial,Yape/Plin,5,1.8,1.0,16.2,-1.8
+ORD-1491,2026-07-31 20:24:00,Clásicas,Cheeseburger Doble,3,24.0,3.6,61.2,Delivery App,Tarjeta de Crédito,3,3.6,3.0,61.2,0.0
+ORD-1492,2026-06-01 13:33:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Para Llevar,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1493,2026-07-30 13:11:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Web Directa,Yape/Plin,1,5.4,1.0,30.6,-5.4
+ORD-1494,2026-07-23 11:41:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Presencial,Tarjeta de Débito,5,2.4,1.0,21.6,-2.4
+ORD-1495,2026-05-24 16:08:00,Clásicas,Cheeseburger Doble,1,24.0,0.0,24.0,Delivery App,Efectivo,4,2.4,1.0,21.6,-2.4
+ORD-1496,2026-05-12 17:14:00,Especiales,Hamburguesa La Churrita,3,28.5,0.0,85.5,Presencial,Efectivo,4,4.28,4.0,96.88,11.38
+ORD-1497,2026-06-19 12:39:00,Clásicas,Hamburguesa Clásica,1,18.0,0.0,18.0,Para Llevar,Tarjeta de Débito,4,1.8,1.0,16.2,-1.8
+ORD-1498,2026-06-04 19:24:00,Especiales,Hamburguesa Extrema,1,36.0,0.0,36.0,Delivery App,Tarjeta de Débito,5,5.4,1.0,30.6,-5.4
+ORD-1499,2026-06-02 16:04:00,Especiales,Hamburguesa La Churrita,1,28.5,0.0,28.5,Presencial,Efectivo,5,4.28,1.0,24.22,-4.28

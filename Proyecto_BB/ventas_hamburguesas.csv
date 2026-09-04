@@ -1,0 +1,256 @@
+﻿id_pedido;fecha_hora;categoria;producto;cantidad;precio_unitario;monto_total;canal_venta;metodo_pago;calificacion
+ORD-1000;21/06/2026 16:01;Gourmet;Hamburguesa Huachana;2;32;64;Delivery App;Yape/Plin;4
+ORD-1001;15/05/2026 17:53;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Crédito;4
+ORD-1002;11/07/2026 20:27;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Efectivo;5
+ORD-1003;30/06/2026 14:48;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Efectivo;5
+ORD-1004;21/05/2026 21:49;Gourmet;Hamburguesa Huachana;4;32;128;Web Directa;Yape/Plin;4
+ORD-1005;22/07/2026 20:29;Clásicas;Hamburguesa Clásica;3;18;54;Presencial;Tarjeta de Crédito;4
+ORD-1006;26/07/2026 13:37;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Yape/Plin;4
+ORD-1007;14/07/2026 12:50;Especiales;Hamburguesa Extrema ;1;36;36;Para Llevar;Tarjeta de Crédito;5
+ORD-1008;14/07/2026 12:03;Clásicas;Hamburguesa Clásica;1;18;18;Delivery App;Tarjeta de Crédito;3
+ORD-1009;27/07/2026 11:00;Extranjeras;Hamguersa Mexicana;3;21;63;Presencial;Yape/Plin;5
+ORD-1010;24/05/2026 12:07;Especiales;Hamburguesa Extrema ;1;36;36;Presencial;Tarjeta de Crédito;5
+ORD-1011;3/05/2026 18:28;Clásicas;Hamburguesa Clásica;1;18;18;Para Llevar;Tarjeta de Débito;4
+ORD-1012;22/05/2026 12:54;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Efectivo;4
+ORD-1013;22/06/2026 14:38;Especiales;Hamburguesa La Churrita ;2;28.5;57;Delivery App;Tarjeta de Crédito;5
+ORD-1014;2/05/2026 19:02;Extranjeras;Hamguersa Mexicana;4;21;84;Delivery App;Tarjeta de Crédito;5
+ORD-1015;27/07/2026 11:31;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Efectivo;4
+ORD-1016;30/05/2026 19:09;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Tarjeta de Crédito;5
+ORD-1017;7/06/2026 14:09;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Yape/Plin;5
+ORD-1018;2/05/2026 12:18;Pollo;Crispy Chicken Burger;5;22;110;Presencial;Efectivo;5
+ORD-1019;3/07/2026 18:45;Gourmet;Hamburguesa Huachana;1;32;32;Delivery App;Efectivo;3
+ORD-1020;29/06/2026 18:33;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Web Directa;Yape/Plin;5
+ORD-1021;21/05/2026 20:59;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Tarjeta de Crédito;1
+ORD-1022;2/06/2026 19:32;Clásicas;Hamburguesa Clásica;3;18;54;Delivery App;Tarjeta de Crédito;4
+ORD-1023;15/07/2026 19:22;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Yape/Plin;1
+ORD-1024;27/06/2026 14:54;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Yape/Plin;2
+ORD-1025;22/05/2026 13:27;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Tarjeta de Débito;5
+ORD-1026;28/07/2026 19:31;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Crédito;5
+ORD-1027;18/06/2026 19:49;Extranjeras;Hamguersa Mexicana;1;23;23;Presencial;Tarjeta de Crédito;5
+ORD-1028;30/07/2026 22:06;Clásicas;Hamburguesa Clásica;3;18;54;Presencial;Tarjeta de Crédito;5
+ORD-1029;28/06/2026 15:28;Gourmet;Hamburguesa Huachana;1;32;32;Presencial;Yape/Plin;4
+ORD-1030;11/06/2026 14:07;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Débito;5
+ORD-1031;31/07/2026 19:00;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Efectivo;5
+ORD-1032;29/06/2026 14:56;Especiales;Hamburguesa Extrema ;2;36;72;Web Directa;Yape/Plin;5
+ORD-1033;19/07/2026 20:54;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Crédito;3
+ORD-1034;15/05/2026 20:02;Pollo;Crispy Chicken Burger;3;22;66;Para Llevar;Tarjeta de Débito;5
+ORD-1035;1/07/2026 15:23;Clásicas;Hamburguesa Clásica;2;18;36;Web Directa;Tarjeta de Débito;5
+ORD-1036;1/07/2026 19:22;Pollo;Crispy Chicken Burger;2;22;44;Presencial;Tarjeta de Débito;5
+ORD-1037;16/06/2026 19:58;Clásicas;Hamburguesa Clásica;2;18;36;Delivery App;Yape/Plin;3
+ORD-1038;1/07/2026 12:07;Extranjeras;Hamguersa Mexicana;2;21;42;Delivery App;Yape/Plin;4
+ORD-1039;20/06/2026 20:53;Clásicas;Hamburguesa Clásica;1;18;18;Delivery App;Yape/Plin;5
+ORD-1040;24/06/2026 17:56;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Tarjeta de Crédito;5
+ORD-1041;3/07/2026 19:46;Gourmet;Hamburguesa Huachana;4;32;128;Delivery App;Tarjeta de Crédito;5
+ORD-1042;3/05/2026 14:36;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Yape/Plin;5
+ORD-1043;20/06/2026 20:02;Clásicas;Hamburguesa Clásica;2;18;36;Delivery App;Tarjeta de Crédito;2
+ORD-1044;7/05/2026 14:50;Clásicas;Hamburguesa Clásica;4;18;72;Delivery App;Tarjeta de Crédito;4
+ORD-1045;21/05/2026 11:32;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Tarjeta de Crédito;5
+ORD-1046;12/07/2026 20:27;Especiales;Hamburguesa La Churrita ;2;28.5;57;Delivery App;Yape/Plin;3
+ORD-1047;8/06/2026 12:46;Clásicas;Hamburguesa Clásica;1;18;18;Delivery App;Tarjeta de Crédito;5
+ORD-1048;18/05/2026 14:07;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Yape/Plin;4
+ORD-1049;4/05/2026 21:33;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Efectivo;3
+ORD-1050;28/07/2026 21:34;Pollo;Crispy Chicken Burger;1;22;22;Web Directa;Tarjeta de Crédito;5
+ORD-1051;29/06/2026 17:31;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Crédito;4
+ORD-1052;14/05/2026 18:23;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Tarjeta de Crédito;5
+ORD-1053;9/05/2026 15:13;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Yape/Plin;5
+ORD-1054;29/07/2026 14:31;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Crédito;5
+ORD-1055;22/06/2026 14:55;Pollo;Crispy Chicken Burger;1;22;22;Para Llevar;Tarjeta de Débito;5
+ORD-1056;2/05/2026 18:45;Clásicas;Cheeseburger Doble;2;24;48;Delivery App;Tarjeta de Crédito;4
+ORD-1057;23/07/2026 19:42;Clásicas;Hamburguesa Clásica;1;18;18;Para Llevar;Yape/Plin;2
+ORD-1058;31/07/2026 19:15;Gourmet;Hamburguesa Huachana;3;32;96;Delivery App;Tarjeta de Débito;4
+ORD-1059;29/06/2026 19:03;Pollo;Crispy Chicken Burger;3;22;66;Delivery App;Yape/Plin;3
+ORD-1060;10/07/2026 12:51;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Efectivo;3
+ORD-1061;13/06/2026 16:36;Pollo;Crispy Chicken Burger;4;23.5;94;Delivery App;Tarjeta de Crédito;5
+ORD-1062;8/05/2026 12:53;Extranjeras;Hamguersa Mexicana;1;21;21;Presencial;Yape/Plin;5
+ORD-1063;16/06/2026 17:20;Clásicas;Hamburguesa Clásica;2;18;36;Web Directa;Tarjeta de Crédito;5
+ORD-1064;4/06/2026 15:13;Pollo;Crispy Chicken Burger;1;22;22;Web Directa;Yape/Plin;4
+ORD-1065;17/07/2026 20:30;Gourmet;Hamburguesa Huachana;3;32;96;Presencial;Yape/Plin;2
+ORD-1066;20/07/2026 14:54;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Para Llevar;Yape/Plin;5
+ORD-1067;5/06/2026 12:47;Clásicas;Hamburguesa Clásica;2;18;36;Web Directa;Tarjeta de Crédito;4
+ORD-1068;19/06/2026 13:17;Clásicas;Hamburguesa Clásica;3;18;54;Delivery App;Tarjeta de Crédito;4
+ORD-1069;4/05/2026 19:06;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Tarjeta de Débito;4
+ORD-1070;2/05/2026 18:09;Especiales;Hamburguesa Extrema ;1;36;36;Delivery App;Tarjeta de Débito;5
+ORD-1071;6/05/2026 12:06;Gourmet;Hamburguesa Huachana;2;32;64;Delivery App;Tarjeta de Crédito;5
+ORD-1072;23/06/2026 12:32;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Débito;5
+ORD-1073;4/05/2026 19:22;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Tarjeta de Crédito;5
+ORD-1074;23/06/2026 12:20;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Tarjeta de Débito;5
+ORD-1075;2/07/2026 19:18;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Yape/Plin;4
+ORD-1076;18/05/2026 19:47;Clásicas;Hamburguesa Clásica;3;18;54;Delivery App;Tarjeta de Débito;5
+ORD-1077;29/07/2026 12:18;Pollo;Crispy Chicken Burger;2;22;44;Para Llevar;Tarjeta de Crédito;3
+ORD-1078;13/06/2026 12:35;Clásicas;Cheeseburger Doble;1;24;24;Web Directa;Tarjeta de Débito;4
+ORD-1079;3/06/2026 22:28;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Tarjeta de Crédito;4
+ORD-1080;13/07/2026 14:59;Clásicas;Cheeseburger Doble;1;24;24;Web Directa;Efectivo;5
+ORD-1081;1/07/2026 14:17;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;4
+ORD-1082;14/05/2026 19:01;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Yape/Plin;2
+ORD-1083;17/06/2026 20:00;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Efectivo;5
+ORD-1084;15/05/2026 22:46;Extranjeras;Hamguersa Mexicana;1;21;21;Presencial;Yape/Plin;5
+ORD-1085;11/07/2026 19:04;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Yape/Plin;4
+ORD-1086;17/07/2026 14:19;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Yape/Plin;5
+ORD-1087;26/07/2026 12:10;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Efectivo;5
+ORD-1088;1/07/2026 19:41;Pollo;Crispy Chicken Burger;2;22;44;Presencial;Tarjeta de Débito;5
+ORD-1089;9/06/2026 17:01;Clásicas;Cheeseburger Doble;2;24;48;Delivery App;Tarjeta de Débito;5
+ORD-1090;24/07/2026 15:02;Pollo;Crispy Chicken Burger;2;22;44;Delivery App;Tarjeta de Débito;4
+ORD-1091;19/07/2026 20:22;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Tarjeta de Débito;5
+ORD-1092;21/07/2026 12:54;Clásicas;Hamburguesa Clásica;3;18;54;Presencial;Tarjeta de Débito;3
+ORD-1093;22/06/2026 16:11;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Débito;4
+ORD-1094;24/05/2026 11:19;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Tarjeta de Crédito;4
+ORD-1095;26/05/2026 16:04;Especiales;Hamburguesa Extrema ;2;36;72;Presencial;Tarjeta de Crédito;4
+ORD-1096;28/07/2026 12:36;Clásicas;Hamburguesa Clásica;2;18;36;Delivery App;Tarjeta de Crédito;3
+ORD-1097;29/06/2026 12:37;Gourmet;Hamburguesa Huachana;1;32;32;Presencial;Tarjeta de Crédito;5
+ORD-1098;10/06/2026 12:29;Extranjeras;Hamguersa Mexicana;1;21;21;Presencial;Tarjeta de Crédito;3
+ORD-1099;29/05/2026 18:08;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Tarjeta de Débito;4
+ORD-1100;15/05/2026 19:33;Especiales;Hamburguesa Extrema ;3;37.5;112.5;Delivery App;Tarjeta de Crédito;4
+ORD-1101;14/06/2026 18:52;Gourmet;Hamburguesa Huachana;2;32;64;Delivery App;Yape/Plin;4
+ORD-1102;4/07/2026 21:43;Clásicas;Cheeseburger Doble;4;24;96;Presencial;Tarjeta de Crédito;5
+ORD-1103;28/07/2026 14:34;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Tarjeta de Crédito;5
+ORD-1104;10/07/2026 14:51;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Yape/Plin;4
+ORD-1105;9/05/2026 20:57;Gourmet;Hamburguesa Huachana;1;32;32;Presencial;Tarjeta de Débito;5
+ORD-1106;27/07/2026 13:21;Gourmet;Hamburguesa Huachana;2;32;64;Delivery App;Tarjeta de Crédito;4
+ORD-1107;1/05/2026 21:43;Clásicas;Hamburguesa Clásica;2;18;36;Web Directa;Yape/Plin;5
+ORD-1108;8/05/2026 11:23;Pollo;Crispy Chicken Burger;5;22;110;Delivery App;Yape/Plin;5
+ORD-1109;27/07/2026 21:16;Gourmet;Hamburguesa Huachana;1;32;32;Delivery App;Tarjeta de Crédito;5
+ORD-1110;2/07/2026 11:09;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Tarjeta de Crédito;5
+ORD-1111;11/05/2026 20:29;Especiales;Hamburguesa La Churrita ;2;30;60;Delivery App;Efectivo;4
+ORD-1112;20/07/2026 17:55;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Tarjeta de Débito;5
+ORD-1113;8/05/2026 22:58;Clásicas;Hamburguesa Clásica;2;21;42;Delivery App;Tarjeta de Débito;1
+ORD-1114;4/06/2026 12:45;Clásicas;Hamburguesa Clásica;2;18;36;Delivery App;Yape/Plin;4
+ORD-1115;4/06/2026 17:22;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;5
+ORD-1116;2/06/2026 21:31;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Débito;4
+ORD-1117;5/05/2026 17:16;Clásicas;Cheeseburger Doble;2;24;48;Para Llevar;Tarjeta de Crédito;3
+ORD-1118;10/06/2026 18:49;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Presencial;Yape/Plin;4
+ORD-1119;28/05/2026 18:50;Clásicas;Hamburguesa Clásica;3;18;54;Presencial;Tarjeta de Débito;5
+ORD-1120;7/05/2026 16:16;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Yape/Plin;3
+ORD-1121;12/07/2026 18:13;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Tarjeta de Crédito;4
+ORD-1122;11/07/2026 18:08;Extranjeras;Hamguersa Mexicana;5;21;105;Delivery App;Tarjeta de Crédito;5
+ORD-1123;12/05/2026 20:39;Especiales;Hamburguesa Extrema ;1;36;36;Delivery App;Tarjeta de Débito;5
+ORD-1124;3/06/2026 11:01;Clásicas;Hamburguesa Clásica;3;18;54;Presencial;Yape/Plin;4
+ORD-1125;2/06/2026 14:44;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Tarjeta de Débito;5
+ORD-1126;17/06/2026 21:24;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Crédito;3
+ORD-1127;23/05/2026 20:38;Especiales;Hamburguesa La Churrita ;2;28.5;57;Web Directa;Yape/Plin;5
+ORD-1128;1/07/2026 16:08;Especiales;Hamburguesa La Churrita ;4;28.5;114;Delivery App;Tarjeta de Crédito;3
+ORD-1129;27/07/2026 18:53;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Efectivo;4
+ORD-1130;6/06/2026 13:21;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Tarjeta de Crédito;5
+ORD-1131;13/06/2026 13:42;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Yape/Plin;5
+ORD-1132;25/07/2026 16:45;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;4
+ORD-1133;30/07/2026 14:03;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Efectivo;4
+ORD-1134;4/06/2026 18:25;Clásicas;Cheeseburger Doble;2;24;48;Delivery App;Tarjeta de Débito;4
+ORD-1135;4/07/2026 12:57;Especiales;Hamburguesa La Churrita ;4;28.5;114;Delivery App;Tarjeta de Crédito;5
+ORD-1136;16/06/2026 21:28;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Crédito;5
+ORD-1137;17/07/2026 22:44;Especiales;Hamburguesa Extrema ;1;36;36;Presencial;Tarjeta de Crédito;5
+ORD-1138;3/05/2026 18:33;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;4
+ORD-1139;1/05/2026 17:22;Clásicas;Cheeseburger Doble;1;24;24;Web Directa;Efectivo;5
+ORD-1140;5/05/2026 14:36;Gourmet;Hamburguesa Huachana;1;32;32;Presencial;Tarjeta de Débito;5
+ORD-1141;29/07/2026 19:10;Clásicas;Cheeseburger Doble;2;24;48;Delivery App;Yape/Plin;4
+ORD-1142;14/05/2026 18:05;Especiales;Hamburguesa Extrema ;1;36;36;Web Directa;Tarjeta de Débito;2
+ORD-1143;27/05/2026 13:17;Gourmet;Hamburguesa Huachana;4;32;128;Delivery App;Yape/Plin;5
+ORD-1144;9/05/2026 20:20;Especiales;Hamburguesa La Churrita ;4;28.5;114;Web Directa;Tarjeta de Crédito;5
+ORD-1145;18/07/2026 19:41;Gourmet;Hamburguesa Huachana;2;32;64;Presencial;Tarjeta de Crédito;4
+ORD-1146;15/05/2026 20:35;Especiales;Hamburguesa Extrema ;3;36;108;Para Llevar;Yape/Plin;4
+ORD-1147;29/07/2026 19:40;Extranjeras;Hamguersa Mexicana;2;21;42;Presencial;Efectivo;5
+ORD-1148;11/06/2026 18:37;Gourmet;Hamburguesa Huachana;1;32;32;Presencial;Tarjeta de Crédito;2
+ORD-1149;16/07/2026 15:33;Gourmet;Hamburguesa Huachana;1;32;32;Delivery App;Tarjeta de Crédito;3
+ORD-1150;20/06/2026 20:16;Clásicas;Hamburguesa Clásica;1;20;20;Para Llevar;Tarjeta de Débito;5
+ORD-1151;2/07/2026 20:36;Clásicas;Hamburguesa Clásica;2;18;36;Web Directa;Efectivo;5
+ORD-1152;21/06/2026 11:24;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Presencial;Tarjeta de Crédito;4
+ORD-1153;4/05/2026 11:37;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Débito;4
+ORD-1154;23/05/2026 14:57;Especiales;Hamburguesa La Churrita ;3;30.5;91.5;Para Llevar;Yape/Plin;5
+ORD-1155;15/05/2026 19:11;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Crédito;4
+ORD-1156;12/06/2026 22:22;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Tarjeta de Crédito;4
+ORD-1157;29/05/2026 13:52;Pollo;Crispy Chicken Burger;5;22;110;Web Directa;Tarjeta de Débito;5
+ORD-1158;5/06/2026 18:41;Extranjeras;Hamguersa Mexicana;1;21;21;Delivery App;Efectivo;4
+ORD-1159;13/05/2026 14:21;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;2
+ORD-1160;1/06/2026 21:20;Especiales;Hamburguesa La Churrita ;2;28.5;57;Delivery App;Tarjeta de Débito;5
+ORD-1161;10/07/2026 19:26;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Tarjeta de Débito;5
+ORD-1162;28/06/2026 19:56;Clásicas;Hamburguesa Clásica;2;18;36;Web Directa;Tarjeta de Débito;5
+ORD-1163;25/07/2026 16:30;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Tarjeta de Débito;3
+ORD-1164;28/05/2026 15:05;Clásicas;Cheeseburger Doble;1;24;24;Web Directa;Tarjeta de Débito;2
+ORD-1165;5/07/2026 13:26;Clásicas;Cheeseburger Doble;4;24;96;Presencial;Tarjeta de Débito;5
+ORD-1166;11/06/2026 12:39;Especiales;Hamburguesa Extrema ;1;36;36;Para Llevar;Tarjeta de Débito;4
+ORD-1167;14/06/2026 20:33;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Débito;4
+ORD-1168;1/07/2026 19:11;Gourmet;Hamburguesa Huachana;1;32;32;Presencial;Tarjeta de Débito;4
+ORD-1169;26/06/2026 22:44;Pollo;Crispy Chicken Burger;3;22;66;Presencial;Yape/Plin;5
+ORD-1170;6/05/2026 22:56;Clásicas;Hamburguesa Clásica;1;18;18;Delivery App;Tarjeta de Crédito;5
+ORD-1171;28/05/2026 17:52;Gourmet;Hamburguesa Huachana;1;32;32;Delivery App;Yape/Plin;5
+ORD-1172;28/05/2026 19:06;Especiales;Hamburguesa Extrema ;1;36;36;Web Directa;Yape/Plin;4
+ORD-1173;13/06/2026 20:09;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;5
+ORD-1174;23/07/2026 19:44;Extranjeras;Hamguersa Mexicana;2;21;42;Presencial;Tarjeta de Débito;3
+ORD-1175;30/05/2026 13:16;Especiales;Hamburguesa La Churrita ;2;28.5;57;Delivery App;Tarjeta de Débito;5
+ORD-1176;1/07/2026 16:25;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Tarjeta de Crédito;5
+ORD-1177;14/07/2026 12:20;Especiales;Hamburguesa La Churrita ;2;28.5;57;Delivery App;Tarjeta de Débito;4
+ORD-1178;31/07/2026 21:27;Clásicas;Cheeseburger Doble;1;24;24;Para Llevar;Tarjeta de Crédito;4
+ORD-1179;28/07/2026 18:57;Extranjeras;Hamguersa Mexicana;4;21;84;Para Llevar;Tarjeta de Crédito;5
+ORD-1180;1/07/2026 13:45;Extranjeras;Hamguersa Mexicana;4;21;84;Para Llevar;Yape/Plin;5
+ORD-1181;1/05/2026 18:01;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Tarjeta de Crédito;2
+ORD-1182;27/05/2026 18:59;Pollo;Crispy Chicken Burger;3;22;66;Presencial;Yape/Plin;5
+ORD-1183;1/07/2026 14:53;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Tarjeta de Débito;5
+ORD-1184;16/07/2026 12:42;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Yape/Plin;3
+ORD-1185;3/05/2026 18:00;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Web Directa;Tarjeta de Débito;5
+ORD-1186;9/07/2026 17:50;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Tarjeta de Crédito;5
+ORD-1187;11/07/2026 19:52;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Yape/Plin;5
+ORD-1188;27/05/2026 17:35;Pollo;Crispy Chicken Burger;4;22;88;Presencial;Tarjeta de Crédito;5
+ORD-1189;9/05/2026 20:50;Especiales;Hamburguesa La Churrita ;2;28.5;57;Delivery App;Tarjeta de Débito;5
+ORD-1190;1/07/2026 17:25;Clásicas;Hamburguesa Clásica;3;18;54;Web Directa;Efectivo;5
+ORD-1191;6/06/2026 17:28;Clásicas;Hamburguesa Clásica;2;18;36;Delivery App;Tarjeta de Crédito;5
+ORD-1192;20/06/2026 20:20;Clásicas;Cheeseburger Doble;3;24;72;Presencial;Tarjeta de Débito;5
+ORD-1193;13/06/2026 15:10;Gourmet;Hamburguesa Huachana;2;32;64;Para Llevar;Yape/Plin;4
+ORD-1194;24/05/2026 13:39;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Yape/Plin;5
+ORD-1195;18/07/2026 11:10;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Yape/Plin;5
+ORD-1196;28/06/2026 19:35;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Tarjeta de Crédito;3
+ORD-1197;1/06/2026 18:48;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Yape/Plin;4
+ORD-1198;27/07/2026 19:58;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Tarjeta de Crédito;5
+ORD-1199;21/06/2026 13:38;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Para Llevar;Yape/Plin;2
+ORD-1200;1/07/2026 13:39;Gourmet;Hamburguesa Huachana;1;32;32;Delivery App;Efectivo;5
+ORD-1201;27/06/2026 11:34;Pollo;Crispy Chicken Burger;2;22;44;Web Directa;Yape/Plin;5
+ORD-1202;21/06/2026 14:53;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Yape/Plin;4
+ORD-1203;12/05/2026 18:33;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Crédito;4
+ORD-1204;8/06/2026 14:54;Clásicas;Hamburguesa Clásica;1;18;18;Delivery App;Yape/Plin;5
+ORD-1205;2/05/2026 15:46;Clásicas;Hamburguesa Clásica;3;18;54;Presencial;Yape/Plin;5
+ORD-1206;3/05/2026 20:23;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Tarjeta de Crédito;4
+ORD-1207;25/06/2026 14:53;Clásicas;Cheeseburger Doble;3;24;72;Para Llevar;Yape/Plin;5
+ORD-1208;20/07/2026 17:21;Especiales;Hamburguesa La Churrita ;1;30;30;Delivery App;Tarjeta de Crédito;3
+ORD-1209;28/06/2026 19:04;Especiales;Hamburguesa La Churrita ;5;28.5;142.5;Delivery App;Yape/Plin;5
+ORD-1210;2/05/2026 14:55;Clásicas;Hamburguesa Clásica;4;18;72;Presencial;Yape/Plin;3
+ORD-1211;2/05/2026 18:32;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Yape/Plin;4
+ORD-1212;31/07/2026 20:57;Clásicas;Hamburguesa Clásica;1;20;20;Presencial;Tarjeta de Crédito;3
+ORD-1213;23/06/2026 20:35;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Tarjeta de Débito;4
+ORD-1214;26/07/2026 13:46;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Débito;4
+ORD-1215;1/05/2026 20:19;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Efectivo;5
+ORD-1216;19/05/2026 16:18;Clásicas;Hamburguesa Clásica;1;18;18;Delivery App;Tarjeta de Débito;5
+ORD-1217;2/05/2026 13:34;Especiales;Hamburguesa Extrema ;1;36;36;Presencial;Tarjeta de Crédito;5
+ORD-1218;22/06/2026 16:51;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Yape/Plin;3
+ORD-1219;13/06/2026 22:42;Pollo;Crispy Chicken Burger;1;22;22;Presencial;Tarjeta de Débito;3
+ORD-1220;29/07/2026 16:16;Especiales;Hamburguesa La Churrita ;2;28.5;57;Para Llevar;Tarjeta de Débito;5
+ORD-1221;1/06/2026 14:58;Gourmet;Hamburguesa Huachana;5;32;160;Delivery App;Tarjeta de Débito;5
+ORD-1222;9/07/2026 18:44;Gourmet;Hamburguesa Huachana;1;34;34;Delivery App;Yape/Plin;5
+ORD-1223;1/06/2026 13:42;Especiales;Hamburguesa La Churrita ;2;28.5;57;Presencial;Tarjeta de Débito;4
+ORD-1224;7/07/2026 12:33;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Para Llevar;Tarjeta de Débito;5
+ORD-1225;24/06/2026 12:08;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Delivery App;Tarjeta de Crédito;4
+ORD-1226;14/07/2026 12:25;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Presencial;Tarjeta de Crédito;1
+ORD-1227;25/06/2026 13:01;Clásicas;Hamburguesa Clásica;3;18;54;Web Directa;Tarjeta de Crédito;5
+ORD-1228;17/05/2026 13:52;Clásicas;Cheeseburger Doble;4;24;96;Presencial;Tarjeta de Crédito;5
+ORD-1229;7/06/2026 18:08;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Tarjeta de Débito;5
+ORD-1230;24/05/2026 13:08;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Delivery App;Yape/Plin;5
+ORD-1231;8/07/2026 14:39;Pollo;Crispy Chicken Burger;2;22;44;Presencial;Tarjeta de Débito;5
+ORD-1232;9/07/2026 20:16;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Para Llevar;Yape/Plin;5
+ORD-1233;25/07/2026 16:00;Especiales;Hamburguesa Extrema ;4;36;144;Delivery App;Efectivo;3
+ORD-1234;11/05/2026 18:24;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Yape/Plin;5
+ORD-1235;16/05/2026 13:42;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Yape/Plin;5
+ORD-1236;12/07/2026 13:39;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Débito;3
+ORD-1237;28/06/2026 11:41;Clásicas;Cheeseburger Doble;1;24;24;Presencial;Tarjeta de Débito;4
+ORD-1238;9/07/2026 13:24;Pollo;Crispy Chicken Burger;2;22;44;Delivery App;Tarjeta de Crédito;5
+ORD-1239;19/07/2026 13:38;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Débito;4
+ORD-1240;3/05/2026 13:34;Pollo;Crispy Chicken Burger;1;22;22;Delivery App;Efectivo;5
+ORD-1241;20/05/2026 12:02;Clásicas;Cheeseburger Doble;1;24;24;Delivery App;Yape/Plin;4
+ORD-1242;28/06/2026 12:49;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Presencial;Tarjeta de Crédito;4
+ORD-1243;5/06/2026 16:36;Especiales;Hamburguesa La Churrita ;1;31.5;31.5;Delivery App;Tarjeta de Débito;4
+ORD-1244;19/05/2026 13:43;Clásicas;Cheeseburger Doble;1;27;27;Presencial;Yape/Plin;5
+ORD-1245;29/07/2026 14:43;Especiales;Hamburguesa La Churrita ;3;28.5;85.5;Para Llevar;Tarjeta de Crédito;3
+ORD-1246;6/07/2026 17:50;Clásicas;Cheeseburger Doble;3;24;72;Delivery App;Tarjeta de Débito;5
+ORD-1247;19/05/2026 18:29;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Yape/Plin;5
+ORD-1248;20/05/2026 11:37;Clásicas;Cheeseburger Doble;2;24;48;Presencial;Tarjeta de Débito;5
+ORD-1249;10/07/2026 19:33;Clásicas;Hamburguesa Clásica;2;18;36;Presencial;Tarjeta de Crédito;5
+ORD-1250;21/06/2026 18:11;Clásicas;Cheeseburger Doble;3;24;72;Delivery App;Tarjeta de Débito;5
+ORD-1251;2/06/2026 12:18;Especiales;Hamburguesa La Churrita ;1;31.5;31.5;Delivery App;Yape/Plin;3
+ORD-1252;9/06/2026 20:36;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Delivery App;Tarjeta de Débito;2
+ORD-1253;8/06/2026 20:43;Especiales;Hamburguesa La Churrita ;1;28.5;28.5;Presencial;Tarjeta de Crédito;5
+ORD-1254;21/07/2026 12:58;Clásicas;Hamburguesa Clásica;1;18;18;Presencial;Tarjeta de Débito;5
