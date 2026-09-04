@@ -1,0 +1,28 @@
+[2026-01-27 18:59:04] Manual: Capuccino -> POS
+[2026-01-27 19:01:12] Carga Masiva: 100 registros.
+[2026-01-28 23:42:15] Manual: Capuccino -> NEG
+[2026-01-28 23:45:23] Carga Masiva: 100 registros.
+[2026-01-29 10:30:03] Base de datos vaciada manualmente.
+[2026-01-29 10:46:09] Manual: Espresso -> POS
+[2026-01-29 10:46:45] Manual: Espresso -> NEG
+[2026-01-29 10:50:31] Manual: Espresso -> NEG
+[2026-01-29 10:51:19] Manual: Americano -> POS
+[2026-01-29 10:51:51] Manual: Espresso -> POS
+[2026-01-29 11:00:15] Manual: Americano -> POS
+[2026-01-29 11:01:24] Carga Masiva: 100 registros.
+[2026-01-29 11:30:13] Manual: Espresso -> POS
+[2026-01-29 11:30:44] Carga Masiva: 100 registros.
+[2026-01-29 11:40:30] Manual: Espresso -> POS
+[2026-01-29 11:41:07] Manual: Capuccino -> NEG
+[2026-01-29 11:41:40] Carga Masiva: 100 registros.
+[2026-01-29 11:43:25] Base de datos vaciada manualmente.
+[2026-02-04 20:52:09] Manual: Americano -> NEG
+[2026-02-04 20:53:12] Manual: Espresso -> POS
+[2026-02-04 20:55:42] Carga Masiva: 100 registros.
+[2026-02-14 21:09:02] Manual: Capuccino -> NEG
+[2026-02-14 21:10:39] Carga Masiva: 100 registros.
+[2026-02-14 21:12:29] Base de datos vaciada manualmente.
+[2026-02-14 21:39:00] Manual: Espresso -> POS
+[2026-02-14 21:46:10] Manual: Americano -> NEG
+[2026-02-14 21:47:48] Carga Masiva: 100 registros.
+[2026-02-22 22:46:08] Manual: Latte -> NEG

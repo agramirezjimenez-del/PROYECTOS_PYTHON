@@ -1,0 +1,10 @@
+1.- python -m venv venv
+2.- venv/Scripts/activate
+3.- Crear el archivo requirements.txt y agregar las librerias
+4.- pip install -r requirements.txt
+5.- Crear las carpetas "data" y "models"
+6.- Dentro de la carpeta "models" crear los archivos database.py, file_manager.py, ia_model.py y __init__.py
+7.- Dentro de las carpeta "data" crear las carpetas "inputs" y "outputs".
+8.- Ejecutar el archivo app.py 
+
+9.- Para salir del entorno virtual ejecutar en la consola "deactivate"
